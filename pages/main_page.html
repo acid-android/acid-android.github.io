@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="../sass/stylesheets/main_page.css" rel="stylesheet">
+    <link href="../sass/stylesheets/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="header__menu-indicator">
+        <div class="menu-indicator__hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="menu-indicator__text">
+            <span class="text__value">Категории</span>
+        </div>
+    </div>
+    <div class="header__menu-indicator-pushed">
+        <div class="menu-indicator-pushed__hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="menu-indicator-pushed__text">
+            <span class="text__value">Категории</span>
+        </div>
+    </div>
+    <div class="header__logo"></div>
+    <div class="header__search">
+        <form class="search__form" name="search" action="/search" method="post">
+            <span class="form__icon"><i class="fa fa-search"></i></span>
+            <input class="form__input" type="text" name="request" placeholder="Поиск">
+        </form>
+    </div>
+</div>
+<div class="dropdown-menu">
+    <div class="dropdown-menu__wrapper">
+        <ul class="wrapper__main-categories-list">
+            <li class="general-category">
+                <h4 class="general-category__head">Электроника</h4>
+                <ul class="general-category__sub-category">
+                    <li class="sub-category__item"><a href="/">Усилители</a></li>
+                    <li class="sub-category__item"><a href="/">AV-Ресиверы</a></li>
+                    <li class="sub-category__item"><a href="/">CD-проигрыватели</a></li>
+                    <li class="sub-category__item"><a href="/">ЦАПы</a></li>
+                    <li class="sub-category__item"><a href="/">Вся электроника <i class="fa fa-angle-double-right"
+                                                                                  aria-hidden="true"></i></a></li>
+                </ul>
+            </li>
+            <li class="general-category">
+                <h4 class="general-category__head">Акустика</h4>
+                <ul class="general-category__sub-category">
+                    <li class="sub-category__item"><a href="/">Напольные АС</a></li>
+                    <li class="sub-category__item"><a href="/">Полочные АС</a></li>
+                    <li class="sub-category__item"><a href="/">АС центрального канала</a></li>
+                    <li class="sub-category__item"><a href="/">Сабвуверы</a></li>
+                    <li class="sub-category__item"><a href="/">Вся акустика <i class="fa fa-angle-double-right"
+                                                                               aria-hidden="true"></i></a></li>
+                </ul>
+            </li>
+            <li class="general-category">
+                <h4 class="general-category__head">Встройка</h4>
+                <ul class="general-category__sub-category">
+                    <li class="sub-category__item"><a href="/">Потолочные АС</a></li>
+                    <li class="sub-category__item"><a href="/">Стеновые АС</a></li>
+                    <li class="sub-category__item"><a href="/">Встариваеме сабвуферы</a></li>
+                    <li class="sub-category__item"><a href="/">Вся встройка <i class="fa fa-angle-double-right"
+                                                                               aria-hidden="true"></i></a></li>
+                </ul>
+            </li>
+            <li class="general-category">
+                <h4 class="general-category__head">Кабели</h4>
+                <ul class="general-category__sub-category">
+                    <li class="sub-category__item"><a href="/">Акустически</a></li>
+                    <li class="sub-category__item"><a href="/">Межблочные</a></li>
+                    <li class="sub-category__item"><a href="/">HDMI</a></li>
+                    <li class="sub-category__item"><a href="/">USB</a></li>
+                    <li class="sub-category__item"><a href="/">Все кабели <i class="fa fa-angle-double-right"
+                                                                             aria-hidden="true"></i></a></li>
+                </ul>
+            </li>
+            <li class="general-category">
+                <h4 class="general-category__head">Портатив</h4>
+                <ul class="general-category__sub-category">
+                    <li class="sub-category__item"><a href="/">Наушники</a></li>
+                    <li class="sub-category__item"><a href="/">Портативные плеера</a></li>
+                    <li class="sub-category__item"><a href="/">Услилители для наушников</a></li>
+                    <li class="sub-category__item"><a href="/">Весь портатив <i class="fa fa-angle-double-right"
+                                                                                aria-hidden="true"></i></a></li>
+                </ul>
+            </li>
+            <li class="general-category">
+                <h4 class="general-category__head">Прочее</h4>
+                <ul class="general-category__sub-category">
+                    <li class="sub-category__item"><a href="/">Переходники</a></li>
+                    <li class="sub-category__item"><a href="/">Разъемы</a></li>
+                    <li class="sub-category__item"><a href="/">Чистящие средства</a></li>
+                    <li class="sub-category__item"><a class="item__all" href="/">Все прочее <i
+                            class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                    <li class="sub-category__item"></li>
+                </ul>
+            </li>
+            <li class="info-column">
+                <ul class="info-column__list">
+                    <li class="list__item">
+                        <div class="item__icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="item__descr">
+                            <h3 class="descr__head">Адрес</h3>
+                            <span class="descr__text">г. Одесса, ул. Пушкинская 72, ЦУМ, 1-й этаж, левое крыло</span>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="item__icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="item__descr">
+                            <h3 class="descr__head">Телефоны</h3>
+                            <span class="descr__text">063-963-38-68</span>
+                            <span class="descr__text">067-981-67-68</span>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="item__icon">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="item__descr">
+                            <h3 class="descr__head">Время работы</h3>
+                            <span class="descr__text">Пн-Сб: 10:00 - 19:00</span>
+                            <span class="descr__text">Вс: 10:00 - 18:00</span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide"><img src="../images/001.jpg"></div>
+        <div class="slide"><img src="../images/002.jpg"></div>
+        <div class="slide"><img src="../images/003.jpg"></div>
+        <div class="slide"><img src="../images/004.jpg"></div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="content">
+        <div class="content__wrapper">
+            <div class="wrapper__top-menu">
+                <div class="top-menu__tab active"><span>Главная</span></div>
+                <div class="top-menu__tab"><span>Бренды</span></div>
+                <div class="top-menu__tab"><span>Дополнительно</span></div>
+            </div>
+            <div class="wrapper__container">
+                <div class="container__products">
+                    <div class="products__left-group">
+                        <div class="products__small-item">
+                            <div class="small-item__wrap">
+                                <div class="image">
+                                    <img src="../images/Rosewood%20Real%20Wood.png">
+                                </div>
+                                <div class="info">
+                                    <div class="brand">
+                                        <span>Monitor Audio</span>
+                                    </div>
+                                    <div class="model">
+                                        <span>Silver 2</span>
+                                    </div>
+                                </div>
+                                <div class="old-price">
+                                    <span>1000</span>
+                                </div>
+                                <div class="price">
+                                    <span>800</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="products__small-item">
+                            <div class="small-item__wrap">
+                                <div class="image">
+                                    <img src="../images/Rosewood%20Real%20Wood.png">
+                                </div>
+                                <div class="info">
+                                    <div class="brand">
+                                        <span>Monitor Audio</span>
+                                    </div>
+                                    <div class="model">
+                                        <span>Silver 2</span>
+                                    </div>
+                                </div>
+                                <div class="old-price">
+                                    <span>1000</span>
+                                </div>
+                                <div class="price">
+                                    <span>800</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__middle-group">
+                        <div class="products__big-item">
+                            <div class="big-item__wrap">
+                                <div class="image">
+                                    <img src="../images/Black.png">
+                                </div>
+                                <div class="info">
+                                    <div class="brand">
+                                        <span>Heco</span>
+                                    </div>
+                                    <div class="model">
+                                        <span>Direkt</span>
+                                    </div>
+                                </div>
+                                <div class="old-price">
+                                    <span>3500</span>
+                                </div>
+                                <div class="price">
+                                    <span>3350</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__right-group">
+                        <div class="products__small-item">
+                            <div class="small-item__wrap">
+                                <div class="image">
+                                    <img src="../images/Rosewood%20Real%20Wood.png">
+                                </div>
+                                <div class="info">
+                                    <div class="brand">
+                                        <span>Monitor Audio</span>
+                                    </div>
+                                    <div class="model">
+                                        <span>Silver 2</span>
+                                    </div>
+                                </div>
+                                <div class="old-price">
+                                    <span>1000</span>
+                                </div>
+                                <div class="price">
+                                    <span>800</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="products__small-item">
+                            <div class="small-item__wrap">
+                                <div class="image">
+                                    <img src="../images/Rosewood%20Real%20Wood.png">
+                                </div>
+                                <div class="info">
+                                    <div class="brand">
+                                        <span>Monitor Audio</span>
+                                    </div>
+                                    <div class="model">
+                                        <span>Silver 2</span>
+                                    </div>
+                                </div>
+                                <div class="old-price">
+                                    <span>1000</span>
+                                </div>
+                                <div class="price">
+                                    <span>800</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/main_page.js"></script>
+<script src="../js/slider.js"></script>
+</body>
+</html>

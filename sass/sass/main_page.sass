@@ -1,0 +1,442 @@
+@import "variables"
+
+html
+  margin: 0
+  padding: 0
+
+  body
+    margin: 0
+    padding: 0
+
+    .header
+      position: relative
+      z-index: 5
+      display: block
+      width: 100%
+      height: 60px
+      background-color: rgba(0,0,0,0.5)
+      border-bottom: 1px rgba(255,255,255,0.5) solid
+
+
+      .header__menu-indicator-pushed
+        display: none
+        float: left
+        width: auto
+        height: 100%
+        border-right: 1px rgba(255,255,255,0.5) solid
+        background-color: rgba(0,0,0,0.5)
+        color: grey
+        padding-right: 10px
+        cursor: pointer
+        opacity: 1
+
+        .menu-indicator-pushed__hamburger
+          display: inline-block
+          margin: 15px 10px 10px 20px
+          opacity: 1
+
+          i
+            font-size: 1.5em
+            color: $text_color
+            opacity: 1
+        .menu-indicator-pushed__text
+          display: inline-block
+          margin: 20px
+          @media screen and ( max-width: 935px)
+            display: none
+
+
+          .text__value
+            color: $text_color
+
+      .header__menu-indicator
+        display: inline-block
+        float: left
+        width: auto
+        height: 100%
+        border-right: 1px rgba(255,255,255,0.3) solid
+        padding-right: 10px
+        cursor: pointer
+        opacity: 1
+
+        .menu-indicator__hamburger
+          display: inline-block
+          margin: 15px 10px 10px 20px
+          opacity: 1
+
+          i
+            font-size: 1.5em
+            color: $text_color
+            opacity: 1
+        .menu-indicator__text
+          display: inline-block
+          margin: 20px
+          opacity: 1
+
+          @media screen and ( max-width: 935px)
+            display: none
+
+          .text__value
+            color: $text_color
+
+      .header__logo
+        display: inline-block
+        width: 105px
+        height: 50px
+        margin-top: 5px
+        margin-left: calc(50% - 105px)
+        transform: translateX(-105px)
+        background-image: url('../../images/logo.png')
+        @media screen and ( max-width: 800px)
+          margin-left: 140px
+
+      .header__search
+        display: inline-block
+        float: right
+        margin: 20px 20px 20px 0
+    .dropdown-menu
+      display: none
+      position: absolute
+      z-index: 1
+      top: -1000px
+      width: 100%
+      height: auto
+      padding-bottom: 100px
+      background-color: rgba(0,0,0,0.6)
+
+
+      .dropdown-menu__wrapper
+        margin: 20px
+        position: relative
+        z-index: 1
+
+        .wrapper__main-categories-list
+          display: block
+
+          .general-category
+            display: inline-block
+            margin-right: 50px
+            color: $text_color
+            vertical-align: top
+
+            .general-category__head
+              text-transform: uppercase
+
+            .general-category__sub-category
+              list-style-type: none
+              padding: 0
+
+              .sub-category__item
+                display: block
+                width: 125px
+                padding: 5px 0
+                font-size: 0.85em
+
+                a
+                  text-decoration: none
+                  color: $text_color
+                  cursor: pointer
+                  &:hover
+                    color: $main_color2
+
+                .item__all
+                  display: block
+                  margin-top: 10px
+                  color: $text_color
+                  text-decoration: none
+                  cursor: pointer
+
+          .info-column
+            display: inline-block
+            color: $text_color
+            vertical-align: top
+
+            .info-column__list
+              list-style-type: none
+
+              .list__item
+                display: block
+                margin-bottom: 30px
+
+                .item__icon
+                  display: inline-block
+                  vertical-align: top
+                  margin-right: 20px
+
+                  i
+                    font-size: 2em
+
+                .item__descr
+                  display: inline-block
+                  width: 205px
+                  //vertical-align: top
+
+                  .descr__head
+                    margin: 0 0 5px 0
+
+                  .descr__text
+                    display: block
+                    margin-bottom: 3px
+
+    .slider-container
+      width: 100%
+      height: auto
+      position: relative
+      top: -60px
+      z-index: 0
+
+      .slider
+        width: 100vw
+        height: 40vw
+        //max-width: 1280px
+        //max-height: 512px
+        overflow: hidden
+        border: none
+        position: relative
+        text-align: center
+        z-index: 0
+
+        .prew-btn, .next-btn
+          display: block
+          position: absolute
+          top: calc(50% - 30px)
+          font-size: 30px
+          overflow: hidden
+          color: #808080
+          opacity: 0.7
+          z-index: 3
+
+        .prew-btn
+          left: 20px
+
+          &:hover
+            opacity: 1
+            color: #ffffff
+            font-size: 40px
+            transform: translateY(-10%)
+
+        .next-btn
+          right: 20px
+
+          &:hover
+            opacity: 1
+            color: #ffffff
+            font-size: 40px
+            transform: translateY(-10%)
+
+        .slide
+          width: 100%
+          height: 100%
+
+          img
+            width: 100%
+            height: 100%
+
+
+    .wrapper
+      position: relative
+      .content
+        position: relative
+        z-index: 1
+        display: block
+        width: auto
+        height: auto
+        margin: -120px 7% 60px 7%
+        background-color: white
+        box-shadow: 0 0 65px rgba(0,0,0,0.5)
+        overflow: hidden
+
+        .content__wrapper
+          display: block
+          position: relative
+
+          .wrapper__top-menu
+            display: block
+            position: relative
+            width: 100%
+            height: 60px
+            border-bottom: 1px #efeaea solid
+            box-sizing: border-box
+
+            .active
+              background-color: $main_color2
+              color: $text_color
+
+            .top-menu__tab
+              display: inline-block
+              position: relative
+              width: calc(100% / 3 - 3px)
+              height: 60px
+              border-right: 1px #efeaea solid
+              box-sizing: border-box
+
+              span
+                display: block
+                position: absolute
+                top: 50%
+                margin-top: -0.625em
+                width: 100%
+                vertical-align: middle
+                height: 60px
+                text-align: center
+                font-size: 0.7em
+                text-transform: uppercase
+
+          .wrapper__container
+            display: block
+            position: relative
+            width: 100%
+            overflow: hidden
+
+            .container__products
+              display: block
+              position: relative
+              width: 100%
+              .info
+                display: block
+                position: relative
+                margin-bottom: 10px
+                margin-left: 20px
+
+                .brand
+                  display: inline-block
+
+                .model
+                  display: inline-block
+
+              .old-price
+                display: block
+                position: relative
+                color: #ff6666
+                text-decoration: line-through
+                font-size: 0.8em
+                margin-left: 20px
+
+              .price
+                display: block
+                position: relative
+                color: $main_color
+                font-size: 1em
+                margin-left: 20px
+
+              .products__left-group
+                display: inline-block
+                position: relative
+                float: left
+                width: calc(100% /4 - 1px)
+                border-right: 1px #efeaea solid
+
+
+                .products__small-item
+                  display: block
+                  position: relative
+                  border-top: 1px #efeaea solid
+                  padding-bottom: 50px
+
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+
+                  .small-item__wrap
+                    display: block
+                    position: relative
+                    width: 100%
+                    height: auto
+
+                    .image
+                      display: block
+                      position: relative
+                      width: 100%
+                      height: auto
+                      margin-top: 20px
+
+                      img
+                        width: 80%
+
+              .products__middle-group
+                display: inline-block
+                position: relative
+                float: left
+                width: calc(100% / 2)
+                .products__big-item
+                  display: block
+                  position: relative
+                  padding: 30px 20px
+                  z-index: 1
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+                  //border-bottom: 1px #efeaea solid
+
+                  .big-item__wrap
+                    display: block
+                    position: relative
+                    width: 100%
+                    height: auto
+
+
+                    .image
+                      display: block
+                      position: relative
+                      width: 100%
+                      height: auto
+
+
+                      img
+                        width: 100%
+
+                    .info
+                      margin-top: 50px
+
+
+
+              .products__right-group
+                display: inline-block
+                position: relative
+                float: right
+                width: calc(100% /4 - 1px)
+                border-left: 1px #efeaea solid
+
+
+                .products__small-item
+                  display: block
+                  position: relative
+                  border-top: 1px #efeaea solid
+                  padding-bottom: 50px
+
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+
+
+                  .small-item__wrap
+                    display: block
+                    position: relative
+                    width: 100%
+                    height: auto
+
+                    .image
+                      display: block
+                      position: relative
+                      width: 100%
+                      height: auto
+                      margin-top: 20px
+
+                      img
+                        width: 80%
+                        z-index: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
