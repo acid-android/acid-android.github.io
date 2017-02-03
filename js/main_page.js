@@ -53,6 +53,12 @@ function padding() {
     $('.set-left__left-group .acoustic').css({
         'padding-bottom': paddingAcousticLeft + 'px'
     });
+
+    var paddingReciever5dot1 = $('.theater-5dot1__left-group').height() - $('.theater-5dot1__right-group .right-group__receiver').height();
+    $('.theater-5dot1__right-group .right-group__receiver').css({
+        'padding-bottom': paddingReciever5dot1 + 'px'
+    });
+    console.log(paddingReciever5dot1 + ' px');
 }
 $(window).resize(function() {
     padding();
