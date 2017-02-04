@@ -97,12 +97,21 @@ html
     .dropdown-menu
       display: none
       position: absolute
-      z-index: 1
+      z-index: 2
       top: -1000px
       width: 100%
       height: auto
       padding-bottom: 100px
       background-color: rgba(0,0,0,0.6)
+
+      .blur
+        display: block
+        position: absolute
+        background: rgba(0,0,0,0.5)
+        width: 100%
+        filter: blur(10px)
+        z-index: 0
+
 
 
       .dropdown-menu__wrapper
@@ -254,7 +263,7 @@ html
       position: relative
       .content
         position: relative
-        z-index: 1
+        z-index: 3
         display: block
         width: auto
         height: auto
@@ -306,7 +315,7 @@ html
             position: relative
             width: 100%
             overflow: hidden
-            z-index: 1
+            z-index: 2
 
             .container__products
               display: block
@@ -1347,6 +1356,436 @@ html
                       width: 80%
 
               .theater-5dot1__link
+                display: block
+                position: relative
+                color: $text_color
+                width: 100%
+                height: 60px
+                overflow: hidden
+                text-transform: uppercase
+                border-top: 1px #efeaea solid
+
+                a
+                  display: block
+                  position: relative
+                  top: 50%
+                  margin-top: -0.625em
+                  margin-right: 20px
+                  float: right
+                  text-decoration: none
+                  color: #808080
+                  cursor: pointer
+                  &:hover
+                    color: $main_color2
+
+            .container__theater-7dot1
+              display: block
+              position: relative
+              width: 100%
+
+              .theater-7dot1__head
+                display: block
+                position: relative
+                background-color: $main_color2
+                color: $text_color
+                width: 100%
+                height: 60px
+                text-transform: uppercase
+
+                h4
+                  display: block
+                  position: absolute
+                  top: 50%
+                  margin-top: -0.625em
+                  width: 100%
+                  height: 60px
+                  text-align: center
+                  text-transform: uppercase
+
+              .theater-7dot1__left-group
+                display: inline-block
+                float: left
+                position: relative
+                width: 60%
+
+                .left-group__front
+                  display: inline-block
+                  width: calc(50% - 3px)
+                  height: auto
+                  border-right: 1px #efeaea solid
+                  border-bottom: 1px #efeaea solid
+
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+
+                  .label
+                    position: relative
+                    top: 20px
+                    left: 33%
+                    text-align: center
+                    width: 33%
+                    background-color: #808080
+                    color: $text_color
+                    padding: 5px 0
+                    z-index: 2
+                    span
+                      text-align: center
+
+                  .info
+                    display: block
+                    position: relative
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    text-align: center
+
+                    .brand
+                      display: inline-block
+
+                    .model
+                      display: inline-block
+
+                    .old-price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: #ff6666
+                      text-decoration: line-through
+                      font-size: 0.8em
+                      margin-left: 20px
+
+                    .price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: $main_color
+                      font-size: 1em
+                      margin-left: 20px
+
+                  .image
+                    display: block
+                    margin-top: 30px
+                    text-align: center
+                    width: 100%
+
+                    img
+                      width: 80%
+
+                .left-group__rear
+                  display: inline-block
+                  width: calc(50% - 3px)
+                  height: auto
+                  border-right: 1px #efeaea solid
+                  border-bottom: 1px #efeaea solid
+
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+
+                  .label
+                    position: relative
+                    top: 20px
+                    left: 33%
+                    text-align: center
+                    width: 33%
+                    background-color: #808080
+                    color: $text_color
+                    padding: 5px 0
+                    z-index: 2
+                    span
+                      text-align: center
+
+                  .info
+                    display: block
+                    position: relative
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    text-align: center
+
+                    .brand
+                      display: inline-block
+
+                    .model
+                      display: inline-block
+
+                    .old-price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: #ff6666
+                      text-decoration: line-through
+                      font-size: 0.8em
+                      margin-left: 20px
+
+                    .price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: $main_color
+                      font-size: 1em
+                      margin-left: 20px
+
+                  .image
+                    display: block
+                    margin-top: 30px
+                    text-align: center
+                    width: 100%
+
+                    img
+                      width: 80%
+
+                .left-group__center
+                  display: inline-block
+                  width: calc(50% - 3px)
+                  height: auto
+                  border-right: 1px #efeaea solid
+                  //border-bottom: 1px #efeaea solid
+
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+
+                  .label
+                    position: relative
+                    top: 20px
+                    left: 33%
+                    text-align: center
+                    width: 33%
+                    background-color: #808080
+                    color: $text_color
+                    padding: 5px 0
+                    z-index: 2
+                    span
+                      text-align: center
+
+                  .info
+                    display: block
+                    position: relative
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    text-align: center
+
+                    .brand
+                      display: inline-block
+
+                    .model
+                      display: inline-block
+
+                    .old-price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: #ff6666
+                      text-decoration: line-through
+                      font-size: 0.8em
+                      margin-left: 20px
+
+                    .price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: $main_color
+                      font-size: 1em
+                      margin-left: 20px
+
+                  .image
+                    display: block
+                    margin-top: 30px
+                    text-align: center
+                    width: 100%
+
+                    img
+                      width: 80%
+
+                .left-group__sub
+                  display: inline-block
+                  width: calc(50% - 3px)
+                  height: auto
+                  border-right: 1px #efeaea solid
+                  //border-bottom: 1px #efeaea solid
+
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+
+                  .label
+                    position: relative
+                    top: 20px
+                    left: 33%
+                    text-align: center
+                    width: 33%
+                    background-color: #808080
+                    color: $text_color
+                    padding: 5px 0
+                    z-index: 2
+                    span
+                      text-align: center
+
+                  .info
+                    margin-top: 10px
+                    display: block
+                    position: relative
+                    margin-bottom: 10px
+                    text-align: center
+
+                    .brand
+                      display: inline-block
+
+                    .model
+                      display: inline-block
+
+                    .old-price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: #ff6666
+                      text-decoration: line-through
+                      font-size: 0.8em
+                      margin-left: 20px
+
+                    .price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: $main_color
+                      font-size: 1em
+                      margin-left: 20px
+
+                  .image
+                    display: block
+                    margin-top: 30px
+                    text-align: center
+                    width: 100%
+                    img
+                      width: 80%
+
+              .theater-7dot1__right-group
+                display: inline-block
+                float: right
+                position: relative
+                width: 40%
+
+                .right-group__rear-surr
+                  display: inline-block
+                  width: 100%
+                  height: auto
+                  border-right: 1px #efeaea solid
+                  border-bottom: 1px #efeaea solid
+
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+
+                  .label
+                    position: relative
+                    top: 20px
+                    left: 33%
+                    text-align: center
+                    width: 33%
+                    background-color: #808080
+                    color: $text_color
+                    padding: 5px 0
+                    z-index: 2
+                    span
+                      text-align: center
+
+                  .info
+                    margin-top: 10px
+                    display: block
+                    position: relative
+                    margin-bottom: 10px
+                    text-align: center
+                    //margin-left: 20px
+
+                    .brand
+                      display: inline-block
+
+                    .model
+                      display: inline-block
+
+                    .old-price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: #ff6666
+                      text-decoration: line-through
+                      font-size: 0.8em
+                      margin-left: 20px
+
+                    .price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: $main_color
+                      font-size: 1em
+                      margin-left: 20px
+
+                  .image
+                    display: block
+                    width: 100%
+                    text-align: center
+                    margin-top: 20px
+                    img
+                      width: calc(60% - 1px)
+
+                .right-group__receiver
+                  display: inline-block
+                  width: 100%
+                  height: auto
+                  border-right: 1px #efeaea solid
+                  //border-bottom: 1px #efeaea solid
+
+                  &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+
+                  .label
+                    position: relative
+                    top: 20px
+                    left: 33%
+                    text-align: center
+                    width: 33%
+                    background-color: #808080
+                    color: $text_color
+                    padding: 5px 0
+                    z-index: 2
+                    span
+                      text-align: center
+
+                  .info
+                    margin-top: 10px
+                    display: block
+                    position: relative
+                    margin-bottom: 10px
+                    text-align: center
+                    //margin-left: 20px
+
+                    .brand
+                      display: inline-block
+
+                    .model
+                      display: inline-block
+
+                    .old-price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: #ff6666
+                      text-decoration: line-through
+                      font-size: 0.8em
+                      margin-left: 20px
+
+                    .price
+                      margin-top: 10px
+                      display: block
+                      position: relative
+                      color: $main_color
+                      font-size: 1em
+                      margin-left: 20px
+
+                  .image
+                    display: block
+                    width: 100%
+                    text-align: center
+                    margin-top: 20px
+                    img
+                      width: 60%
+
+              .theater-7dot1__link
                 display: block
                 position: relative
                 color: $text_color
