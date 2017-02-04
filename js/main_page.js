@@ -72,6 +72,11 @@ function padding() {
     $('.theater-7dot1__right-group .right-group__rear-surr').css({
         'padding-bottom': paddingReciever7dot1/2 + 'px'
     });
+
+    var paddingReciever9dot1 = $('.theater-9dot1__left-group').height() - $('.theater-9dot1__right-group .right-group__receiver').height();
+    $('.theater-9dot1__right-group .right-group__receiver').css({
+        'padding-bottom': paddingReciever9dot1 + 'px'
+    });
 }
 $(window).resize(function() {
     padding();

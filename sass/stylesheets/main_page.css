@@ -2111,3 +2111,585 @@ html body .wrapper .content .content__wrapper .wrapper__container .container__th
 html body .wrapper .content .content__wrapper .wrapper__container .container__theater-7dot1 .theater-7dot1__link a:hover {
   color: #52AFEB;
 }
+/* line 1811, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 1816, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__head {
+  display: block;
+  position: relative;
+  background-color: #52AFEB;
+  color: #F2F5F7;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+}
+/* line 1825, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__head h4 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 1835, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 60%;
+}
+/* line 1841, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front {
+  display: inline-block;
+  width: calc(100% / 3 - 4px);
+  height: auto;
+  border-right: 1px #efeaea solid;
+  border-bottom: 1px #efeaea solid;
+}
+/* line 1848, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* line 1851, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .label {
+  position: relative;
+  top: 20px;
+  left: 33%;
+  text-align: center;
+  width: 33%;
+  background-color: #808080;
+  color: #F2F5F7;
+  padding: 5px 0;
+  z-index: 2;
+}
+/* line 1861, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .label span {
+  text-align: center;
+}
+/* line 1864, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .info {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 1871, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .info .brand {
+  display: inline-block;
+}
+/* line 1874, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .info .model {
+  display: inline-block;
+}
+/* line 1877, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .info .old-price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #ff6666;
+  text-decoration: line-through;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+/* line 1886, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .info .price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #095A98;
+  font-size: 1em;
+  margin-left: 20px;
+}
+/* line 1894, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .image {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+/* line 1900, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front .image img {
+  width: 80%;
+}
+/* line 1904, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear {
+  display: inline-block;
+  width: calc(100% / 3 - 4px);
+  height: auto;
+  border-right: 1px #efeaea solid;
+  border-bottom: 1px #efeaea solid;
+}
+/* line 1911, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* line 1914, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .label {
+  position: relative;
+  top: 20px;
+  left: 33%;
+  text-align: center;
+  width: 33%;
+  background-color: #808080;
+  color: #F2F5F7;
+  padding: 5px 0;
+  z-index: 2;
+}
+/* line 1924, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .label span {
+  text-align: center;
+}
+/* line 1927, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .info {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 1934, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .info .brand {
+  display: inline-block;
+}
+/* line 1937, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .info .model {
+  display: inline-block;
+}
+/* line 1940, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .info .old-price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #ff6666;
+  text-decoration: line-through;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+/* line 1949, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .info .price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #095A98;
+  font-size: 1em;
+  margin-left: 20px;
+}
+/* line 1957, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .image {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+/* line 1963, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear .image img {
+  width: 80%;
+}
+/* line 1966, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center {
+  display: inline-block;
+  width: calc(100% / 3 - 4px);
+  height: auto;
+  border-right: 1px #efeaea solid;
+  border-bottom: 1px #efeaea solid;
+}
+/* line 1973, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* line 1976, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .label {
+  position: relative;
+  top: 20px;
+  left: 33%;
+  text-align: center;
+  width: 33%;
+  background-color: #808080;
+  color: #F2F5F7;
+  padding: 5px 0;
+  z-index: 2;
+}
+/* line 1986, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .label span {
+  text-align: center;
+}
+/* line 1989, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .info {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 1996, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .info .brand {
+  display: inline-block;
+}
+/* line 1999, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .info .model {
+  display: inline-block;
+}
+/* line 2002, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .info .old-price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #ff6666;
+  text-decoration: line-through;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+/* line 2011, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .info .price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #095A98;
+  font-size: 1em;
+  margin-left: 20px;
+}
+/* line 2019, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .image {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+/* line 2025, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__center .image img {
+  width: 80%;
+}
+/* line 2029, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr {
+  display: inline-block;
+  width: calc(100% / 3 - 4px);
+  height: auto;
+  border-right: 1px #efeaea solid;
+}
+/* line 2036, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* line 2039, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .label {
+  position: relative;
+  top: 20px;
+  left: 33%;
+  text-align: center;
+  width: 50%;
+  background-color: #808080;
+  color: #F2F5F7;
+  padding: 5px 0;
+  z-index: 2;
+}
+/* line 2049, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .label span {
+  text-align: center;
+}
+/* line 2052, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .info {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 2059, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .info .brand {
+  display: inline-block;
+}
+/* line 2062, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .info .model {
+  display: inline-block;
+}
+/* line 2065, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .info .old-price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #ff6666;
+  text-decoration: line-through;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+/* line 2074, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .info .price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #095A98;
+  font-size: 1em;
+  margin-left: 20px;
+}
+/* line 2082, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .image {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+/* line 2088, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__rear-surr .image img {
+  width: 80%;
+}
+/* line 2092, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height {
+  display: inline-block;
+  width: calc(100% / 3 - 4px);
+  height: auto;
+  border-right: 1px #efeaea solid;
+}
+/* line 2099, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* line 2102, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .label {
+  position: relative;
+  top: 20px;
+  left: 33%;
+  text-align: center;
+  width: 50%;
+  background-color: #808080;
+  color: #F2F5F7;
+  padding: 5px 0;
+  z-index: 2;
+}
+/* line 2112, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .label span {
+  text-align: center;
+}
+/* line 2115, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .info {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 2122, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .info .brand {
+  display: inline-block;
+}
+/* line 2125, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .info .model {
+  display: inline-block;
+}
+/* line 2128, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .info .old-price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #ff6666;
+  text-decoration: line-through;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+/* line 2137, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .info .price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #095A98;
+  font-size: 1em;
+  margin-left: 20px;
+}
+/* line 2145, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .image {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+/* line 2151, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__front-height .image img {
+  width: 80%;
+}
+/* line 2154, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub {
+  display: inline-block;
+  width: calc(100% / 3 - 4px);
+  height: auto;
+  border-right: 1px #efeaea solid;
+}
+/* line 2161, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* line 2164, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .label {
+  position: relative;
+  top: 20px;
+  left: 33%;
+  text-align: center;
+  width: 33%;
+  background-color: #808080;
+  color: #F2F5F7;
+  padding: 5px 0;
+  z-index: 2;
+}
+/* line 2174, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .label span {
+  text-align: center;
+}
+/* line 2177, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .info {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 2184, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .info .brand {
+  display: inline-block;
+}
+/* line 2187, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .info .model {
+  display: inline-block;
+}
+/* line 2190, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .info .old-price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #ff6666;
+  text-decoration: line-through;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+/* line 2199, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .info .price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #095A98;
+  font-size: 1em;
+  margin-left: 20px;
+}
+/* line 2207, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .image {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+/* line 2212, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__left-group .left-group__sub .image img {
+  width: 80%;
+}
+/* line 2216, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group {
+  display: inline-block;
+  float: right;
+  position: relative;
+  width: 40%;
+}
+/* line 2222, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-right: 1px #efeaea solid;
+}
+/* line 2229, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* line 2232, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .label {
+  position: relative;
+  top: 20px;
+  left: 33%;
+  text-align: center;
+  width: 33%;
+  background-color: #808080;
+  color: #F2F5F7;
+  padding: 5px 0;
+  z-index: 2;
+}
+/* line 2242, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .label span {
+  text-align: center;
+}
+/* line 2245, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .info {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 2253, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .info .brand {
+  display: inline-block;
+}
+/* line 2256, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .info .model {
+  display: inline-block;
+}
+/* line 2259, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .info .old-price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #ff6666;
+  text-decoration: line-through;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+/* line 2268, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .info .price {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: #095A98;
+  font-size: 1em;
+  margin-left: 20px;
+}
+/* line 2276, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .image {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 150px;
+}
+/* line 2281, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__right-group .right-group__receiver .image img {
+  width: 60%;
+}
+/* line 2284, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__link {
+  display: block;
+  position: relative;
+  color: #F2F5F7;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  text-transform: uppercase;
+  border-top: 1px #efeaea solid;
+}
+/* line 2294, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__link a {
+  display: block;
+  position: relative;
+  top: 50%;
+  margin-top: -0.625em;
+  margin-right: 20px;
+  float: right;
+  text-decoration: none;
+  color: #808080;
+  cursor: pointer;
+}
+/* line 2304, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__theater-9dot1 .theater-9dot1__link a:hover {
+  color: #52AFEB;
+}
