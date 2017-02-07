@@ -320,6 +320,7 @@ html
               .background
                 display: none
                 background-color: $main_color2
+                width: 100%
 
           .wrapper__container
             display: block
@@ -2895,7 +2896,6 @@ html
               position: relative
               width: 100%
               overflow: hidden
-              border-bottom: 1px #efeaea solid
               margin-bottom: 50px
 
               .contacts__map
@@ -2907,3 +2907,69 @@ html
                 .map
                   display: block
                   width: 100%
+
+              .contacts__info
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                padding: 50px 0
+
+                @media screen and ( max-width: 700px)
+                  flex-direction: column
+                  justify-content: center
+                  align-items: center
+
+                span
+                  display: block
+                  padding-bottom: 10px
+
+                .info__address
+                  display: block
+                  text-align: center
+                  width: 20%
+
+
+
+                  .address__icon
+                    display: block
+                    color: $main_color2
+
+                    i
+                      font-size: 1.5em
+
+                .info__phone
+                  display: block
+                  text-align: center
+                  width: 20%
+
+
+                  .phone__icon
+                    display: block
+                    color: $main_color2
+
+                    i
+                      font-size: 1.5em
+
+                .info__email
+                  display: block
+                  text-align: center
+                  width: 20%
+
+                  .email__icon
+                    display: block
+                    color: $main_color2
+
+                    i
+                      font-size: 1.5em
+
+                .info__time
+                  width: 20%
+                  text-align: center
+                  display: block
+
+                  .time__icon
+                    display: block
+                    color: $main_color2
+
+                    i
+                      font-size: 1.5em

@@ -120,7 +120,9 @@ html
         z-index: 1
 
         .wrapper__main-categories-list
-          display: block
+          display: flex
+          flex-direction: row
+          justify-content: space-around
 
           .general-category
             display: inline-block
@@ -143,9 +145,9 @@ html
 
               .sub-category__item
                 display: block
-                width: 125px
+                width: auto
                 padding: 5px 0
-                font-size: 0.85em
+                font-size: 1rem
 
                 a
                   text-decoration: none
@@ -161,44 +163,44 @@ html
                   text-decoration: none
                   cursor: pointer
 
-          .info-column
-            display: inline-block
-            color: $text_color
-            vertical-align: top
-
-            @media screen and ( max-width: 1460px)
-              margin-top: 20px
-
-            @media screen and ( max-width: 970px)
-              display: none
-
-            .info-column__list
-              list-style-type: none
-
-              .list__item
-                display: block
-                margin-bottom: 30px
-
-                @media screen and ( max-width: 1460px)
-                  display: inline-block
-
-
-                .item__icon
-                  display: inline-block
-                  vertical-align: top
-                  margin-right: 20px
-
-                  i
-                    font-size: 2em
-
-                .item__descr
-                  display: inline-block
-                  width: 205px
-                  //vertical-align: top
-
-                  .descr__head
-                    margin: 0 0 5px 0
-
-                  .descr__text
-                    display: block
-                    margin-bottom: 3px
+          //.info-column
+          //  display: inline-block
+          //  color: $text_color
+          //  vertical-align: top
+          //
+          //  @media screen and ( max-width: 1460px)
+          //    margin-top: 20px
+          //
+          //  @media screen and ( max-width: 970px)
+          //    display: none
+          //
+          //  .info-column__list
+          //    list-style-type: none
+          //
+          //    .list__item
+          //      display: block
+          //      margin-bottom: 30px
+          //
+          //      @media screen and ( max-width: 1460px)
+          //        display: inline-block
+          //
+          //
+          //      .item__icon
+          //        display: inline-block
+          //        vertical-align: top
+          //        margin-right: 20px
+          //
+          //        i
+          //          font-size: 2em
+          //
+          //      .item__descr
+          //        display: inline-block
+          //        width: 205px
+          //        //vertical-align: top
+          //
+          //        .descr__head
+          //          margin: 0 0 5px 0
+          //
+          //        .descr__text
+          //          display: block
+          //          margin-bottom: 3px

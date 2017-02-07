@@ -1,7 +1,6 @@
 var menu = $('.dropdown-menu');
 var menuButton = $('.header__menu-indicator');
 var hideButton = $('.header__menu-indicator-pushed');
-//var blur = '<div class="blur" style="position: relative; top: 0; display: block; width: 100%; filter: blur(10px);z-index: 0;"></div>';
 var activeTabBackground = $('.wrapper__top-menu .active .background');
 var tabBackground = $('.wrapper__top-menu .background');
 activeTabBackground.show();
@@ -16,14 +15,7 @@ activeTabBackground.css(
         'height': $('.top-menu__tab').height()
     }
 );
-//$('.wrapper__top-menu .active').on('click', function(){
-//    var activeTab = $(this);
-//    activeTabBackground.hide('clip', 500);
-//    setTimeout(function () {
-//        activeTab.removeClass('active');
-//    }, 450);
-//
-//});
+
 
 function nonActiveCheck($value) {
     if ($value == 'top-menu__tab') {
@@ -59,7 +51,6 @@ menuButton.on('click', function () {
     menuButton.hide();
     hideButton.show();
     menu.show();
-    //menu.prepend(blur);
     $('.blur').css({
         'height': menu.height()
     });
