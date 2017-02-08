@@ -1,0 +1,288 @@
+@import "variables"
+
+html
+  margin: 0
+  padding: 0
+
+  body
+    margin: 0
+    padding: 0
+
+    .header
+      background-color: $list-bg-color
+      box-shadow: 0 0 65px rgba(0,0,0,0.5)
+      border-bottom: 1px rgba(165, 165, 165, 0.25) solid
+      z-index: 5
+
+
+      .header__menu-indicator-pushed
+        background-color: $main_color
+        border-right: 1px rgba(165, 165, 165, 0.25) solid
+
+      .header__menu-indicator
+        border-right: 1px rgba(165, 165, 165, 0.25) solid
+
+    .dropdown-menu
+      background-color: $list-bg-color
+      z-index: 4
+
+      .blur
+        display: none
+
+
+    .list-head
+      display: block
+      position: relative
+      top: -60px
+      background-color: $list-bg-color
+      height: auto
+
+      .head__wrapper
+        display: block
+        width: 100%
+        position: relative
+        padding-top: $list-header-padding + 15px
+        padding-bottom: 120px
+        text-align: center
+
+        .wrapper__text
+          color: $text_color
+          text-transform: uppercase
+
+        .wrapper__breadcrumbs
+          display: block
+
+          .anchor
+            display: inline-block
+
+
+            a
+              color: #bcb9b9
+              font-weight: 100
+              text-decoration: none
+
+              &:hover
+                color: $text_color
+
+
+          .delimiter
+            display: inline-block
+            color: #bcb9b9
+            font-weight: 100
+
+
+    .content
+      position: relative
+      z-index: 3
+      display: block
+      width: auto
+      height: 500px
+      margin: -120px 5% 60px 5%
+      background-color: white
+      box-shadow: 0 0 65px rgba(0,0,0,0.5)
+      overflow: hidden
+
+      .content__wrapper
+
+        .wrapper__types
+          width: 100%
+          height: 300px
+          display: block
+          position: relative
+          overflow: hidden
+
+          .types__left
+            display: block
+            position: relative
+            float: left
+            width: 60%
+            height: 300px
+            overflow: hidden
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4096ee+0,60abf8+56,7abcff+100 */
+            background: #4096ee /* Old browsers */
+            background: -moz-linear-gradient(left,  #4096ee 0%, #60abf8 56%, #7abcff 100%) /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  #4096ee 0%,#60abf8 56%,#7abcff 100%) /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  #4096ee 0%,#60abf8 56%,#7abcff 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#7abcff',GradientType=1 ) /* IE6-9 */
+            .left__info
+              display: block
+              position: relative
+              float: left
+              width: 40%
+              text-align: center
+              margin-top: 50px
+
+              .info__name
+                display: block
+                position: relative
+                margin-top: 30px
+                color: $text_color
+                text-transform: uppercase
+
+              .info__button
+                display: block
+                position: relative
+                margin: 100px auto 0
+                width: inherit
+                padding: 10px 20px
+                text-align: center
+                color: $text_color
+                //border: 1px rgba(165, 165, 165, 0.25) solid
+                border-radius: 20px
+                box-shadow: 0 0 20px rgba(0,0,0,0.3)
+                cursor: pointer
+
+                span
+                  width: 100%
+
+                &:hover
+                  transition: all .15s ease-in
+                  transform: scale(1.1)
+
+
+            .left__image
+              display: block
+              position: relative
+              float: right
+              height: 100%
+              margin-right: 10vw
+
+
+              img
+                display: block
+                height: 100%
+
+
+
+          .types__right
+            display: block
+            position: relative
+            float: right
+            width: 40%
+            height: 300px
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4096ee+0,60abf8+56,7abcff+100 */
+            background: -moz-linear-gradient(302deg, rgba(66,47,225,1) 0%, rgba(127,111,239,1) 100%) /* ff3.6+ */
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(66,47,225,1)), color-stop(100%, rgba(127,111,239,1))) /* safari4+,chrome */
+            background: -webkit-linear-gradient(302deg, rgba(66,47,225,1) 0%, rgba(127,111,239,1) 100%) /* safari5.1+,chrome10+ */
+            background: -o-linear-gradient(302deg, rgba(66,47,225,1) 0%, rgba(127,111,239,1) 100%) /* opera 11.10+ */
+            background: -ms-linear-gradient(302deg, rgba(66,47,225,1) 0%, rgba(127,111,239,1) 100%) /* ie10+ */
+            background: linear-gradient(148deg, rgba(66,47,225,1) 0%, rgba(127,111,239,1) 100%) /* w3c */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422FE1', endColorstr='#7F6FEF',GradientType=0 ) /* ie6-9 */
+
+            .right__info
+              display: block
+              position: relative
+              float: left
+              width: 40%
+              text-align: center
+              margin-top: 50px
+
+              .info__name
+                display: block
+                position: relative
+                margin-top: 30px
+                color: $text_color
+                text-transform: uppercase
+
+              .info__button
+                display: block
+                position: relative
+                margin: 100px auto 0
+                width: inherit
+                padding: 10px 20px
+                text-align: center
+                color: $text_color
+                //border: 1px rgba(165, 165, 165, 0.25) solid
+                border-radius: 20px
+                box-shadow: 0 0 20px rgba(0,0,0,0.3)
+                cursor: pointer
+
+                span
+                  width: 100%
+
+
+                &:hover
+                  transition: all .15s ease-in
+                  transform: scale(1.1)
+
+            .right__image
+              display: block
+              position: absolute
+              float: right
+              height: 63%
+              bottom: 20%
+              right: 6%
+              margin-right: 20px
+
+
+              img
+                display: block
+                height: 100%
+
+        .wrapper__main
+          .main__head
+            display: block
+            position: relative
+            overflow: hidden
+            width: 100%
+            height: 60px
+            border-bottom: 1px #efeaea solid
+
+
+            .head__filter
+              position: relative
+              display: inline-block
+              width: 25%
+              height: 100%
+              border-right: 1px #efeaea solid
+              float: left
+
+              span
+                display: block
+                position: absolute
+                top: 50%
+                margin-top: -0.625em
+                width: 100%
+                height: 60px
+                text-align: center
+                font-size: 0.7em
+                text-transform: uppercase
+
+            .head__sort
+              position: relative
+              display: inline-block
+              width: 25%
+              height: 100%
+              border-right: 1px #efeaea solid
+              float: left
+
+              i
+                color: $main_color
+                display: block
+                position: absolute
+                top: 50%
+                margin-top: -0.625em
+                width: 100%
+                height: 60px
+                text-align: start
+                margin-left: 10px
+                font-size: 1em
+                text-transform: uppercase
+
+            .head__num-of-items
+              position: relative
+              display: inline-block
+              width: 25%
+              height: 100%
+              border-right: 1px #efeaea solid
+              float: left
+
+            .head__compare
+              position: relative
+              display: inline-block
+              width: calc(25% - 3px)
+              height: 100%
+              float: left
+
+
+

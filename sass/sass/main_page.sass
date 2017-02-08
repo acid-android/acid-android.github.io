@@ -8,200 +8,6 @@ html
     margin: 0
     padding: 0
 
-    //.header
-    //  position: relative
-    //  z-index: 5
-    //  display: block
-    //  width: 100%
-    //  height: 60px
-    //  background-color: rgba(0,0,0,0.5)
-    //  border-bottom: 1px rgba(255,255,255,0.5) solid
-    //
-    //
-    //  .header__menu-indicator-pushed
-    //    display: none
-    //    float: left
-    //    width: auto
-    //    height: 100%
-    //    border-right: 1px rgba(255,255,255,0.5) solid
-    //    background-color: rgba(0,0,0,0.5)
-    //    color: grey
-    //    padding-right: 10px
-    //    cursor: pointer
-    //    opacity: 1
-    //
-    //    .menu-indicator-pushed__hamburger
-    //      display: inline-block
-    //      margin: 15px 10px 10px 20px
-    //      opacity: 1
-    //
-    //      i
-    //        font-size: 1.5em
-    //        color: $text_color
-    //        opacity: 1
-    //    .menu-indicator-pushed__text
-    //      display: inline-block
-    //      margin: 20px
-    //      @media screen and ( max-width: 935px)
-    //        display: none
-    //
-    //
-    //      .text__value
-    //        color: $text_color
-    //
-    //  .header__menu-indicator
-    //    display: inline-block
-    //    float: left
-    //    width: auto
-    //    height: 100%
-    //    border-right: 1px rgba(255,255,255,0.3) solid
-    //    padding-right: 10px
-    //    cursor: pointer
-    //    opacity: 1
-    //
-    //    .menu-indicator__hamburger
-    //      display: inline-block
-    //      margin: 15px 10px 10px 20px
-    //      opacity: 1
-    //
-    //      i
-    //        font-size: 1.5em
-    //        color: $text_color
-    //        opacity: 1
-    //    .menu-indicator__text
-    //      display: inline-block
-    //      margin: 20px
-    //      opacity: 1
-    //
-    //      @media screen and ( max-width: 935px)
-    //        display: none
-    //
-    //      .text__value
-    //        color: $text_color
-    //
-    //  .header__logo
-    //    display: inline-block
-    //    width: 105px
-    //    height: 50px
-    //    margin-top: 5px
-    //    margin-left: calc(50% - 105px)
-    //    transform: translateX(-105px)
-    //    background-image: url('../../images/logo.png')
-    //    @media screen and ( max-width: 800px)
-    //      margin-left: 140px
-    //
-    //  .header__search
-    //    display: inline-block
-    //    float: right
-    //    margin: 20px 20px 20px 0
-    //.dropdown-menu
-    //  display: none
-    //  position: absolute
-    //  z-index: 2
-    //  top: -1000px
-    //  width: 100%
-    //  height: auto
-    //  padding-bottom: 100px
-    //  background-color: rgba(0,0,0,0.6)
-    //
-    //  .blur
-    //    display: block
-    //    position: absolute
-    //    background: rgba(0,0,0,0.5)
-    //    width: 100%
-    //    filter: blur(10px)
-    //    z-index: 0
-    //
-    //
-    //
-    //  .dropdown-menu__wrapper
-    //    margin: 20px
-    //    position: relative
-    //    z-index: 1
-    //
-    //    .wrapper__main-categories-list
-    //      display: block
-    //
-    //      .general-category
-    //        display: inline-block
-    //        margin-right: 50px
-    //        color: $text_color
-    //        vertical-align: top
-    //
-    //        @media screen and ( max-width: 1460px)
-    //          margin-right: 0
-    //
-    //        .general-category__head
-    //          text-transform: uppercase
-    //
-    //          @media screen and ( max-width: 1460px)
-    //            font-size: 0.85em
-    //
-    //        .general-category__sub-category
-    //          list-style-type: none
-    //          padding: 0
-    //
-    //          .sub-category__item
-    //            display: block
-    //            width: 125px
-    //            padding: 5px 0
-    //            font-size: 0.85em
-    //
-    //            a
-    //              text-decoration: none
-    //              color: $text_color
-    //              cursor: pointer
-    //              &:hover
-    //                color: $main_color2
-    //
-    //            .item__all
-    //              display: block
-    //              margin-top: 10px
-    //              color: $text_color
-    //              text-decoration: none
-    //              cursor: pointer
-    //
-    //      .info-column
-    //        display: inline-block
-    //        color: $text_color
-    //        vertical-align: top
-    //
-    //        @media screen and ( max-width: 1460px)
-    //          margin-top: 20px
-    //
-    //        @media screen and ( max-width: 970px)
-    //          display: none
-    //
-    //        .info-column__list
-    //          list-style-type: none
-    //
-    //          .list__item
-    //            display: block
-    //            margin-bottom: 30px
-    //
-    //            @media screen and ( max-width: 1460px)
-    //              display: inline-block
-    //
-    //
-    //            .item__icon
-    //              display: inline-block
-    //              vertical-align: top
-    //              margin-right: 20px
-    //
-    //              i
-    //                font-size: 2em
-    //
-    //            .item__descr
-    //              display: inline-block
-    //              width: 205px
-    //              //vertical-align: top
-    //
-    //              .descr__head
-    //                margin: 0 0 5px 0
-    //
-    //              .descr__text
-    //                display: block
-    //                margin-bottom: 3px
 
     .slider-container
       width: 100%
@@ -289,7 +95,8 @@ html
             .top-menu__tab
               display: inline-block
               position: relative
-              width: calc(100% / 3 - 3px)
+              width: calc(100% / 3)
+              float: left
               height: 60px
               border-right: 1px #efeaea solid
               box-sizing: border-box
@@ -412,6 +219,7 @@ html
                         position: relative
                         width: 100%
                         height: auto
+                        text-align: center
                         margin-top: 20px
 
                         img
@@ -444,6 +252,7 @@ html
                         position: relative
                         width: 100%
                         height: auto
+                        text-align: center
 
 
                         img
@@ -491,6 +300,7 @@ html
                         width: 100%
                         height: auto
                         margin-top: 20px
+                        text-align: center
 
 
                         img

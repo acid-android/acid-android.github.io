@@ -1,0 +1,308 @@
+/* line 3, ../sass/list_page.sass */
+html {
+  margin: 0;
+  padding: 0;
+}
+/* line 7, ../sass/list_page.sass */
+html body {
+  margin: 0;
+  padding: 0;
+}
+/* line 11, ../sass/list_page.sass */
+html body .header {
+  background-color: #3746de;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px rgba(165, 165, 165, 0.25) solid;
+  z-index: 5;
+}
+/* line 18, ../sass/list_page.sass */
+html body .header .header__menu-indicator-pushed {
+  background-color: #095A98;
+  border-right: 1px rgba(165, 165, 165, 0.25) solid;
+}
+/* line 22, ../sass/list_page.sass */
+html body .header .header__menu-indicator {
+  border-right: 1px rgba(165, 165, 165, 0.25) solid;
+}
+/* line 25, ../sass/list_page.sass */
+html body .dropdown-menu {
+  background-color: #3746de;
+  z-index: 4;
+}
+/* line 29, ../sass/list_page.sass */
+html body .dropdown-menu .blur {
+  display: none;
+}
+/* line 33, ../sass/list_page.sass */
+html body .list-head {
+  display: block;
+  position: relative;
+  top: -60px;
+  background-color: #3746de;
+  height: auto;
+}
+/* line 40, ../sass/list_page.sass */
+html body .list-head .head__wrapper {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+/* line 48, ../sass/list_page.sass */
+html body .list-head .head__wrapper .wrapper__text {
+  color: #F2F5F7;
+  text-transform: uppercase;
+}
+/* line 52, ../sass/list_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs {
+  display: block;
+}
+/* line 55, ../sass/list_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs .anchor {
+  display: inline-block;
+}
+/* line 59, ../sass/list_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs .anchor a {
+  color: #bcb9b9;
+  font-weight: 100;
+  text-decoration: none;
+}
+/* line 64, ../sass/list_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs .anchor a:hover {
+  color: #F2F5F7;
+}
+/* line 68, ../sass/list_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs .delimiter {
+  display: inline-block;
+  color: #bcb9b9;
+  font-weight: 100;
+}
+/* line 74, ../sass/list_page.sass */
+html body .content {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: auto;
+  height: 500px;
+  margin: -120px 5% 60px 5%;
+  background-color: white;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+/* line 87, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types {
+  width: 100%;
+  height: 300px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+/* line 94, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__left {
+  display: block;
+  position: relative;
+  float: left;
+  width: 60%;
+  height: 300px;
+  overflow: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4096ee+0,60abf8+56,7abcff+100 */
+  background: #4096ee;
+  background: -moz-linear-gradient(left, #4096ee 0%, #60abf8 56%, #7abcff 100%);
+  background: -webkit-linear-gradient(left, #4096ee 0%, #60abf8 56%, #7abcff 100%);
+  background: linear-gradient(to right, #4096ee 0%, #60abf8 56%, #7abcff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#7abcff',GradientType=1 );
+}
+/* line 107, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__left .left__info {
+  display: block;
+  position: relative;
+  float: left;
+  width: 40%;
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 115, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__left .left__info .info__name {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  color: #F2F5F7;
+  text-transform: uppercase;
+}
+/* line 122, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__left .left__info .info__button {
+  display: block;
+  position: relative;
+  margin: 100px auto 0;
+  width: inherit;
+  padding: 10px 20px;
+  text-align: center;
+  color: #F2F5F7;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+/* line 135, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__left .left__info .info__button span {
+  width: 100%;
+}
+/* line 138, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__left .left__info .info__button:hover {
+  transition: all 0.15s ease-in;
+  transform: scale(1.1);
+}
+/* line 143, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__left .left__image {
+  display: block;
+  position: relative;
+  float: right;
+  height: 100%;
+  margin-right: 10vw;
+}
+/* line 151, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__left .left__image img {
+  display: block;
+  height: 100%;
+}
+/* line 157, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__right {
+  display: block;
+  position: relative;
+  float: right;
+  width: 40%;
+  height: 300px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4096ee+0,60abf8+56,7abcff+100 */
+  background: -moz-linear-gradient(302deg, #422fe1 0%, #7f6fef 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #422fe1), color-stop(100%, #7f6fef));
+  background: -webkit-linear-gradient(302deg, #422fe1 0%, #7f6fef 100%);
+  background: -o-linear-gradient(302deg, #422fe1 0%, #7f6fef 100%);
+  background: -ms-linear-gradient(302deg, #422fe1 0%, #7f6fef 100%);
+  background: linear-gradient(148deg, #422fe1 0%, #7f6fef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422FE1', endColorstr='#7F6FEF',GradientType=0 );
+}
+/* line 172, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__right .right__info {
+  display: block;
+  position: relative;
+  float: left;
+  width: 40%;
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 180, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__right .right__info .info__name {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  color: #F2F5F7;
+  text-transform: uppercase;
+}
+/* line 187, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__right .right__info .info__button {
+  display: block;
+  position: relative;
+  margin: 100px auto 0;
+  width: inherit;
+  padding: 10px 20px;
+  text-align: center;
+  color: #F2F5F7;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+/* line 200, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__right .right__info .info__button span {
+  width: 100%;
+}
+/* line 204, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__right .right__info .info__button:hover {
+  transition: all 0.15s ease-in;
+  transform: scale(1.1);
+}
+/* line 208, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__right .right__image {
+  display: block;
+  position: absolute;
+  float: right;
+  height: 63%;
+  bottom: 20%;
+  right: 6%;
+  margin-right: 20px;
+}
+/* line 218, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__types .types__right .right__image img {
+  display: block;
+  height: 100%;
+}
+/* line 223, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__head {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px #efeaea solid;
+}
+/* line 232, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__head .head__filter {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  border-right: 1px #efeaea solid;
+  float: left;
+}
+/* line 240, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__head .head__filter span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+/* line 251, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__head .head__sort {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  border-right: 1px #efeaea solid;
+  float: left;
+}
+/* line 259, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__head .head__sort i {
+  color: #095A98;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+  width: 100%;
+  height: 60px;
+  text-align: start;
+  margin-left: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+/* line 272, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__head .head__num-of-items {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  border-right: 1px #efeaea solid;
+  float: left;
+}
+/* line 280, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__head .head__compare {
+  position: relative;
+  display: inline-block;
+  width: calc(25% - 3px);
+  height: 100%;
+  float: left;
+}
