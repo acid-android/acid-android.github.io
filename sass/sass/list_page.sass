@@ -76,7 +76,7 @@ html
       z-index: 3
       display: block
       width: auto
-      height: 500px
+      //height: 500px
       margin: -120px 5% 60px 5%
       background-color: white
       box-shadow: 0 0 65px rgba(0,0,0,0.5)
@@ -90,6 +90,9 @@ html
           display: block
           position: relative
           overflow: hidden
+
+          @media screen and ( max-width: 750px)
+            display: none
 
           .types__left
             display: block
@@ -146,6 +149,9 @@ html
               float: right
               height: 100%
               margin-right: 10vw
+
+              @media screen and ( max-width: 980px)
+                margin-right: 2px
 
 
               img
@@ -213,17 +219,23 @@ html
               bottom: 20%
               right: 6%
               margin-right: 20px
+              @media screen and ( max-width: 980px)
+                bottom: 10%
+                right: 0
 
 
               img
                 display: block
                 height: 100%
 
+                @media screen and ( max-width: 980px)
+                  height: 70%
+
         .wrapper__main
           .main__head
             display: block
             position: relative
-            overflow: hidden
+            overflow: visible
             width: 100%
             height: 60px
             border-bottom: 1px #efeaea solid
@@ -242,32 +254,147 @@ html
                 position: absolute
                 top: 50%
                 margin-top: -0.625em
-                width: 100%
+                width: auto
                 height: 60px
                 text-align: center
                 font-size: 0.7em
                 text-transform: uppercase
+                margin-left: calc(13vw - 54px)
+
+              .filter__refresh
+                width: 15%
+                display: inline-block
+                position: relative
+                float: right
+
+                @media screen and ( max-width: 1135px)
+                  display: none
+
+                i
+                  color: $main_color
+                  display: block
+                  position: relative
+                  margin-top: 22px
+                  width: 100%
+                  height: 60px
+                  text-align: start
+                  margin-left: 10px
+                  font-size: 1em
+                  text-transform: uppercase
 
             .head__sort
               position: relative
               display: inline-block
               width: 25%
+              min-width: 255px
               height: 100%
               border-right: 1px #efeaea solid
               float: left
 
-              i
-                color: $main_color
-                display: block
-                position: absolute
-                top: 50%
-                margin-top: -0.625em
+              @media screen and ( max-width: 1135px)
+                min-width: 0
+
+
+
+              .sort__container
+                display: inline-block
+                position: relative
+                overflow: hidden
                 width: 100%
-                height: 60px
-                text-align: start
-                margin-left: 10px
-                font-size: 1em
-                text-transform: uppercase
+
+
+
+                .container__label
+                  width: 47%
+                  display: inline-block
+                  position: relative
+                  float: left
+
+                  @media screen and ( max-width: 1135px)
+                    display: none
+
+
+                  span
+                    display: block
+                    position: relative
+                    margin-top: 23px
+                    top: 50%
+                    width: 100%
+                    height: 60px
+                    text-align: start
+                    margin-left: 20px
+                    font-size: 0.6em
+                    text-transform: uppercase
+
+
+
+                .container__value
+                  width: 53%
+                  display: inline-block
+                  position: relative
+                  float: left
+                  margin-top: 17px
+                  cursor: pointer
+                  text-align: center
+
+                  @media screen and ( max-width: 1135px)
+                    width: 100%
+
+                  &:hover
+                    background-color: rgba(0, 136, 255, 0.35)
+
+                  span
+                    display: inline
+                    position: relative
+                    margin-top: 21px
+                    padding-left: 10px
+                    top: 50%
+                    width: 100%
+                    height: 60px
+                    text-align: start
+                    font-size: 0.8em
+
+                  i
+                    color: $main_color
+                    display: inline
+                    text-align: end
+                    position: relative
+                    width: auto
+                    height: auto
+                    float: right
+                    margin-right: 10px
+                    margin-top: -2px
+
+
+              .sort__drop
+                display: none
+                position: absolute
+                width: auto
+                height: auto
+                top: 60px
+                right: 0
+                z-index: 4
+                box-shadow: 0 6px 20px rgba(0,0,0,0.3)
+
+                .drop__menu
+                  display: block
+                  padding: 0
+
+                  .menu__item
+                    list-style-type: none
+                    padding: 10px
+                    text-align: center
+                    cursor: pointer
+                    font-size: 0.8em
+
+                  .checked
+                    color: $main_color2
+                    text-decoration: underline
+
+              .drop
+                display: block
+
+
 
             .head__num-of-items
               position: relative
@@ -277,12 +404,218 @@ html
               border-right: 1px #efeaea solid
               float: left
 
+              .num-of-items__container
+                display: inline-block
+                position: relative
+                overflow: hidden
+                width: 100%
+
+
+
+                .container__label
+                  width: 47%
+                  display: inline-block
+                  position: relative
+                  float: left
+
+                  @media screen and ( max-width: 1135px)
+                    display: none
+
+
+                  span
+                    display: block
+                    position: relative
+                    margin-top: 23px
+                    top: 50%
+                    width: 100%
+                    height: 60px
+                    text-align: start
+                    margin-left: 20px
+                    font-size: 0.6em
+                    text-transform: uppercase
+
+
+
+                .container__value
+                  width: 53%
+                  display: inline-block
+                  position: relative
+                  float: left
+                  margin-top: 17px
+                  cursor: pointer
+                  text-align: center
+
+                  @media screen and ( max-width: 1135px)
+                    width: 100%
+
+                  &:hover
+                    background-color: rgba(0, 136, 255, 0.35)
+
+                  span
+                    display: inline
+                    position: relative
+                    margin-top: 21px
+                    padding-left: 10px
+                    top: 50%
+                    width: 100%
+                    height: 60px
+                    text-align: start
+                    font-size: 0.8em
+
+                  i
+                    color: $main_color
+                    display: inline
+                    text-align: end
+                    position: relative
+                    width: auto
+                    height: auto
+                    float: right
+                    margin-right: 10px
+                    margin-top: -2px
+
+
+              .num-of-items__drop
+                display: none
+                position: absolute
+                width: auto
+                height: auto
+                top: 60px
+                right: 0
+                z-index: 4
+                box-shadow: 0 6px 20px rgba(0,0,0,0.3)
+
+                .drop__menu
+                  display: block
+                  padding: 0
+
+                  .menu__item
+                    list-style-type: none
+                    padding: 10px
+                    text-align: center
+                    cursor: pointer
+                    font-size: 0.8em
+
+                  .checked
+                    color: $main_color2
+                    text-decoration: underline
+
+              .drop
+                display: block
+
             .head__compare
               position: relative
               display: inline-block
               width: calc(25% - 3px)
               height: 100%
               float: left
+
+              @media screen and ( max-width: 1135px)
+                width: 16.5%
+                text-align: center
+
+
+
+              .compare__container
+                display: block
+                position: relative
+                //text-align: center
+                vertical-align: middle
+                width: 100%
+
+                span
+                  display: inline-block
+                  font-size: 0.7em
+                  text-transform: uppercase
+                  margin-left: calc(13vw - 67px)
+
+                  @media screen and ( max-width: 1135px)
+                    margin-left: 10px
+                    font-size: 0.5em
+
+                .circle
+                  display: inline-block
+                  width: 19px
+                  background-color: $main_color
+                  border-radius: 10px
+                  margin-left: 20px
+                  margin-top: 20px
+                  text-align: center
+
+                  @media screen and ( max-width: 1135px)
+                    margin-left: 5px
+
+
+                  span
+                    padding: 1px
+                    font-size: 0.85em
+                    color: $text_color
+                    margin: 0
+
+          .main__filters
+            display: block
+            position: relative
+            width: 25%
+            height: 200px
+            border-right: 1px #efeaea solid
+
+            .filters__general
+              display: block
+              position: relative
+              width: 100%
+              border-bottom: 1px #efeaea solid
+
+
+
+              .filter__head
+                display: block
+                position: relative
+                padding: 10px
+
+                .open-icon, .close-icon, .head__name
+                  display: inline-block
+
+                .head__name
+                  font-size: 0.7em
+                  text-transform: uppercase
+                  padding-left: 10px
+
+            .opened
+              .filter__head
+                .close-icon
+                  display: none
+
+            .minimized
+              .filter__head
+                .open-icon
+                  display: none
+
+            .general__body
+              display: block
+              position: relative
+              width: 100%
+
+              .body__list
+                list-style-type: none
+                padding: 0
+
+                .list__items
+                  .item
+                    list-style-type: none
+                    padding-left: 35px
+                    overflow: hidden
+                    font-size: 0.7em
+
+                    .item__name, .item__quantity
+                      display: inline-block
+
+                    .item__name
+                      float: left
+
+                    .item__quantity
+                      float: right
+                      padding-right: 10px
+
+
 
 
 

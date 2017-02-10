@@ -124,3 +124,69 @@ function padding() {
 $(window).resize(function () {
     padding();
 });
+
+
+//-----------------------------Sort Type--------------------
+
+var sortButton = $('.sort__container .container__value');
+var sortDropMenu = $('.sort__drop');
+sortDropMenu.css({
+    'width': sortButton.width()
+});
+
+
+sortButton.on('click', function(){
+   if(sortDropMenu.attr('class') !== 'sort__drop drop'){
+       sortDropMenu.addClass('drop');
+   } else {
+       sortDropMenu.removeClass('drop');
+   }
+});
+
+
+var currentSort = $('.sort__drop .drop__menu .checked');
+var sortValue = $('.sort__container .container__value span');
+sortValue.html(currentSort.html());
+$('.sort__drop .drop__menu .menu__item').on('click', function () {
+    var newSort = $(this);
+    newSort.addClass('checked');
+    currentSort.removeClass('checked');
+    currentSort = newSort;
+    sortValue.html(currentSort.html());
+    sortDropMenu.removeClass('drop');
+
+});
+
+
+
+//------------------Number Of Elements On Page-------------------------------
+
+var numButton = $('.num-of-items__container .container__value');
+var numDropMenu = $('.num-of-items__drop');
+numDropMenu.css({
+   'width': numButton.width()
+});
+
+numButton.on('click', function(){
+    if(numDropMenu.attr('class') !== 'num-of-items__drop drop'){
+        numDropMenu.addClass('drop');
+    } else {
+        numDropMenu.removeClass('drop');
+    }
+});
+
+
+var currentNum = $('.num-of-items__drop .drop__menu .checked');
+var numValue = $('.num-of-items__container .container__value span');
+numValue.html(currentNum.html());
+$('.num-of-items__drop .drop__menu .menu__item').on('click', function () {
+    var newNum = $(this);
+    newNum.addClass('checked');
+    currentNum.removeClass('checked');
+    currentNum = newNum;
+    numValue.html(currentNum.html());
+    numDropMenu.removeClass('drop');
+
+});
+
+

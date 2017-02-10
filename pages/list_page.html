@@ -158,21 +158,90 @@
             <div class="main__head">
                 <div class="head__filter">
                     <span>Фильтры</span>
-                </div>
-                <div class="head__sort">
-                    <div class="sort__refresh">
+                    <div class="filter__refresh">
                         <i class="fa fa-refresh" aria-hidden="true"></i>
                     </div>
-                    <div class="sort__by"></div>
                 </div>
-                <div class="head__num-of-items"></div>
-                <div class="head__compare"></div>
+                <div class="head__sort">
+                    <div class="sort__container">
+
+                        <div class="container__label">
+                            <span>Сортировать по: </span>
+                        </div>
+                        <div class="container__value">
+                            <span></span>
+                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="sort__drop">
+                        <ul class="drop__menu">
+                            <li class="menu__item checked">убыванию цены</li>
+                            <li class="menu__item">возрастанию цены</li>
+                            <li class="menu__item">сериям</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="head__num-of-items">
+                    <div class="num-of-items__container">
+
+                        <div class="container__label">
+                            <span>Элементов на странице: </span>
+                        </div>
+                        <div class="container__value">
+                            <span></span>
+                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="num-of-items__drop">
+                        <ul class="drop__menu">
+                            <li class="menu__item checked">12</li>
+                            <li class="menu__item">24</li>
+                            <li class="menu__item">36</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="head__compare">
+                    <div class="compare__container">
+                        <span>в сравнении </span>
+                        <div class="circle"><span>3</span></div>
+                    </div>
+                </div>
             </div>
-            <div class="main__filters"></div>
+            <div class="main__filters">
+                <div class="filters__general opened">
+                    <div class="filter__head">
+                        <div class="open-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="close-icon"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+                        <span class="head__name">Категории</span>
+                    </div>
+                    <div class="general__body">
+                        <ul class="body__list">
+                            <li class="list__items">
+                                <ul class="item">
+                                    <li class="item__name">Усилители</li>
+                                    <li class="item__quantity">5</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="filters__price minimized">
+                    <div class="price__head"></div>
+                    <div class="price__body"></div>
+                </div>
+                </div>
+                <div class="filters__colors minimized">
+                    <div class="colors__head"></div>
+                    <div class="colors__body"></div>
+                </div>
+            </div>
             <div class="main__products"></div>
         </div>
-    </div>
+
+        </div>
 </div>
+
 
 <script src="../js/jquery-1.7.2.min.js"></script>
 <script src="../js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
