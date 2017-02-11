@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>List Page</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="../sass/stylesheets/template.css" rel="stylesheet">
     <link href="../sass/stylesheets/list_page.css" rel="stylesheet">
     <link href="../sass/stylesheets/font-awesome.min.css" rel="stylesheet">
@@ -124,122 +125,258 @@
 </div>
 
 <div class="content">
-    <div class="content__wrapper">
-        <div class="wrapper__types">
-            <div class="types__left">
-                <div class="left__info">
-                    <div class="info__name">
-                        <span>Акустические системы</span>
-                    </div>
-                    <div class="info__button">
-
-                        <span>Перейти</span>
-                    </div>
-                </div>
-                <div class="left__image">
-                    <img src="../images/acoustic%20type.png">
-                </div>
+<div class="content__wrapper">
+<div class="wrapper__types">
+    <div class="types__left">
+        <div class="left__info">
+            <div class="info__name">
+                <span>Акустические системы</span>
             </div>
-            <div class="types__right">
-                <div class="right__info">
-                    <div class="info__name">
-                        <span>Сабвуферы</span>
-                    </div>
-                    <div class="info__button">
-                        <span>Перейти</span>
-                    </div>
+            <div class="info__button">
+
+                <span>Перейти</span>
+            </div>
+        </div>
+        <div class="left__image">
+            <img src="../images/acoustic%20type.png">
+        </div>
+    </div>
+    <div class="types__right">
+        <div class="right__info">
+            <div class="info__name">
+                <span>Сабвуферы</span>
+            </div>
+            <div class="info__button">
+                <span>Перейти</span>
+            </div>
+        </div>
+        <div class="right__image">
+            <img src="../images/sub%20type.png">
+        </div>
+    </div>
+</div>
+<div class="wrapper__main">
+<div class="main__head">
+    <div class="head__filter">
+        <span>Фильтры</span>
+
+        <div class="filter__refresh">
+            <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="head__sort">
+        <div class="sort__container">
+
+            <div class="container__label">
+                <span>Сортировать по: </span>
+            </div>
+            <div class="container__value">
+                <span></span>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="sort__drop">
+            <ul class="drop__menu">
+                <li class="menu__item checked">убыванию цены</li>
+                <li class="menu__item">возрастанию цены</li>
+                <li class="menu__item">сериям</li>
+            </ul>
+        </div>
+    </div>
+    <div class="head__num-of-items">
+        <div class="num-of-items__container">
+
+            <div class="container__label">
+                <span>Элементов на странице: </span>
+            </div>
+            <div class="container__value">
+                <span></span>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="num-of-items__drop">
+            <ul class="drop__menu">
+                <li class="menu__item checked">12</li>
+                <li class="menu__item">24</li>
+                <li class="menu__item">36</li>
+            </ul>
+        </div>
+    </div>
+    <div class="head__compare">
+        <div class="compare__container">
+            <span>в сравнении </span>
+
+            <div class="circle"><span>3</span></div>
+        </div>
+    </div>
+</div>
+<div class="main__filters">
+    <div class="filters__general opened">
+        <div class="filter__head">
+            <!-------------------------Open-close buttons---------------------------------->
+            <div class="open-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div class="close-icon"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+            <!------------------------------------------------------------------------------>
+
+            <!--------------------------Head name------------------------------------------->
+            <span class="head__name">Бренд</span>
+            <!------------------------------------------------------------------------------>
+        </div>
+        <!------------------------------Filter body--------------------------------------->
+        <div class="general__body f-body">
+            <!----------------------------Filter items------------------------------------>
+            <ul class="body__list">
+                <li class="list__items checked">
+                    <ul class="item">
+                        <li class="item__name">Denon</li>
+                        <li class="item__quantity">4</li>
+                    </ul>
+                </li>
+                <li class="list__items">
+                    <ul class="item">
+                        <li class="item__name">Anthem</li>
+                        <li class="item__quantity">15</li>
+                    </ul>
+                </li>
+                <li class="list__items">
+                    <ul class="item">
+                        <li class="item__name">YBA</li>
+                        <li class="item__quantity">6</li>
+                    </ul>
+                </li>
+                <li class="list__items">
+                    <ul class="item">
+                        <li class="item__name">NAD</li>
+                        <li class="item__quantity">16</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="filters__general opened">
+        <div class="filter__head">
+            <!-------------------------Open-close buttons---------------------------------->
+            <div class="open-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div class="close-icon"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+            <!------------------------------------------------------------------------------>
+
+            <!--------------------------Head name------------------------------------------->
+            <span class="head__name">Категории</span>
+            <!------------------------------------------------------------------------------>
+        </div>
+        <!------------------------------Filter body--------------------------------------->
+        <div class="general__body f-body">
+            <!----------------------------Filter items------------------------------------>
+            <ul class="body__list">
+                <li class="list__items checked">
+                    <ul class="item">
+                        <li class="item__name">Усилители</li>
+                        <li class="item__quantity">5</li>
+                    </ul>
+                </li>
+                <li class="list__items">
+                    <ul class="item">
+                        <li class="item__name">CD-проигрыватели</li>
+                        <li class="item__quantity">5</li>
+                    </ul>
+                </li>
+                <li class="list__items">
+                    <ul class="item">
+                        <li class="item__name">AV-ресиверы</li>
+                        <li class="item__quantity">5</li>
+                    </ul>
+                </li>
+                <li class="list__items">
+                    <ul class="item">
+                        <li class="item__name">ЦАПы</li>
+                        <li class="item__quantity">5</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="filters__price minimized">
+        <div class="filter__head">
+            <!-------------------------Open-close buttons---------------------------------->
+            <div class="open-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div class="close-icon"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+            <!------------------------------------------------------------------------------>
+
+            <!--------------------------Head name------------------------------------------->
+            <span class="head__name">Цена</span>
+            <!------------------------------------------------------------------------------>
+        </div>
+        <div class="price__body f-body">
+            <div class="body__list">
+                <div class="inputs">
+                    <input type="text" id="amount" readonly
+                           style="border:0; color:#f6931f; font-weight:bold;">
                 </div>
-                <div class="right__image">
-                    <img src="../images/sub%20type.png">
+                <div class="price-range"></div>
+            </div>
+        </div>
+    </div>
+    <div class="filters__colors opened">
+        <div class="filter__head">
+            <!-------------------------Open-close buttons---------------------------------->
+            <div class="open-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div class="close-icon"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+            <!------------------------------------------------------------------------------>
+
+            <!--------------------------Head name------------------------------------------->
+            <span class="head__name">Цвет</span>
+            <!------------------------------------------------------------------------------>
+        </div>
+        <div class="colors__body f-body">
+            <div class="body__list">
+                <div class="colors-container checked" style="background-image: url('../images/circle-white.png')">
+                    <div class="color-check black"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-black.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-blue.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-brown.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-red.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-orange.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-white.png')">
+                    <div class="color-check black"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container checked" style="background-image: url('../images/circle-black.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-blue.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-brown.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container checked" style="background-image: url('../images/circle-red.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
+                </div>
+                <div class="colors-container" style="background-image: url('../images/circle-orange.png')">
+                    <div class="color-check white"><i class="fa fa-check" aria-hidden="true"></i></div>
                 </div>
             </div>
         </div>
-        <div class="wrapper__main">
-            <div class="main__head">
-                <div class="head__filter">
-                    <span>Фильтры</span>
-                    <div class="filter__refresh">
-                        <i class="fa fa-refresh" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="head__sort">
-                    <div class="sort__container">
+    </div>
+</div>
+<div class="main__products"></div>
+</div>
 
-                        <div class="container__label">
-                            <span>Сортировать по: </span>
-                        </div>
-                        <div class="container__value">
-                            <span></span>
-                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="sort__drop">
-                        <ul class="drop__menu">
-                            <li class="menu__item checked">убыванию цены</li>
-                            <li class="menu__item">возрастанию цены</li>
-                            <li class="menu__item">сериям</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="head__num-of-items">
-                    <div class="num-of-items__container">
+</div>
 
-                        <div class="container__label">
-                            <span>Элементов на странице: </span>
-                        </div>
-                        <div class="container__value">
-                            <span></span>
-                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="num-of-items__drop">
-                        <ul class="drop__menu">
-                            <li class="menu__item checked">12</li>
-                            <li class="menu__item">24</li>
-                            <li class="menu__item">36</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="head__compare">
-                    <div class="compare__container">
-                        <span>в сравнении </span>
-                        <div class="circle"><span>3</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="main__filters">
-                <div class="filters__general opened">
-                    <div class="filter__head">
-                        <div class="open-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                        <div class="close-icon"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
-                        <span class="head__name">Категории</span>
-                    </div>
-                    <div class="general__body">
-                        <ul class="body__list">
-                            <li class="list__items">
-                                <ul class="item">
-                                    <li class="item__name">Усилители</li>
-                                    <li class="item__quantity">5</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="filters__price minimized">
-                    <div class="price__head"></div>
-                    <div class="price__body"></div>
-                </div>
-                </div>
-                <div class="filters__colors minimized">
-                    <div class="colors__head"></div>
-                    <div class="colors__body"></div>
-                </div>
-            </div>
-            <div class="main__products"></div>
-        </div>
-
-        </div>
+</div>
 </div>
 
 

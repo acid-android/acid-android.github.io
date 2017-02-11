@@ -626,68 +626,187 @@ html body .content .content__wrapper .wrapper__main .main__filters {
   display: block;
   position: relative;
   width: 25%;
-  height: 200px;
+  height: auto;
   border-right: 1px #efeaea solid;
 }
 /* line 561, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .open-icon, html body .content .content__wrapper .wrapper__main .main__filters .close-icon, html body .content .content__wrapper .wrapper__main .main__filters .head__name {
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 565, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .filters__general {
   display: block;
   position: relative;
   width: 100%;
   border-bottom: 1px #efeaea solid;
 }
-/* line 569, ../sass/list_page.sass */
+/* line 571, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .filters__general .filter__head {
   display: block;
   position: relative;
   padding: 10px;
 }
-/* line 574, ../sass/list_page.sass */
-html body .content .content__wrapper .wrapper__main .main__filters .filters__general .filter__head .open-icon, html body .content .content__wrapper .wrapper__main .main__filters .filters__general .filter__head .close-icon, html body .content .content__wrapper .wrapper__main .main__filters .filters__general .filter__head .head__name {
-  display: inline-block;
-}
-/* line 577, ../sass/list_page.sass */
+/* line 578, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .filters__general .filter__head .head__name {
   font-size: 0.7em;
   text-transform: uppercase;
   padding-left: 10px;
 }
-/* line 584, ../sass/list_page.sass */
-html body .content .content__wrapper .wrapper__main .main__filters .opened .filter__head .close-icon {
-  display: none;
-}
-/* line 589, ../sass/list_page.sass */
-html body .content .content__wrapper .wrapper__main .main__filters .minimized .filter__head .open-icon {
-  display: none;
-}
-/* line 592, ../sass/list_page.sass */
+/* line 583, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .general__body {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 597, ../sass/list_page.sass */
+/* line 588, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .general__body .body__list {
+  display: none;
   list-style-type: none;
   padding: 0;
 }
-/* line 602, ../sass/list_page.sass */
+/* line 593, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .general__body .body__list .list__items {
+  display: block;
+  padding-bottom: 5px;
+}
+/* line 596, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .general__body .body__list .list__items .item {
   list-style-type: none;
   padding-left: 35px;
   overflow: hidden;
   font-size: 0.7em;
+  cursor: pointer;
 }
-/* line 608, ../sass/list_page.sass */
+/* line 603, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .general__body .body__list .list__items .item .item__name, html body .content .content__wrapper .wrapper__main .main__filters .general__body .body__list .list__items .item .item__quantity {
   display: inline-block;
 }
-/* line 611, ../sass/list_page.sass */
+/* line 606, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .general__body .body__list .list__items .item .item__name {
   float: left;
 }
-/* line 614, ../sass/list_page.sass */
+/* line 609, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__filters .general__body .body__list .list__items .item .item__quantity {
   float: right;
-  padding-right: 10px;
+  padding-right: 35px;
+}
+/* line 613, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .general__body .body__list .checked {
+  color: #52AFEB;
+}
+/* line 617, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__price {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px #efeaea solid;
+}
+/* line 623, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__price .filter__head {
+  display: block;
+  position: relative;
+  padding: 10px;
+}
+/* line 630, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__price .filter__head .head__name {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+/* line 635, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__price .price__body {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+/* line 642, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__price .price__body .price__range {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 648, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 653, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .filter__head {
+  display: block;
+  position: relative;
+  padding: 10px;
+}
+/* line 658, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .filter__head .head__name {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+/* line 664, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .colors__body {
+  display: block;
+  position: relative;
+  width: 80%;
+  max-width: 245px;
+  padding: 20px 35px;
+}
+/* line 672, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .colors__body .body__list {
+  display: none;
+}
+/* line 675, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .colors__body .body__list .colors-container {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 2px 5px;
+  background-size: cover;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 685, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .colors__body .body__list .colors-container .color-check {
+  display: none;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 9px;
+  font-size: 0.7em;
+}
+/* line 693, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .colors__body .body__list .colors-container .black {
+  color: #000000;
+}
+/* line 696, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .colors__body .body__list .colors-container .white {
+  color: #ffffff;
+}
+/* line 700, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .filters__colors .colors__body .body__list .checked .color-check {
+  display: block;
+}
+/* line 706, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .opened .filter__head .open-icon {
+  display: none;
+}
+/* line 711, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .opened .f-body .body__list {
+  display: block;
+}
+/* line 721, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .minimized .filter__head .close-icon {
+  display: none;
+}
+/* line 724, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .minimized .body__list {
+  display: none;
+}
+/* line 727, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__filters .minimized .general__body, html body .content .content__wrapper .wrapper__main .main__filters .minimized .price__body, html body .content .content__wrapper .wrapper__main .main__filters .minimized .colors__body {
+  display: none;
 }

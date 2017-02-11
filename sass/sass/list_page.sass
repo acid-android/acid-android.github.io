@@ -555,8 +555,12 @@ html
             display: block
             position: relative
             width: 25%
-            height: 200px
+            height: auto
             border-right: 1px #efeaea solid
+
+            .open-icon, .close-icon, .head__name
+              display: inline-block
+              cursor: pointer
 
             .filters__general
               display: block
@@ -564,30 +568,17 @@ html
               width: 100%
               border-bottom: 1px #efeaea solid
 
-
-
               .filter__head
                 display: block
                 position: relative
                 padding: 10px
 
-                .open-icon, .close-icon, .head__name
-                  display: inline-block
+
 
                 .head__name
                   font-size: 0.7em
                   text-transform: uppercase
                   padding-left: 10px
-
-            .opened
-              .filter__head
-                .close-icon
-                  display: none
-
-            .minimized
-              .filter__head
-                .open-icon
-                  display: none
 
             .general__body
               display: block
@@ -595,15 +586,19 @@ html
               width: 100%
 
               .body__list
+                display: none
                 list-style-type: none
                 padding: 0
 
                 .list__items
+                  display: block
+                  padding-bottom: 5px
                   .item
                     list-style-type: none
                     padding-left: 35px
                     overflow: hidden
                     font-size: 0.7em
+                    cursor: pointer
 
                     .item__name, .item__quantity
                       display: inline-block
@@ -613,7 +608,124 @@ html
 
                     .item__quantity
                       float: right
-                      padding-right: 10px
+                      padding-right: 35px
+
+                .checked
+                  color: $main_color2
+
+
+            .filters__price
+              display: block
+              position: relative
+              width: 100%
+              border-bottom: 1px #efeaea solid
+
+              .filter__head
+                display: block
+                position: relative
+                padding: 10px
+
+
+
+                .head__name
+                  font-size: 0.7em
+                  text-transform: uppercase
+                  padding-left: 10px
+
+              .price__body
+                display: block
+                position: relative
+                width: 100%
+                padding-left: 35px
+                padding-right: 35px
+
+                .price__range
+                  display: block
+                  position: relative
+                  width: 100%
+
+
+            .filters__colors
+              display: block
+              position: relative
+              width: 100%
+
+              .filter__head
+                display: block
+                position: relative
+                padding: 10px
+
+                .head__name
+                  font-size: 0.7em
+                  text-transform: uppercase
+                  padding-left: 10px
+
+
+              .colors__body
+                display: block
+                position: relative
+                width: 80%
+                max-width: 245px
+                padding: 20px 35px
+
+
+                .body__list
+                  display: none
+
+                  .colors-container
+                    display: inline-block
+                    position: relative
+                    width: 30px
+                    height: 30px
+                    margin: 0 2px 5px
+                    background-size: cover
+                    vertical-align: middle
+                    cursor: pointer
+
+                    .color-check
+                      display: none
+                      width: 100%
+                      position: relative
+                      text-align: center
+                      margin-top: 9px
+                      font-size: 0.7em
+
+                    .black
+                      color: #000000
+
+                    .white
+                      color: #ffffff
+
+                  .checked
+                    .color-check
+                      display: block
+
+
+            .opened
+              .filter__head
+                .open-icon
+                  display: none
+
+              .f-body
+
+                .body__list
+                  display: block
+
+
+
+
+
+
+            .minimized
+              .filter__head
+                .close-icon
+                  display: none
+
+              .body__list
+                display: none
+
+              .general__body, .price__body, .colors__body
+                display: none
 
 
 

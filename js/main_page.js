@@ -189,4 +189,63 @@ $('.num-of-items__drop .drop__menu .menu__item').on('click', function () {
 
 });
 
+$( function() {
+    $( ".price-range" ).slider({
+        range: true,
+        min: 0,
+        max: 99999,
+        values: [ 75, 20000 ],
+        slide: function( event, ui ) {
+            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+    });
+    $( "#amount" ).val( "$" + $( ".price-range" ).slider( "values", 0 ) +
+    " - $" + $( ".price-range" ).slider( "values", 1 ) );
+} );
+
+$( function() {
+  var filterHead = $('.filter__head');
+  var filterBody = $('.f-body');
+
+  filterHead.on('click', function(){
+      var filter = $(this).parent();
+      var body = filter.find(filterBody);
+      var bodyWrap = body.find($('.body__list'));
+      if(filter.attr('class').indexOf('opened') > -1) {
+          bodyWrap.hide('blind', 300);
+          setTimeout(function () {
+              filter.removeClass('opened');
+              filter.addClass('minimized');
+          }, 300);
+      } else if (filter.attr('class').indexOf('minimized') > -1){
+          bodyWrap.show('blind', 300);
+          setTimeout(function () {
+              filter.removeClass('minimized');
+              filter.addClass('opened');
+          }, 300);
+      }
+  });
+});
+
+$( function() {
+    var filterItem = $('.list__items');
+    filterItem.on('click', function(){
+        if($(this).attr('class').indexOf('checked') == -1){
+            $(this).addClass('checked');
+        } else {
+            $(this).removeClass('checked');
+        }
+    });
+});
+
+$( function() {
+    var colorItem = $('.colors-container');
+    colorItem.on('click', function(){
+        if($(this).attr('class').indexOf('checked') == -1){
+            $(this).addClass('checked');
+        } else {
+            $(this).removeClass('checked');
+        }
+    });
+});
 
