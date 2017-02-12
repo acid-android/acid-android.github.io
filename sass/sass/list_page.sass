@@ -232,6 +232,10 @@ html
                   height: 70%
 
         .wrapper__main
+          display: block
+          position: relative
+          overflow: hidden
+
           .main__head
             display: block
             position: relative
@@ -239,7 +243,7 @@ html
             width: 100%
             height: 60px
             border-bottom: 1px #efeaea solid
-
+            box-sizing: border-box
 
             .head__filter
               position: relative
@@ -248,6 +252,7 @@ html
               height: 100%
               border-right: 1px #efeaea solid
               float: left
+              box-sizing: border-box
 
               span
                 display: block
@@ -290,6 +295,7 @@ html
               height: 100%
               border-right: 1px #efeaea solid
               float: left
+              box-sizing: border-box
 
               @media screen and ( max-width: 1135px)
                 min-width: 0
@@ -376,6 +382,7 @@ html
                 z-index: 4
                 box-shadow: 0 6px 20px rgba(0,0,0,0.3)
 
+
                 .drop__menu
                   display: block
                   padding: 0
@@ -403,6 +410,7 @@ html
               height: 100%
               border-right: 1px #efeaea solid
               float: left
+              box-sizing: border-box
 
               .num-of-items__container
                 display: inline-block
@@ -427,7 +435,7 @@ html
                     position: relative
                     margin-top: 23px
                     top: 50%
-                    width: 100%
+                    width: auto
                     height: 60px
                     text-align: start
                     margin-left: 20px
@@ -505,9 +513,10 @@ html
             .head__compare
               position: relative
               display: inline-block
-              width: calc(25% - 3px)
+              width: 25%
               height: 100%
               float: left
+              box-sizing: border-box
 
               @media screen and ( max-width: 1135px)
                 width: 16.5%
@@ -551,181 +560,308 @@ html
                     color: $text_color
                     margin: 0
 
-          .main__filters
+          .main__content
             display: block
             position: relative
-            width: 25%
-            height: auto
-            border-right: 1px #efeaea solid
-
-            .open-icon, .close-icon, .head__name
-              display: inline-block
-              cursor: pointer
-
-            .filters__general
+            width: 100%
+            overflow: hidden
+            box-sizing: border-box
+            .content__filters
               display: block
+              float: left
               position: relative
-              width: 100%
+              width: calc(25% - 1px)
+              height: auto
+
               border-bottom: 1px #efeaea solid
-
-              .filter__head
-                display: block
-                position: relative
-                padding: 10px
+              box-sizing: border-box
 
 
+              .open-icon, .close-icon, .head__name
+                display: inline-block
+                cursor: pointer
 
-                .head__name
-                  font-size: 0.7em
-                  text-transform: uppercase
-                  padding-left: 10px
-
-            .general__body
-              display: block
-              position: relative
-              width: 100%
-
-              .body__list
-                display: none
-                list-style-type: none
-                padding: 0
-
-                .list__items
-                  display: block
-                  padding-bottom: 5px
-                  .item
-                    list-style-type: none
-                    padding-left: 35px
-                    overflow: hidden
-                    font-size: 0.7em
-                    cursor: pointer
-
-                    .item__name, .item__quantity
-                      display: inline-block
-
-                    .item__name
-                      float: left
-
-                    .item__quantity
-                      float: right
-                      padding-right: 35px
-
-                .checked
-                  color: $main_color2
-
-
-            .filters__price
-              display: block
-              position: relative
-              width: 100%
-              border-bottom: 1px #efeaea solid
-
-              .filter__head
-                display: block
-                position: relative
-                padding: 10px
-
-
-
-                .head__name
-                  font-size: 0.7em
-                  text-transform: uppercase
-                  padding-left: 10px
-
-              .price__body
+              .filters__general
                 display: block
                 position: relative
                 width: 100%
-                padding-left: 35px
-                padding-right: 35px
+                border-bottom: 1px #efeaea solid
 
-                .price__range
+                .filter__head
+                  display: block
+                  position: relative
+                  padding: 10px
+
+
+
+                  .head__name
+                    font-size: 0.7em
+                    text-transform: uppercase
+                    padding-left: 10px
+
+              .general__body
+                display: block
+                position: relative
+                width: 100%
+
+                .body__list
+                  display: none
+                  list-style-type: none
+                  padding: 0
+
+                  .list__items
+                    display: block
+                    padding-bottom: 5px
+                    .item
+                      list-style-type: none
+                      padding-left: 35px
+                      overflow: hidden
+                      font-size: 0.7em
+                      cursor: pointer
+
+                      .item__name, .item__quantity
+                        display: inline-block
+
+                      .item__name
+                        float: left
+
+                      .item__quantity
+                        float: right
+                        padding-right: 35px
+
+                  .checked
+                    color: $main_color2
+
+
+              .filters__price
+                display: block
+                position: relative
+                width: 100%
+                border-bottom: 1px #efeaea solid
+
+                .filter__head
+                  display: block
+                  position: relative
+                  padding: 10px
+
+
+
+                  .head__name
+                    font-size: 0.7em
+                    text-transform: uppercase
+                    padding-left: 10px
+
+                .price__body
                   display: block
                   position: relative
                   width: 100%
+                  padding-left: 35px
+                  padding-right: 35px
+
+                  .price__range
+                    display: block
+                    position: relative
+                    width: 100%
 
 
-            .filters__colors
+              .filters__colors
+                display: block
+                position: relative
+                width: 100%
+
+                .filter__head
+                  display: block
+                  position: relative
+                  padding: 10px
+
+                  .head__name
+                    font-size: 0.7em
+                    text-transform: uppercase
+                    padding-left: 10px
+
+
+                .colors__body
+                  display: block
+                  position: relative
+                  width: 80%
+                  max-width: 245px
+                  padding: 20px 35px
+
+
+                  .body__list
+                    display: none
+
+                    .colors-container
+                      display: inline-block
+                      position: relative
+                      width: 30px
+                      height: 30px
+                      margin: 0 2px 5px
+                      background-size: cover
+                      vertical-align: middle
+                      cursor: pointer
+
+                      .color-check
+                        display: none
+                        width: 100%
+                        position: relative
+                        text-align: center
+                        margin-top: 9px
+                        font-size: 0.7em
+
+                      .black
+                        color: #000000
+
+                      .white
+                        color: #ffffff
+
+                    .checked
+                      .color-check
+                        display: block
+
+
+              .filter
+                &:hover
+                  background-color: rgba(246, 246, 246, 0.4)
+              .opened
+                .filter__head
+                  .open-icon
+                    display: none
+
+                .f-body
+
+                  .body__list
+                    display: block
+
+              .minimized
+                .filter__head
+                  .close-icon
+                    display: none
+
+                .body__list
+                  display: none
+
+                .general__body, .price__body, .colors__body
+                  display: none
+
+            .content__products
+              display: inline-block
+              position: relative
+              box-sizing: border-box
+              width: calc(75% + 1px)
+              float: right
+              overflow: visible
+
+              .products__container
+                display: block
+                position: relative
+                width: 100%
+                float: right
+
+                .container__row
+                  display: block
+                  width: 100%
+                  position: relative
+                  overflow: hidden
+                  box-sizing: border-box
+
+                  .row__product-wrapper
+                    width: calc(100% / 3)
+                    height: 256px
+                    display: inline-block
+                    float: left
+                    border-left: 1px #efeaea solid
+                    border-bottom: 1px #efeaea solid
+                    box-sizing: border-box
+
+                    &:first-child
+                      width: calc(100% / 3 - 1px)
+
+                    &:nth-child(2)
+                      width: calc(100% / 3 + 1px)
+
+            .content__pagination
               display: block
               position: relative
-              width: 100%
+              border-left: 1px #efeaea solid
+              width: calc(75% + 1px)
+              float: right
+              height: 60px
+              box-sizing: border-box
 
-              .filter__head
+              .left-button-container, .pages-container, .right-button-container
+                display: inline-block
+
+              .left-button-container
                 display: block
-                position: relative
-                padding: 10px
+                float: left
+                border-right: 1px #efeaea solid
+                height: 60px
+                width: calc(100% / 3 - 1px)
+                box-sizing: border-box
 
-                .head__name
-                  font-size: 0.7em
-                  text-transform: uppercase
-                  padding-left: 10px
-
-
-              .colors__body
-                display: block
-                position: relative
-                width: 80%
-                max-width: 245px
-                padding: 20px 35px
-
-
-                .body__list
-                  display: none
-
-                  .colors-container
-                    display: inline-block
-                    position: relative
-                    width: 30px
-                    height: 30px
-                    margin: 0 2px 5px
-                    background-size: cover
-                    vertical-align: middle
-                    cursor: pointer
-
-                    .color-check
-                      display: none
-                      width: 100%
-                      position: relative
-                      text-align: center
-                      margin-top: 9px
-                      font-size: 0.7em
-
-                    .black
-                      color: #000000
-
-                    .white
-                      color: #ffffff
-
-                  .checked
-                    .color-check
-                      display: block
-
-
-            .opened
-              .filter__head
-                .open-icon
-                  display: none
-
-              .f-body
-
-                .body__list
+                .left-button
                   display: block
+                  position: relative
+                  float: left
+                  height: 100%
+                  width: 20%
+                  box-sizing: border-box
+                  border-right: 1px #efeaea solid
+
+                  .button-icon
+                    display: block
+                    margin: 1.1em auto 0
+                    width: 15%
+
+              .pages-container
+                display: block
+                height: 100%
+                width: calc(100% / 3)
+                float: left
+                box-sizing: border-box
+
+                .page
+                  display: inline-block
+                  width: 20%
+                  float: left
+                  height: 60px
+                  border-right: 1px #efeaea solid
+                  box-sizing: border-box
+
+                  &:last-child
+                    border-right: none
+
+                  .number
+                    display: block
+                    margin: 1.1em auto 0
+                    width: 15%
+
+
+              .right-button-container
+                display: block
+                float: left
+                border-left: 1px #efeaea solid
+                height: 60px
+                width: calc(100% / 3 + 1px)
+                box-sizing: border-box
+
+                .right-button
+                  display: block
+                  position: relative
+                  float: right
+                  height: 100%
+                  width: 20%
+                  box-sizing: border-box
+                  border-left: 1px #efeaea solid
+
+                  .button-icon
+                    display: block
+                    margin: 1.1em auto 0
+                    width: 15%
 
 
 
-
-
-
-            .minimized
-              .filter__head
-                .close-icon
-                  display: none
-
-              .body__list
-                display: none
-
-              .general__body, .price__body, .colors__body
-                display: none
 
 
 
