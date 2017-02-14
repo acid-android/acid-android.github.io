@@ -68,6 +68,10 @@ menuButton.on('click', function () {
         }, 750);
     });
 });
+$('.container__row .row__product-wrapper:first-child').css({
+   'height':  $('.container__row .row__product-wrapper:last-child').height() + 1
+});
+console.log($('.container__row .row__product-wrapper:last-child').height());
 
 $('.old-price span').each(function () {
     var value = $(this).html();
