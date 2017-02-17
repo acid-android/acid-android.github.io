@@ -241,7 +241,7 @@ html body .content .content__product-about {
 html body .content .content__product-about .product-about__tabs {
   display: block;
   position: relative;
-  width: 40%;
+  width: 100%;
   padding-left: 10%;
   padding-bottom: 20px;
 }
@@ -290,9 +290,34 @@ html body .content .content__product-about .product-about__specifications {
   width: 100%;
 }
 /* line 255, ../sass/product_page.sass */
+html body .content .content__product-about .product-about__specifications .specifications__wrapper {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 30px;
+  text-align: center;
+}
+/* line 262, ../sass/product_page.sass */
+html body .content .content__product-about .product-about__specifications .specifications__wrapper .wrapper__group {
+  display: inline-block;
+  width: 20%;
+  min-width: 200px;
+  padding: 20px;
+  vertical-align: top;
+}
+/* line 269, ../sass/product_page.sass */
+html body .content .content__product-about .product-about__specifications .specifications__wrapper .wrapper__group .spec {
+  display: block;
+  margin-bottom: 40px;
+}
+/* line 273, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__gallery {
   display: none;
   width: 100%;
   text-align: center;
   padding: 20px 0;
+}
+/* line 279, ../sass/product_page.sass */
+html body .content .content__product-about .product-about__gallery .fotorama {
+  text-align: -webkit-center;
 }

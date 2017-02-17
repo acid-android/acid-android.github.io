@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b76291d0-51a1-4e56-b21b-a04d78d34e27" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/29a0b1eb1d7cbf604749dd0ea99be4d138858d6a/product_page.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/29a0b1eb1d7cbf604749dd0ea99be4d138858d6a/product_page.sassc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/stylesheets/product_page.css" afterPath="$PROJECT_DIR$/sass/stylesheets/product_page.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/product_page.html" afterPath="$PROJECT_DIR$/pages/product_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/sass/product_page.sass" afterPath="$PROJECT_DIR$/sass/sass/product_page.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="acid-android.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,13 +49,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_page.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product_page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/product_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10489511" vertical-offset="0" max-vertical-offset="2130">
-              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            <state vertical-scroll-proportion="-51.041668" vertical-offset="3335" max-vertical-offset="5070">
+              <caret line="304" column="36" selection-start-line="304" selection-start-column="36" selection-end-line="304" selection-end-column="36" />
               <folding>
-                <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_page.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="product_page.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/sass/product_page.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-76.125" vertical-offset="2043" max-vertical-offset="4065">
-              <caret line="258" column="25" selection-start-line="258" selection-start-column="25" selection-end-line="258" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.8018648" vertical-offset="3018" max-vertical-offset="4380">
+              <caret line="270" column="32" selection-start-line="270" selection-start-column="32" selection-end-line="270" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -123,11 +126,11 @@
         <option value="$PROJECT_DIR$/pages/list_page.html" />
         <option value="$PROJECT_DIR$/sass/sass/list_page.sass" />
         <option value="$PROJECT_DIR$/js/jquery-1.8.0.min.js" />
-        <option value="$PROJECT_DIR$/sass/sass/product_page.sass" />
         <option value="$PROJECT_DIR$/js/jquery-1.8.2.min.js" />
         <option value="$PROJECT_DIR$/js/main_page.js" />
         <option value="$PROJECT_DIR$/sass/stylesheets/fotorama.css" />
         <option value="$PROJECT_DIR$/pages/product_page.html" />
+        <option value="$PROJECT_DIR$/sass/sass/product_page.sass" />
       </list>
     </option>
   </component>
@@ -403,7 +406,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1680">
           <caret line="165" column="49" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
           <folding>
-            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -463,7 +465,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1680">
           <caret line="165" column="49" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
           <folding>
-            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -639,33 +640,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/sass/product_page.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-76.125" vertical-offset="2043" max-vertical-offset="4065">
-          <caret line="258" column="25" selection-start-line="258" selection-start-column="25" selection-end-line="258" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery-1.8.2.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.011441648" vertical-offset="0" max-vertical-offset="1311">
           <caret line="1" column="93379" selection-start-line="1" selection-start-column="93379" selection-end-line="1" selection-end-column="93379" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/sass/list_page.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.0" vertical-offset="11763" max-vertical-offset="13050">
-          <caret line="924" column="20" selection-start-line="924" selection-start-column="20" selection-end-line="924" selection-end-column="62" />
-          <folding>
-            <element signature="e#7203#8415#0" expanded="false" />
-            <element signature="e#16608#17039#0" expanded="false" />
-            <element signature="e#17069#17984#0" expanded="false" />
-            <element signature="e#18016#18791#0" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,6 +663,19 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1406" max-vertical-offset="10245">
           <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/sass/list_page.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.0" vertical-offset="11763" max-vertical-offset="13050">
+          <caret line="924" column="20" selection-start-line="924" selection-start-column="20" selection-end-line="924" selection-end-column="62" />
+          <folding>
+            <element signature="e#7203#8415#0" expanded="false" />
+            <element signature="e#16608#17039#0" expanded="false" />
+            <element signature="e#17069#17984#0" expanded="false" />
+            <element signature="e#18016#18791#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -704,16 +697,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/product_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10489511" vertical-offset="0" max-vertical-offset="2130">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        <state vertical-scroll-proportion="-51.041668" vertical-offset="3335" max-vertical-offset="5070">
+          <caret line="304" column="36" selection-start-line="304" selection-start-column="36" selection-end-line="304" selection-end-column="36" />
           <folding>
-            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/sass/product_page.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8018648" vertical-offset="3018" max-vertical-offset="4380">
+          <caret line="270" column="32" selection-start-line="270" selection-start-column="32" selection-end-line="270" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
