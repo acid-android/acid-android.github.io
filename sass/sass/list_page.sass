@@ -76,7 +76,6 @@ html
       z-index: 3
       display: block
       width: auto
-      //height: 500px
       margin: -120px 5% 60px 5%
       background-color: white
       box-shadow: 0 0 65px rgba(0,0,0,0.5)
@@ -829,8 +828,8 @@ html
 
 
 
-                    &:nth-child(2)
-                      width: calc(100% / 3 + 1px)
+                    //&:nth-child(2)
+                    //  width: calc(100% / 3 + 1px)
 
 
 
@@ -875,6 +874,27 @@ html
                       display: block
                       margin: 1.1em auto 0
                       width: 15%
+
+                    &:hover
+                      background-color: $main_color2
+                      color: $text_color
+                      box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
+                      border-right: 1px $main_color2 solid
+
+                  .not-active
+
+
+                    .button-icon
+                      display: block
+                      margin: 1.1em auto 0
+                      width: 15%
+                      color: #808080
+
+                    &:hover
+                      background-color: #ffffff
+                      box-shadow: none
+                      border-right: 1px #efeaea solid
+
 
                 .pages-container
                   display: block
@@ -927,10 +947,32 @@ html
                   border-left: 1px #efeaea solid
                   cursor: pointer
 
+
                   .button-icon
                     display: block
                     margin: 1.1em auto 0
                     width: 15%
+
+                  &:hover
+                    background-color: $main_color2
+                    color: $text_color
+                    box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
+                    border-left: 1px $main_color2 solid
+
+
+                .not-active
+
+
+                  .button-icon
+                    display: block
+                    margin: 1.1em auto 0
+                    width: 15%
+                    color: #808080
+
+                  &:hover
+                    background-color: #ffffff
+                    box-shadow: none
+                    border-left: 1px #efeaea solid
 
 
 
