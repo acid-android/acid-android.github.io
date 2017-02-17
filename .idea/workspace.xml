@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b76291d0-51a1-4e56-b21b-a04d78d34e27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/29a0b1eb1d7cbf604749dd0ea99be4d138858d6a/product_page.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/29a0b1eb1d7cbf604749dd0ea99be4d138858d6a/product_page.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/stylesheets/product_page.css" afterPath="$PROJECT_DIR$/sass/stylesheets/product_page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/product_page.html" afterPath="$PROJECT_DIR$/pages/product_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/sass/product_page.sass" afterPath="$PROJECT_DIR$/sass/sass/product_page.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main_page.js" afterPath="$PROJECT_DIR$/js/main_page.js" />
     </list>
     <ignored path="acid-android.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_page.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product_page.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/sass/product_page.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8018648" vertical-offset="3018" max-vertical-offset="4380">
+            <state vertical-scroll-proportion="-43.0" vertical-offset="3018" max-vertical-offset="4380">
               <caret line="270" column="32" selection-start-line="270" selection-start-column="32" selection-end-line="270" selection-end-column="32" />
               <folding />
             </state>
@@ -90,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_page.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main_page.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5394" max-vertical-offset="6720">
-              <caret line="436" column="30" selection-start-line="436" selection-start-column="30" selection-end-line="436" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.8855835" vertical-offset="5394" max-vertical-offset="6735">
+              <caret line="437" column="27" selection-start-line="437" selection-start-column="27" selection-end-line="437" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -127,10 +123,10 @@
         <option value="$PROJECT_DIR$/sass/sass/list_page.sass" />
         <option value="$PROJECT_DIR$/js/jquery-1.8.0.min.js" />
         <option value="$PROJECT_DIR$/js/jquery-1.8.2.min.js" />
-        <option value="$PROJECT_DIR$/js/main_page.js" />
         <option value="$PROJECT_DIR$/sass/stylesheets/fotorama.css" />
         <option value="$PROJECT_DIR$/pages/product_page.html" />
         <option value="$PROJECT_DIR$/sass/sass/product_page.sass" />
+        <option value="$PROJECT_DIR$/js/main_page.js" />
       </list>
     </option>
   </component>
@@ -650,14 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5394" max-vertical-offset="6720">
-          <caret line="436" column="30" selection-start-line="436" selection-start-column="30" selection-end-line="436" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/stylesheets/fotorama.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1406" max-vertical-offset="10245">
@@ -711,8 +699,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/sass/product_page.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8018648" vertical-offset="3018" max-vertical-offset="4380">
+        <state vertical-scroll-proportion="-43.0" vertical-offset="3018" max-vertical-offset="4380">
           <caret line="270" column="32" selection-start-line="270" selection-start-column="32" selection-end-line="270" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8855835" vertical-offset="5394" max-vertical-offset="6735">
+          <caret line="437" column="27" selection-start-line="437" selection-start-column="27" selection-end-line="437" selection-end-column="27" />
           <folding />
         </state>
       </provider>

@@ -434,7 +434,8 @@ function zoom(){
     $(".wrapper__color-image .show img").imagezoomsl({
 
         zoomrange: [4, 4],
-        magnifiersize: [500, 500]
+        magnifiersize: [500, 500],
+        magnifierpos: "left"
 
     });
 }
