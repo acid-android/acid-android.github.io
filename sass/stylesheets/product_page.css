@@ -313,11 +313,12 @@ html body .content .content__product-about .product-about__specifications .speci
 /* line 273, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__gallery {
   display: none;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   text-align: center;
   padding: 20px 0;
 }
-/* line 279, ../sass/product_page.sass */
+/* line 280, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__gallery .fotorama {
   text-align: -webkit-center;
 }

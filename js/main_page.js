@@ -68,10 +68,7 @@ menuButton.on('click', function () {
         }, 750);
     });
 });
-$('.container__row .row__product-wrapper:first-child').css({
-   'height':  $('.container__row .row__product-wrapper:last-child').height() + 1
-});
-console.log($('.container__row .row__product-wrapper:last-child').height());
+
 
 $('.products__big-item .big-item__wrap .info').css({
     'margin-top': '0'
@@ -249,7 +246,6 @@ $(function () {
     var minusPageButton = $('.left-button');
     var stack = getStack();
     checkStackBounds(stack, plusPageButton, minusPageButton, activePageButton);
-    console.log(stack);
 
     pageButton.on('click', function () {
         if ($(this).attr('class') !== 'pages-container active') {
@@ -315,7 +311,7 @@ function buttonNotActive(button){
 }
 
 $(function () {
-    var colorName = $('.color-name span');
+    var colorName = $('.info__colors .color-name span');
     var colorButton = $('.info__colors .color');
     var colorImage = $('.wrapper__color-image .image');
     var activeColorButton = $('.info__colors .active');
@@ -323,20 +319,20 @@ $(function () {
     var colorOldPrice = $('.info__price .old-price span');
     var colorPrice = $('.info__price .price span');
     showPrice(colorOldPrice, colorPrice, activeColorButton);
-    zoom()
+    //formatLocalPrice(colorOldPrice, colorPrice);
+    //formatLocalPrice(colorOldPrice, colorPrice);
+    //console.log('old price: ' + colorOldPrice.html() + '; new price: ' + colorPrice.html());
+    zoom();
 
     colorButton.on('click', function () {
         if (!checkOnActiveColor($(this))) {
             return;
         }
-        console.log($(this).data('color-name'));
         var newActiveColorButton = $(this);
         newActiveColorButton.addClass('active');
         activeColorButton.removeClass('active');
-
-
         activeColorButton = newActiveColorButton;
-        colorName.html(activeColorButton.data('color-name').replace(/\_/gi, ' '));
+        colorName.html(replaceUnderline(activeColorButton.data('color-name')));
         showPrice(colorOldPrice, colorPrice, activeColorButton);
         activeColorImage.removeClass('show');
         var newColorImage = showColorImage(activeColorButton.data('color-name'));
@@ -346,13 +342,49 @@ $(function () {
     });
 });
 
+function replaceUnderline(data){
+    return data.replace(/\_/gi, ' ');
+}
+
+$(function processProductList() {
+    var product = $('.row__product-wrapper');
+    product.each(function (i, elem) {
+        $(elem + '.image img').attr('src', $(elem + '.info .colors .active').data('color-path'));
+        if($(elem + '.info .colors .active').data('color-old-price')) {
+            $(elem + '.info .prices .old-price span').html($(elem + '.info .colors .active').data('color-old-price'));
+        }
+        $(elem + '.info .prices .price span').html($(elem + '.info .colors .active').data('color-price'));
+        $(elem + '.info .colors .color-name span').html(replaceUnderline($(elem + '.info .colors .active').data('color-name')));
+        formatLocalPrice($(elem + '.info .prices .old-price span'), $(elem + '.info .prices .price span'));
+    });
+    //formatPrice();
+
+    var colorButton = $('.info .colors .color');
+    colorButton.on('click', function () {
+        if(!checkOnActiveColor($(this))){
+            return;
+        }
+        var colorPath = $(this).data('color-path');
+        var productId = $(this).closest('.row__product-wrapper').data('product-id');
+        console.log(productId);
+        $('[data-product-id="'+productId+'"]' + ' .image img').attr('src', $(this).data('color-path'));
+        if($(this).data('color-old-price')) {
+            $('[data-product-id="' + productId + '"]' + ' .info .prices .old-price span').html($(this).data('color-old-price'));
+        }
+        $('[data-product-id="'+productId+'"]' + ' .info .prices .price span').html($(this).data('color-price'));
+        $('[data-product-id="' + productId + '"]' + ' .info .colors .color-name span').html(replaceUnderline($(this).data('color-name')));
+        $('[data-product-id="' + productId + '"]' + ' .info .colors .active').removeClass('active');
+        $(this).addClass('active');
+        formatLocalPrice($('[data-product-id="' + productId + '"]' + ' .info .prices .old-price span'), $('[data-product-id="'+productId+'"]' + ' .info .prices .price span'));
+    });
+
+});
+
 function checkOnActiveColor(colorButton){
     if(!colorButton.hasClass('active')) {
-        console.log('true');
         return true;
 
     } else {
-        console.log('false');
         return false;
     }
 }
@@ -362,7 +394,9 @@ function showPrice(colorOldPrice, colorPrice, activeColorButton){
     if(activeColorButton.data('color-old-price')){
         colorOldPrice.html(activeColorButton.data('color-old-price'));
     }
+    //console.log('old price: ' + colorOldPrice.html() + '; new price: ' + colorPrice.html());
     formatPrice();
+
 }
 
 function showColorImage(data){
@@ -387,6 +421,15 @@ function formatPrice(){
         if (value !== '')
             $(this).html(value + ' грн');
     });
+}
+
+function formatLocalPrice(oldPriceSpan, priceSpan){
+    var oldPriceValue = oldPriceSpan.html();
+    var priceValue = priceSpan.html();
+    if(oldPriceValue){
+        oldPriceSpan.html(oldPriceValue.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + ' грн');
+    }
+    priceSpan.html(priceValue.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + ' грн');
 }
 
 
@@ -425,11 +468,6 @@ function productTabIsActive(tab){
         return true;
     }
 }
-
-//$('.wrapper__color-image img').imagezoomsl({
-//    zoomrange: [3, 3]
-//});
-
 function zoom(){
     $(".wrapper__color-image .show img").imagezoomsl({
 
