@@ -745,31 +745,53 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   padding-left: 35px;
   padding-right: 35px;
 }
-/* line 662, ../sass/list_page.sass */
+/* line 663, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content {
+  width: 75%;
+  margin: 20px 20px 20px 0;
+  background: #efeaea;
+  border: none;
+  font-size: 0.3em;
+}
+/* line 670, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content .ui-widget-header {
+  background: #095A98;
+}
+/* line 673, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content .ui-corner-all {
+  border-radius: 10px;
+}
+/* line 676, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content .ui-slider-handle {
+  font-size: 2.3em;
+  top: -0.45em;
+  box-shadow: 2px 2px 7px rgba(55, 55, 55, 0.5);
+}
+/* line 681, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .price__range {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 668, ../sass/list_page.sass */
+/* line 687, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 673, ../sass/list_page.sass */
+/* line 692, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .filter__head {
   display: block;
   position: relative;
   padding: 10px;
 }
-/* line 678, ../sass/list_page.sass */
+/* line 697, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .filter__head .head__name {
   font-size: 0.7em;
   text-transform: uppercase;
   padding-left: 10px;
 }
-/* line 684, ../sass/list_page.sass */
+/* line 703, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body {
   display: block;
   position: relative;
@@ -777,11 +799,11 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   max-width: 245px;
   padding: 20px 35px;
 }
-/* line 692, ../sass/list_page.sass */
+/* line 711, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list {
   display: none;
 }
-/* line 695, ../sass/list_page.sass */
+/* line 714, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container {
   display: inline-block;
   position: relative;
@@ -792,7 +814,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 705, ../sass/list_page.sass */
+/* line 724, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container .color-check {
   display: none;
   width: 100%;
@@ -801,43 +823,43 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   margin-top: 9px;
   font-size: 0.7em;
 }
-/* line 713, ../sass/list_page.sass */
+/* line 732, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container .black {
   color: #000000;
 }
-/* line 716, ../sass/list_page.sass */
+/* line 735, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container .white {
   color: #ffffff;
 }
-/* line 720, ../sass/list_page.sass */
+/* line 739, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .checked .color-check {
   display: block;
 }
-/* line 725, ../sass/list_page.sass */
+/* line 744, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filter:hover {
   background-color: rgba(246, 246, 246, 0.4);
 }
-/* line 729, ../sass/list_page.sass */
+/* line 748, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .opened .filter__head .open-icon {
   display: none;
 }
-/* line 734, ../sass/list_page.sass */
+/* line 753, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .opened .f-body .body__list {
   display: block;
 }
-/* line 739, ../sass/list_page.sass */
+/* line 758, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .filter__head .close-icon {
   display: none;
 }
-/* line 742, ../sass/list_page.sass */
+/* line 761, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .body__list {
   display: none;
 }
-/* line 745, ../sass/list_page.sass */
+/* line 764, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .general__body, html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .price__body, html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .colors__body {
   display: none;
 }
-/* line 748, ../sass/list_page.sass */
+/* line 767, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products {
   display: inline-block;
   position: relative;
@@ -847,14 +869,14 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   overflow: visible;
   z-index: 9;
 }
-/* line 757, ../sass/list_page.sass */
+/* line 776, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container {
   display: block;
   position: relative;
   width: 100%;
   float: right;
 }
-/* line 763, ../sass/list_page.sass */
+/* line 782, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row {
   display: block;
   width: 100%;
@@ -862,7 +884,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   overflow: hidden;
   box-sizing: border-box;
 }
-/* line 770, ../sass/list_page.sass */
+/* line 789, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper {
   width: calc(100% / 3);
   height: auto;
@@ -872,18 +894,18 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   border-bottom: 1px #efeaea solid;
   box-sizing: border-box;
 }
-/* line 780, ../sass/list_page.sass */
+/* line 799, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .image {
   position: relative;
   text-align: center;
   display: block;
   width: 100%;
 }
-/* line 786, ../sass/list_page.sass */
+/* line 805, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .image img {
   width: 75%;
 }
-/* line 789, ../sass/list_page.sass */
+/* line 808, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info {
   display: block;
   position: relative;
@@ -892,29 +914,29 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   margin-left: 10px;
   text-align: center;
 }
-/* line 799, ../sass/list_page.sass */
+/* line 818, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .product-name {
   display: block;
   position: relative;
   margin-bottom: 10px;
 }
-/* line 804, ../sass/list_page.sass */
+/* line 823, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .product-name .brand, html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .product-name .model {
   display: inline-block;
 }
-/* line 807, ../sass/list_page.sass */
+/* line 826, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors {
   display: block;
   position: relative;
 }
-/* line 811, ../sass/list_page.sass */
+/* line 830, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color-name {
   display: block;
   position: relative;
   font-size: 0.7em;
   padding-bottom: 10px;
 }
-/* line 817, ../sass/list_page.sass */
+/* line 836, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color {
   display: inline-block;
   position: relative;
@@ -925,19 +947,19 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 827, ../sass/list_page.sass */
+/* line 846, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color .checked {
   display: none;
 }
-/* line 830, ../sass/list_page.sass */
+/* line 849, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color .black {
   color: #000000;
 }
-/* line 833, ../sass/list_page.sass */
+/* line 852, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color .white {
   color: #ffffff;
 }
-/* line 837, ../sass/list_page.sass */
+/* line 856, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .active .checked {
   display: block;
   width: 100%;
@@ -946,40 +968,40 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   margin-top: 6px;
   font-size: 0.6em;
 }
-/* line 845, ../sass/list_page.sass */
+/* line 864, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices {
   margin-top: 10px;
   padding-bottom: 20px;
   display: block;
   position: relative;
 }
-/* line 851, ../sass/list_page.sass */
+/* line 870, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .old-price, html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .price {
   display: inline-block;
 }
-/* line 854, ../sass/list_page.sass */
+/* line 873, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .old-price {
   position: relative;
   color: #ff6666;
   text-decoration: line-through;
   font-size: 0.8em;
 }
-/* line 861, ../sass/list_page.sass */
+/* line 880, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .price {
   position: relative;
   color: #095A98;
   font-size: 1em;
   padding-left: 10px;
 }
-/* line 869, ../sass/list_page.sass */
+/* line 888, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper:first-child {
   width: calc(100% / 3);
 }
-/* line 874, ../sass/list_page.sass */
+/* line 893, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper:nth-child(2) {
   width: calc(100% / 3 - 1px);
 }
-/* line 879, ../sass/list_page.sass */
+/* line 898, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination {
   display: block;
   position: relative;
@@ -990,18 +1012,18 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   box-sizing: border-box;
   z-index: 2;
 }
-/* line 889, ../sass/list_page.sass */
+/* line 908, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper {
   position: relative;
   display: block;
   z-index: 0;
   overflow: hidden;
 }
-/* line 895, ../sass/list_page.sass */
+/* line 914, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container, html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .pages-container, html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .right-button-container {
   display: inline-block;
 }
-/* line 898, ../sass/list_page.sass */
+/* line 917, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container {
   display: block;
   float: left;
@@ -1010,7 +1032,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   width: calc(100% / 3 - 1px);
   box-sizing: border-box;
 }
-/* line 906, ../sass/list_page.sass */
+/* line 925, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container .left-button {
   display: block;
   position: relative;
@@ -1021,33 +1043,33 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   border-right: 1px #efeaea solid;
   cursor: pointer;
 }
-/* line 916, ../sass/list_page.sass */
+/* line 935, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container .left-button .button-icon {
   display: block;
   margin: 1.1em auto 0;
   width: 15%;
 }
-/* line 921, ../sass/list_page.sass */
+/* line 940, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container .left-button:hover {
   background-color: #52AFEB;
   color: #F2F5F7;
   box-shadow: 0 0 20px rgba(55, 70, 222, 0.5);
   border-right: 1px #52AFEB solid;
 }
-/* line 930, ../sass/list_page.sass */
+/* line 949, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container .not-active .button-icon {
   display: block;
   margin: 1.1em auto 0;
   width: 15%;
   color: #808080;
 }
-/* line 936, ../sass/list_page.sass */
+/* line 955, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container .not-active:hover {
   background-color: #ffffff;
   box-shadow: none;
   border-right: 1px #efeaea solid;
 }
-/* line 942, ../sass/list_page.sass */
+/* line 961, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .pages-container {
   display: block;
   height: 100%;
@@ -1055,7 +1077,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   float: left;
   box-sizing: border-box;
 }
-/* line 949, ../sass/list_page.sass */
+/* line 968, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .pages-container .page {
   display: inline-block;
   width: 20%;
@@ -1065,17 +1087,17 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   box-sizing: border-box;
   cursor: pointer;
 }
-/* line 958, ../sass/list_page.sass */
+/* line 977, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .pages-container .page:last-child {
   border-right: none;
 }
-/* line 961, ../sass/list_page.sass */
+/* line 980, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .pages-container .page .number {
   display: block;
   margin: 1.1em auto 0;
   width: 15%;
 }
-/* line 966, ../sass/list_page.sass */
+/* line 985, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .pages-container .active {
   background-color: #52AFEB;
   box-shadow: 0 0 20px rgba(55, 70, 222, 0.5);
@@ -1083,7 +1105,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   z-index: 3;
   border-right: 1px #52AFEB solid;
 }
-/* line 975, ../sass/list_page.sass */
+/* line 994, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container {
   display: block;
   float: left;
@@ -1092,7 +1114,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   width: calc(100% / 3 + 1px);
   box-sizing: border-box;
 }
-/* line 983, ../sass/list_page.sass */
+/* line 1002, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container .right-button {
   display: block;
   position: relative;
@@ -1103,27 +1125,27 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   border-left: 1px #efeaea solid;
   cursor: pointer;
 }
-/* line 994, ../sass/list_page.sass */
+/* line 1013, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container .right-button .button-icon {
   display: block;
   margin: 1.1em auto 0;
   width: 15%;
 }
-/* line 999, ../sass/list_page.sass */
+/* line 1018, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container .right-button:hover {
   background-color: #52AFEB;
   color: #F2F5F7;
   box-shadow: 0 0 20px rgba(55, 70, 222, 0.5);
   border-left: 1px #52AFEB solid;
 }
-/* line 1009, ../sass/list_page.sass */
+/* line 1028, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container .not-active .button-icon {
   display: block;
   margin: 1.1em auto 0;
   width: 15%;
   color: #808080;
 }
-/* line 1015, ../sass/list_page.sass */
+/* line 1034, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container .not-active:hover {
   background-color: #ffffff;
   box-shadow: none;

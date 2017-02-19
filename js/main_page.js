@@ -181,15 +181,15 @@ $('.num-of-items__drop .drop__menu .menu__item').on('click', function () {
 $( function() {
     $( ".price-range" ).slider({
         range: true,
-        min: 0,
-        max: 99999,
-        values: [ 75, 20000 ],
+        min: 6750,
+        max: 135000,
+        values: [ 6750, 135000 ],
         slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+            $( "#amount" ).val(  ui.values[ 0 ] + " грн - " + ui.values[ 1 ] + ' грн' );
         }
     });
-    $( "#amount" ).val( "$" + $( ".price-range" ).slider( "values", 0 ) +
-    " - $" + $( ".price-range" ).slider( "values", 1 ) );
+    $( "#amount" ).val(  $( ".price-range" ).slider( "values", 0 ) +
+    " грн - " + $( ".price-range" ).slider( "values", 1 ) + ' грн' );
 } );
 
 $( function() {
