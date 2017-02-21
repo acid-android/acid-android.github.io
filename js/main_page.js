@@ -236,8 +236,10 @@ $( function() {
         animate: true,
         values: [ minPrice, maxPrice ],
         slide: function( event, ui ) {
-            minPriceInput.val(ui.values[ 0 ]);
-            maxPriceInput.val(ui.values[ 1 ]);
+            minPrice = ui.values[ 0 ];
+            maxPrice = ui.values[ 1 ];
+            minPriceInput.val(minPrice);
+            maxPriceInput.val(maxPrice);
         }
     });
     minPriceInput.val($( ".price-range" ).slider( "values", 0 ));
