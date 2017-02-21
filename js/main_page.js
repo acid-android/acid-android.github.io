@@ -215,6 +215,10 @@ $( function() {
             minPrice = maxPrice;
             minPriceInput.val(minPrice);
             $('.price-range').slider("values", 0, minPrice);
+        } else {
+            minPrice = fixMinPrice;
+            minPriceInput.val(minPrice);
+            $('.price-range').slider("values", 0, minPrice);
         }
     });
 
@@ -225,6 +229,10 @@ $( function() {
         }
         else if (maxPriceInput.val() <= fixMaxPrice && maxPriceInput.val() < minPrice){
             maxPrice = minPrice;
+            maxPriceInput.val(maxPrice);
+            $('.price-range').slider("values", 1, maxPrice);
+        } else {
+            maxPrice = fixMaxPrice;
             maxPriceInput.val(maxPrice);
             $('.price-range').slider("values", 1, maxPrice);
         }
