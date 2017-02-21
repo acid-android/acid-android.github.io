@@ -1,51 +1,11 @@
+
+//-----------------------------DROPDOWN MENU-------------------------------------------------
 var menu = $('.dropdown-menu');
 var menuButton = $('.header__menu-indicator');
 var hideButton = $('.header__menu-indicator-pushed');
-var activeTabBackground = $('.wrapper__top-menu .active .background');
-var tabBackground = $('.wrapper__top-menu .background');
-activeTabBackground.show();
-var tab = $('.wrapper__top-menu .top-menu__tab');
-tabBackground.css(
-    {
-        'height': $('.top-menu__tab').height()
-    }
-);
-activeTabBackground.css(
-    {
-        'height': $('.top-menu__tab').height()
-    }
-);
 
 
-function nonActiveCheck($value) {
-    if ($value == 'top-menu__tab') {
-        return true;
-    } else {
-        return false;
-    }
-};
 
-tab.on('click', function () {
-    if (nonActiveCheck($(this).attr('class'))) {
-        var oldActiveTab = $('.wrapper__top-menu .active');
-        var newActiveTab = $(this);
-        var oldTabContent = $('.container__' + oldActiveTab.attr('id'));
-        var newTabContent = $('.container__' + newActiveTab.attr('id'));
-        activeTabBackground.hide('clip', 500);
-        oldTabContent.hide('fade', 500);
-        activeTabBackground = newActiveTab.find('.background');
-        setTimeout(function () {
-            oldActiveTab.removeClass('active');
-
-
-        }, 450);
-        setTimeout(function () {
-            newActiveTab.find('.background').show('clip', 500);
-            newTabContent.show('fade', 500);
-            newActiveTab.addClass('active');
-        }, 450);
-    }
-});
 
 menuButton.on('click', function () {
     menuButton.hide();
@@ -69,13 +29,65 @@ menuButton.on('click', function () {
     });
 });
 
+//-----------------------------DROPDOWN MENU END-------------------------------------
+
+
+
+//----------------------------TABS INDEX PAGE---------------------------------------
+
+var activeTabBackground = $('.wrapper__top-menu .active .background');
+var tabBackground = $('.wrapper__top-menu .background');
+activeTabBackground.show();
+var tab = $('.wrapper__top-menu .top-menu__tab');
+tabBackground.css(
+    {
+        'height': tab.height()
+    }
+);
+activeTabBackground.css(
+    {
+        'height': tab.height()
+    }
+);
+
+
+function nonActiveCheck($value) {
+    if ($value == 'top-menu__tab') {
+        return true;
+    }
+}
+
+tab.on('click', function () {
+    if (nonActiveCheck($(this).attr('class'))) {
+        var oldActiveTab = $('.wrapper__top-menu .active');
+        var newActiveTab = $(this);
+        var oldTabContent = $('.container__' + oldActiveTab.attr('id'));
+        var newTabContent = $('.container__' + newActiveTab.attr('id'));
+        activeTabBackground.hide('clip', { direction: "horizontal" }, 500);
+        oldTabContent.hide('fade', 500);
+        activeTabBackground = newActiveTab.find('.background');
+        setTimeout(function () {
+            oldActiveTab.removeClass('active');
+
+
+        }, 450);
+        setTimeout(function () {
+            newActiveTab.find('.background').show('clip', { direction: "horizontal" }, 500);
+            newTabContent.show('fade', 500);
+            newActiveTab.addClass('active');
+        }, 450);
+    }
+});
+
+//----------------------------TABS INDEX PAGE END---------------------------------------
+
 
 $('.products__big-item .big-item__wrap .info').css({
     'margin-top': '0'
 });
 
 padding();
-
+//-------------------------PADDING ON INDEX-------------------------------------------------------------
 function padding() {
     var paddingBigItem = $('.products__left-group').height() - $('.products__big-item').height();
     $('.products__big-item').css({
@@ -113,6 +125,7 @@ function padding() {
 $(window).resize(function () {
     padding();
 });
+//-------------------------PADDING ON INDEX END-------------------------------------------------------------
 
 
 //-----------------------------Sort Type--------------------
@@ -146,6 +159,8 @@ $('.sort__drop .drop__menu .menu__item').on('click', function () {
 
 });
 
+//-----------------------------Sort Type END--------------------
+
 
 
 //------------------Number Of Elements On Page-------------------------------
@@ -178,20 +193,61 @@ $('.num-of-items__drop .drop__menu .menu__item').on('click', function () {
 
 });
 
+
+//------------------Number Of Elements On Page END-------------------------------
+
+
+//----------------------PRICE SLIDER--------------------------------------------
+
 $( function() {
-    $( ".price-range" ).slider({
-        range: true,
-        min: 6750,
-        max: 135000,
-        values: [ 6750, 135000 ],
-        slide: function( event, ui ) {
-            $( "#amount" ).val(  ui.values[ 0 ] + " грн - " + ui.values[ 1 ] + ' грн' );
+    var minPriceInput = $('.filters__price .price__body .inputs .min-price');
+    var maxPriceInput = $('.filters__price .price__body .inputs .max-price');
+    var minPrice = minPriceInput.data('min-price');
+    var maxPrice = maxPriceInput.data('max-price');
+    var fixMinPrice = minPrice;
+    var fixMaxPrice = maxPrice;
+    minPriceInput.change(function(){
+        if(minPriceInput.val() >= fixMinPrice && minPriceInput.val() < maxPrice) {
+            minPrice = minPriceInput.val();
+            $('.price-range').slider("values", 0, minPrice);
+        }
+        else if (minPriceInput.val() >= fixMinPrice && minPriceInput.val() >= maxPrice){
+            minPrice = maxPrice;
+            minPriceInput.val(minPrice);
+            $('.price-range').slider("values", 0, minPrice);
         }
     });
-    $( "#amount" ).val(  $( ".price-range" ).slider( "values", 0 ) +
-    " грн - " + $( ".price-range" ).slider( "values", 1 ) + ' грн' );
-} );
 
+    maxPriceInput.change(function(){
+        if(maxPriceInput.val() <= fixMaxPrice && maxPriceInput.val() > minPrice) {
+            maxPrice = maxPriceInput.val();
+            $('.price-range').slider("values", 1, maxPrice);
+        }
+        else if (maxPriceInput.val() <= fixMaxPrice && maxPriceInput.val() < minPrice){
+            maxPrice = minPrice;
+            maxPriceInput.val(maxPrice);
+            $('.price-range').slider("values", 1, maxPrice);
+        }
+    });
+    $( ".price-range" ).slider({
+        range: true,
+        min: fixMinPrice,
+        max: fixMaxPrice,
+        animate: true,
+        values: [ minPrice, maxPrice ],
+        slide: function( event, ui ) {
+            minPriceInput.val(ui.values[ 0 ]);
+            maxPriceInput.val(ui.values[ 1 ]);
+        }
+    });
+    minPriceInput.val($( ".price-range" ).slider( "values", 0 ));
+    maxPriceInput.val( $( ".price-range" ).slider( "values", 1 ));
+
+} );
+//--------------------PRICE SLIDER END------------------------------------------------
+
+
+//--------------------FILTERS---------------------------------------------------------
 $( function() {
   var filterHead = $('.filter__head');
   var filterBody = $('.f-body');
@@ -237,6 +293,10 @@ $( function() {
         }
     });
 });
+
+//--------------------FILTERS END-----------------------------------------------
+
+//--------------------PAGINATION-----------------------------------------------
 
 $(function () {
     var activePageButton = $('.pages-container .active');
@@ -310,6 +370,10 @@ function buttonNotActive(button){
     }
 }
 
+//--------------------------PAGINATION END----------------------------------------
+
+//--------------------------COLOR SELECTION PRODUCT PAGE-------------------------
+
 $(function () {
     var colorName = $('.info__colors .color-name span');
     var colorButton = $('.info__colors .color');
@@ -346,46 +410,15 @@ function replaceUnderline(data){
     return data.replace(/\_/gi, ' ');
 }
 
-$(function processProductList() {
-    var product = $('.row__product-wrapper');
-    product.each(function (i, elem) {
-        $(elem + '.image img').attr('src', $(elem + '.info .colors .active').data('color-path'));
-        if($(elem + '.info .colors .active').data('color-old-price')) {
-            $(elem + '.info .prices .old-price span').html($(elem + '.info .colors .active').data('color-old-price'));
-        }
-        $(elem + '.info .prices .price span').html($(elem + '.info .colors .active').data('color-price'));
-        $(elem + '.info .colors .color-name span').html(replaceUnderline($(elem + '.info .colors .active').data('color-name')));
-        formatLocalPrice($(elem + '.info .prices .old-price span'), $(elem + '.info .prices .price span'));
-    });
-    //formatPrice();
-
-    var colorButton = $('.info .colors .color');
-    colorButton.on('click', function () {
-        if(!checkOnActiveColor($(this))){
-            return;
-        }
-        var colorPath = $(this).data('color-path');
-        var productId = $(this).closest('.row__product-wrapper').data('product-id');
-        console.log(productId);
-        $('[data-product-id="'+productId+'"]' + ' .image img').attr('src', $(this).data('color-path'));
-        if($(this).data('color-old-price')) {
-            $('[data-product-id="' + productId + '"]' + ' .info .prices .old-price span').html($(this).data('color-old-price'));
-        }
-        $('[data-product-id="'+productId+'"]' + ' .info .prices .price span').html($(this).data('color-price'));
-        $('[data-product-id="' + productId + '"]' + ' .info .colors .color-name span').html(replaceUnderline($(this).data('color-name')));
-        $('[data-product-id="' + productId + '"]' + ' .info .colors .active').removeClass('active');
-        $(this).addClass('active');
-        formatLocalPrice($('[data-product-id="' + productId + '"]' + ' .info .prices .old-price span'), $('[data-product-id="'+productId+'"]' + ' .info .prices .price span'));
-    });
-
-});
+function showColorImage(data){
+    var image = $('[data-color-name="'+data+'"]');
+    image.addClass('show');
+    return image;
+}
 
 function checkOnActiveColor(colorButton){
     if(!colorButton.hasClass('active')) {
         return true;
-
-    } else {
-        return false;
     }
 }
 
@@ -398,14 +431,6 @@ function showPrice(colorOldPrice, colorPrice, activeColorButton){
     formatPrice();
 
 }
-
-function showColorImage(data){
-    var image = $('[data-color-name="'+data+'"]');
-    image.addClass('show');
-    return image;
-}
-
-
 
 function formatPrice(){
     $('.old-price span').each(function () {
@@ -432,6 +457,55 @@ function formatLocalPrice(oldPriceSpan, priceSpan){
     priceSpan.html(priceValue.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + ' грн');
 }
 
+//-----------------------------COLOR SELECTION PRODUCT PAGE END-----------------------------------
+
+
+
+//-----------------------------COLOR SELECTION LIST PAGE--------------------------------------
+
+$(function processProductList() {
+    var product = $('.row__product-wrapper');
+    product.each(function (i, elem) {
+        $(elem + '.image img').attr('src', $(elem + '.info .colors .active').data('color-path'));
+        if($(elem + '.info .colors .active').data('color-old-price')) {
+            $(elem + '.info .prices .old-price span').html($(elem + '.info .colors .active').data('color-old-price'));
+        }
+        $(elem + '.info .prices .price span').html($(elem + '.info .colors .active').data('color-price'));
+        $(elem + '.info .colors .color-name span').html(replaceUnderline($(elem + '.info .colors .active').data('color-name')));
+        formatLocalPrice($(elem + '.info .prices .old-price span'), $(elem + '.info .prices .price span'));
+    });
+
+    var colorButton = $('.info .colors .color');
+    colorButton.on('click', function () {
+        if(!checkOnActiveColor($(this))){
+            return;
+        }
+        var colorPath = $(this).data('color-path');
+        var productId = $(this).closest('.row__product-wrapper').data('product-id');
+        console.log(productId);
+        $('[data-product-id="'+productId+'"]' + ' .image img').attr('src', $(this).data('color-path'));
+        if($(this).data('color-old-price')) {
+            $('[data-product-id="' + productId + '"]' + ' .info .prices .old-price span').html($(this).data('color-old-price'));
+        }
+        $('[data-product-id="'+productId+'"]' + ' .info .prices .price span').html($(this).data('color-price'));
+        $('[data-product-id="' + productId + '"]' + ' .info .colors .color-name span').html(replaceUnderline($(this).data('color-name')));
+        $('[data-product-id="' + productId + '"]' + ' .info .colors .active').removeClass('active');
+        $(this).addClass('active');
+        formatLocalPrice($('[data-product-id="' + productId + '"]' + ' .info .prices .old-price span'), $('[data-product-id="'+productId+'"]' + ' .info .prices .price span'));
+    });
+
+});
+
+
+//-----------------------------COLOR SELECTION LIST PAGE END--------------------------------------
+
+
+
+
+
+
+
+//--------------------------------TABS PRODUCT PAGE------------------------------------------
 
 $(function(){
     var activeProductTab = $('.product-about__tabs .active');
@@ -455,12 +529,7 @@ $(function(){
             activeProductTab = newActiveProductTab;
             activeProductTabUnderline = newActiveProductTab.find('.tab__underline');
         }, 300);
-
-
-
     });
-
-
 });
 
 function productTabIsActive(tab){
@@ -468,6 +537,10 @@ function productTabIsActive(tab){
         return true;
     }
 }
+
+//--------------------------------TABS PRODUCT PAGE END------------------------------------------
+
+//-----------------------------PRODUCT ZOOM-----------------------------------
 function zoom(){
     $(".wrapper__color-image .show img").imagezoomsl({
 
@@ -477,5 +550,5 @@ function zoom(){
 
     });
 }
-
+//-----------------------------PRODUCT ZOOM END-----------------------------------
 
