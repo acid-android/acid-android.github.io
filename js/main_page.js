@@ -1,4 +1,17 @@
+//-----------------PAGE LOAD-------------------------------
 
+$(document).ready(function(){
+    $("body").css("display","none").show('fade', 1200);
+});
+
+//-----------------PAGE LOAD END----------------------------
+
+//-------------------ANCHOR CLICK----------------------------
+$('a').on('click', function(){
+   $('body').hide('fade', 2000);
+});
+
+//-------------------ANCHOR CLICK END---------------------------
 //-----------------------------DROPDOWN MENU-------------------------------------------------
 var menu = $('.dropdown-menu');
 var menuButton = $('.header__menu-indicator');
