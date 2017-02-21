@@ -6,12 +6,6 @@ $(document).ready(function(){
 
 //-----------------PAGE LOAD END----------------------------
 
-//-------------------ANCHOR CLICK----------------------------
-$('a').on('click', function(){
-   $('body').hide('fade', 2000);
-});
-
-//-------------------ANCHOR CLICK END---------------------------
 //-----------------------------DROPDOWN MENU-------------------------------------------------
 var menu = $('.dropdown-menu');
 var menuButton = $('.header__menu-indicator');
@@ -217,15 +211,15 @@ $( function() {
     var maxPriceInput = $('.filters__price .price__body .inputs .max-price');
     var minPrice = minPriceInput.data('min-price');
     var maxPrice = maxPriceInput.data('max-price');
-    var fixMinPrice = minPrice;
-    var fixMaxPrice = maxPrice;
+    var fixMinPrice = minPriceInput.data('min-price');
+    var fixMaxPrice = maxPriceInput.data('max-price');
     minPriceInput.change(function(){
-        if(minPriceInput.val() >= fixMinPrice && minPriceInput.val() < maxPrice) {
-            minPrice = minPriceInput.val();
+        if(parseInt(minPriceInput.val()) >= fixMinPrice && parseInt(minPriceInput.val()) < parseInt(maxPriceInput.val())) {
+            minPrice = parseInt(minPriceInput.val());
             $('.price-range').slider("values", 0, minPrice);
         }
-        else if (minPriceInput.val() >= fixMinPrice && minPriceInput.val() >= maxPrice){
-            minPrice = maxPrice;
+        else if (parseInt(minPriceInput.val()) >= fixMinPrice && parseInt(minPriceInput.val()) >= parseInt(maxPriceInput.val())){
+            minPrice = parseInt(maxPriceInput.val());
             minPriceInput.val(minPrice);
             $('.price-range').slider("values", 0, minPrice);
         } else {
@@ -236,12 +230,12 @@ $( function() {
     });
 
     maxPriceInput.change(function(){
-        if(maxPriceInput.val() <= fixMaxPrice && maxPriceInput.val() > minPrice) {
-            maxPrice = maxPriceInput.val();
+        if(parseInt(maxPriceInput.val()) <= fixMaxPrice && parseInt(maxPriceInput.val()) > parseInt(minPriceInput.val())) {
+            maxPrice = parseInt(maxPriceInput.val());
             $('.price-range').slider("values", 1, maxPrice);
         }
-        else if (maxPriceInput.val() <= fixMaxPrice && maxPriceInput.val() < minPrice){
-            maxPrice = minPrice;
+        else if (parseInt(maxPriceInput.val()) <= fixMaxPrice && parseInt(maxPriceInput.val()) <= parseInt(minPriceInput.val())){
+            maxPrice = parseInt(minPriceInput.val());
             maxPriceInput.val(maxPrice);
             $('.price-range').slider("values", 1, maxPrice);
         } else {

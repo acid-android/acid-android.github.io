@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="b76291d0-51a1-4e56-b21b-a04d78d34e27" name="Default" comment="" />
+=======
+    <list default="true" id="b76291d0-51a1-4e56-b21b-a04d78d34e27" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main_page.js" afterPath="$PROJECT_DIR$/js/main_page.js" />
+    </list>
+>>>>>>> Stashed changes
     <ignored path="acid-android.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -54,9 +60,20 @@
       <file leaf-file-name="list_page.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/sass/list_page.sass">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="978">
               <caret line="678" column="63" selection-start-line="678" selection-start-column="63" selection-end-line="678" selection-end-column="63" />
               <folding />
+=======
+            <state vertical-scroll-proportion="4.7062936" vertical-offset="5118" max-vertical-offset="13695">
+              <caret line="864" column="44" selection-start-line="864" selection-start-column="44" selection-end-line="864" selection-end-column="44" />
+              <folding>
+                <element signature="e#7203#8415#0" expanded="false" />
+                <element signature="e#16608#17039#0" expanded="false" />
+                <element signature="e#17069#17984#0" expanded="false" />
+                <element signature="e#18016#18791#0" expanded="false" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -64,8 +81,13 @@
       <file leaf-file-name="main_page.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main_page.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="279">
               <caret line="187" column="58" selection-start-line="187" selection-start-column="58" selection-end-line="187" selection-end-column="58" />
+=======
+            <state vertical-scroll-proportion="-15.0" vertical-offset="5355" max-vertical-offset="7245">
+              <caret line="383" column="20" selection-start-line="383" selection-start-column="20" selection-end-line="383" selection-end-column="20" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -638,6 +660,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/pages/product_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -645,6 +668,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/pages/list_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -672,9 +697,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/sass/list_page.sass">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="978">
           <caret line="678" column="63" selection-start-line="678" selection-start-column="63" selection-end-line="678" selection-end-column="63" />
+=======
+        <state vertical-scroll-proportion="-15.0" vertical-offset="5355" max-vertical-offset="7245">
+          <caret line="383" column="20" selection-start-line="383" selection-start-column="20" selection-end-line="383" selection-end-column="20" />
+>>>>>>> Stashed changes
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/sass/list_page.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.7062936" vertical-offset="5118" max-vertical-offset="13695">
+          <caret line="864" column="44" selection-start-line="864" selection-start-column="44" selection-end-line="864" selection-end-column="44" />
+          <folding>
+            <element signature="e#7203#8415#0" expanded="false" />
+            <element signature="e#16608#17039#0" expanded="false" />
+            <element signature="e#17069#17984#0" expanded="false" />
+            <element signature="e#18016#18791#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
