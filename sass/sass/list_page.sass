@@ -660,9 +660,38 @@ html
                   padding-right: 35px
 
                   .body__list
+                    .inputs
+                      width: 75%
+                      display: block
+
+                      input
+                        display: inline-block
+                        position: relative
+                        width: 25%
+                        padding: 7px
+                        margin-top: 5px
+                        margin-bottom: 5px
+                        border-radius: 15px
+                        color: #959595
+                        //box-shadow: none
+                        border: 1px #a4a2a2 solid
+                        text-align: center
+                        outline-style: none
+
+                        &:focus
+                          border: 2px #a4a2a2 solid
+                          font-size: 0.8em
+                          color: #000000
+                          box-shadow: 0 0px 19px rgba(175, 175, 175, 0.9)
+
+                      label
+                        font-size: 0.8em
+
+                      .max-price
+                        margin-left: 5px
                     .ui-widget-content
                       width: 75%
-                      margin: 20px 20px 20px 0
+                      margin: 20px 20px 30px 0
                       background: #efeaea
                       border: none
                       font-size: 0.3em
@@ -676,6 +705,7 @@ html
                       .ui-slider-handle
                         font-size: 2.3em
                         top: -.45em
+                        outline-style: none
                         box-shadow: 2px 2px 7px rgba(55, 55, 55,0.5)
 
                   .price__range
