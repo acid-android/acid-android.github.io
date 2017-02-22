@@ -66,6 +66,7 @@ function nonActiveCheck($value) {
 
 tab.on('click', function () {
     if (nonActiveCheck($(this).attr('class'))) {
+        //setLocation($(this).attr('id'));
         var oldActiveTab = $('.wrapper__top-menu .active');
         var newActiveTab = $(this);
         var oldTabContent = $('.container__' + oldActiveTab.attr('id'));
@@ -83,8 +84,18 @@ tab.on('click', function () {
             newTabContent.show('fade', 500);
             newActiveTab.addClass('active');
         }, 450);
+        console.log(location.hash);
     }
 });
+
+function setLocation(curLoc){
+    try {
+        history.pushState(null, null, curLoc);
+        return;
+    } catch(e) {}
+    window.location.hash = '#' + curLoc;
+
+}
 
 //----------------------------TABS INDEX PAGE END---------------------------------------
 
@@ -569,3 +580,49 @@ function zoom(){
 }
 //-----------------------------PRODUCT ZOOM END-----------------------------------
 
+//------------------------------COMPARE BLOCK WIDTH-------------------------------
+
+
+var compareBlock = $('.table__main');
+var compareTable = $('.compare__table');
+var legendBlock = $('.table__legend');
+var width = parseInt(compareTable.width() / (compareBlock.length + 1));
+if (width * (compareBlock.length + 1) > compareTable.width()) {
+    width = width - 1;
+}
+legendBlock.css({
+    'width': width
+});
+compareBlock.css({
+    'width': width
+});
+
+
+$(window).resize(function () {
+    if (width * (compareBlock.length + 1) > compareTable.width()) {
+        legendBlock.css({
+            'width': parseInt(compareTable.width() / (compareBlock.length + 1)) - 1
+        });
+        compareBlock.css({
+            'width': parseInt(compareTable.width() / (compareBlock.length + 1)) - 1
+        });
+    } else {
+        legendBlock.css({
+            'width': parseInt(compareTable.width() / (compareBlock.length + 1))
+        });
+        compareBlock.css({
+            'width': parseInt(compareTable.width() / (compareBlock.length + 1))
+        });
+    }
+});
+
+//------------------------------COMPARE BLOCK WIDTH END-----------------------------
+
+//------------------------------COMPARE BLOCK INFO HEIGHT----------------------------
+
+var numOfItemsBlock = $('.container__num-of-items');
+var infoBlock = $('.container__product .info');
+
+numOfItemsBlock.css({
+    'height': infoBlock.height()
+});

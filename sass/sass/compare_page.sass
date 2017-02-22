@@ -1,0 +1,223 @@
+@import "variables"
+
+html
+  margin: 0
+  padding: 0
+
+  body
+    margin: 0
+    padding: 0
+    height: 100%
+
+
+    .header
+      background-color: $list-bg-color
+      box-shadow: 0 0 65px rgba(0,0,0,0.5)
+      border-bottom: 1px rgba(165, 165, 165, 0.25) solid
+      z-index: 5
+
+
+      .header__menu-indicator-pushed
+        background-color: $main_color
+        border-right: 1px rgba(165, 165, 165, 0.25) solid
+
+      .header__menu-indicator
+        border-right: 1px rgba(165, 165, 165, 0.25) solid
+
+    .dropdown-menu
+      background-color: $list-bg-color
+      z-index: 4
+
+      .blur
+        display: none
+
+
+    .list-head
+      display: block
+      position: relative
+      top: -60px
+      background-color: $list-bg-color
+      height: auto
+
+      .head__wrapper
+        display: block
+        width: 100%
+        position: relative
+        padding-top: $list-header-padding + 15px
+        padding-bottom: 120px
+        text-align: center
+
+        .wrapper__text
+          color: $text_color
+          text-transform: uppercase
+
+        .wrapper__breadcrumbs
+          display: block
+
+          .anchor
+            display: inline-block
+
+
+            a
+              color: #bcb9b9
+              font-weight: 100
+              text-decoration: none
+
+              &:hover
+                color: $text_color
+
+
+          .delimiter
+            display: inline-block
+            color: #bcb9b9
+            font-weight: 100
+
+
+    .content
+      position: relative
+      z-index: 3
+      display: block
+      width: auto
+      margin: -120px 5% 90px 5%
+      background-color: white
+      box-shadow: 0 0 65px rgba(0,0,0,0.5)
+      overflow: hidden
+
+      .content__compare
+        display: block
+        position: relative
+        width: 100%
+
+        .compare__table
+          display: block
+          position: relative
+          width: 100%
+
+          .table__legend
+            display: inline-block
+            position: relative
+            box-sizing: border-box
+            width: auto
+            float: left
+
+            .legend__head
+              display: block
+              position: relative
+              height: 60px
+              text-align: center
+              border-bottom: 1px #efeaea solid
+
+              .head__reload-icon
+                display: block
+                position: absolute
+                top: 50%
+                margin-top: -0.625em
+                width: 100%
+                height: 60px
+                text-align: center
+                color: #969696
+
+                i
+                  cursor: pointer
+
+            .legend__container
+              display: block
+              position: relative
+              width: 100%
+
+              .container__num-of-items
+                display: block
+                position: relative
+                width: 100%
+                text-align: -webkit-center
+                margin-top: 10px
+
+                span
+                  display: block
+                  text-align: center
+
+                .num
+                  font-size: 3em
+                  color: $main_color
+                  margin-bottom: 20px
+
+                .descr
+                  width: 9rem
+
+              .container__specifications
+                display: block
+                margin-top: 20px
+                text-align: center
+
+
+                .colors
+                  display: block
+                  padding: 13px 0
+                  border-top: 1px #c8c5c5 dotted
+                  width: 80%
+                  margin: 0 auto
+
+                .specification
+                  display: block
+                  padding: 13px 0
+                  margin: 0 auto
+                  border-top: 1px #c8c5c5 dotted
+                  width: 80%
+
+
+
+
+
+          .table__main
+            float: left
+            display: inline-block
+            position: relative
+            box-sizing: border-box
+            width: auto
+            border-left: 1px #efeaea solid
+
+            .main__head
+              position: relative
+              display: block
+              height: 60px
+              text-align: center
+              border-bottom: 1px #efeaea solid
+
+              .head__remove-icon
+                display: block
+                position: absolute
+                top: 50%
+                margin-top: -0.625em
+                width: 100%
+                height: 60px
+                color: #969696
+                text-align: center
+
+                i
+                  cursor: pointer
+
+            .main__container
+              display: block
+              position: relative
+              width: 100%
+
+              .info
+                margin-top: 20px
+                text-align: center
+
+                .image
+                  display: block
+                  position: relative
+                  width: 100%
+
+                  img
+                    width: 80%
+
+
+
+
+
+
+
+
+

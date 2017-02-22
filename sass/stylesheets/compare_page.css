@@ -1,0 +1,240 @@
+/* line 3, ../sass/compare_page.sass */
+html {
+  margin: 0;
+  padding: 0;
+}
+/* line 7, ../sass/compare_page.sass */
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* line 13, ../sass/compare_page.sass */
+html body .header {
+  background-color: #3746de;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px rgba(165, 165, 165, 0.25) solid;
+  z-index: 5;
+}
+/* line 20, ../sass/compare_page.sass */
+html body .header .header__menu-indicator-pushed {
+  background-color: #095A98;
+  border-right: 1px rgba(165, 165, 165, 0.25) solid;
+}
+/* line 24, ../sass/compare_page.sass */
+html body .header .header__menu-indicator {
+  border-right: 1px rgba(165, 165, 165, 0.25) solid;
+}
+/* line 27, ../sass/compare_page.sass */
+html body .dropdown-menu {
+  background-color: #3746de;
+  z-index: 4;
+}
+/* line 31, ../sass/compare_page.sass */
+html body .dropdown-menu .blur {
+  display: none;
+}
+/* line 35, ../sass/compare_page.sass */
+html body .list-head {
+  display: block;
+  position: relative;
+  top: -60px;
+  background-color: #3746de;
+  height: auto;
+}
+/* line 42, ../sass/compare_page.sass */
+html body .list-head .head__wrapper {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+/* line 50, ../sass/compare_page.sass */
+html body .list-head .head__wrapper .wrapper__text {
+  color: #F2F5F7;
+  text-transform: uppercase;
+}
+/* line 54, ../sass/compare_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs {
+  display: block;
+}
+/* line 57, ../sass/compare_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs .anchor {
+  display: inline-block;
+}
+/* line 61, ../sass/compare_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs .anchor a {
+  color: #bcb9b9;
+  font-weight: 100;
+  text-decoration: none;
+}
+/* line 66, ../sass/compare_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs .anchor a:hover {
+  color: #F2F5F7;
+}
+/* line 70, ../sass/compare_page.sass */
+html body .list-head .head__wrapper .wrapper__breadcrumbs .delimiter {
+  display: inline-block;
+  color: #bcb9b9;
+  font-weight: 100;
+}
+/* line 76, ../sass/compare_page.sass */
+html body .content {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: auto;
+  margin: -120px 5% 90px 5%;
+  background-color: white;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+/* line 86, ../sass/compare_page.sass */
+html body .content .content__compare {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 91, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 96, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+  float: left;
+}
+/* line 103, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__head {
+  display: block;
+  position: relative;
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px #efeaea solid;
+}
+/* line 110, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__head .head__reload-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: #969696;
+}
+/* line 120, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__head .head__reload-icon i {
+  cursor: pointer;
+}
+/* line 123, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 128, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: -webkit-center;
+  margin-top: 10px;
+}
+/* line 135, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items span {
+  display: block;
+  text-align: center;
+}
+/* line 139, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items .num {
+  font-size: 3em;
+  color: #095A98;
+  margin-bottom: 20px;
+}
+/* line 144, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items .descr {
+  width: 9rem;
+}
+/* line 147, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 153, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications .colors {
+  display: block;
+  padding: 13px 0;
+  border-top: 1px #c8c5c5 dotted;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 160, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications .specification {
+  display: block;
+  padding: 13px 0;
+  margin: 0 auto;
+  border-top: 1px #c8c5c5 dotted;
+  width: 80%;
+}
+/* line 171, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main {
+  float: left;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+  border-left: 1px #efeaea solid;
+}
+/* line 179, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__head {
+  position: relative;
+  display: block;
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px #efeaea solid;
+}
+/* line 186, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__head .head__remove-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+  width: 100%;
+  height: 60px;
+  color: #969696;
+  text-align: center;
+}
+/* line 196, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__head .head__remove-icon i {
+  cursor: pointer;
+}
+/* line 199, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 204, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .info {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 208, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .info .image {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 213, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .info .image img {
+  width: 80%;
+}
