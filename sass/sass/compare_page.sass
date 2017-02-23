@@ -92,6 +92,7 @@ html
           display: block
           position: relative
           width: 100%
+          overflow: hidden
 
           .table__legend
             display: inline-block
@@ -130,7 +131,7 @@ html
                 position: relative
                 width: 100%
                 text-align: -webkit-center
-                margin-top: 10px
+                margin-top: 20px
 
                 span
                   display: block
@@ -205,6 +206,32 @@ html
                 margin-top: 20px
                 text-align: center
 
+                .type
+                  display: block
+                  position: relative
+                  color: #969696
+                  font-size: 0.7em
+                  text-transform: uppercase
+
+                .name
+                  display: block
+                  position: relative
+                  margin-top: 5px
+
+                  .brand
+                    display: inline-block
+                    position: relative
+                  .model
+                    display: inline-block
+                    position: relative
+
+                .price
+                  display: block
+                  position: relative
+                  color: $main_color
+                  font-size: 1em
+                  margin-top: 20px
+
                 .image
                   display: block
                   position: relative
@@ -212,6 +239,54 @@ html
 
                   img
                     width: 80%
+
+              .container__specifications
+                display: block
+                margin-top: 20px
+                text-align: center
+
+
+                .colors
+                  display: block
+                  padding: 9px 0
+                  border-top: 1px #c8c5c5 dotted
+                  width: 80%
+                  margin: 0 auto
+
+                  .color
+                    display: inline-block
+                    position: relative
+                    width: 20px
+                    height: 20px
+                    margin: 0 2px 5px
+                    background-size: cover
+                    vertical-align: middle
+                    cursor: pointer
+
+                    .checked
+                      display: none
+
+                      .black
+                        color: #000000
+
+                      .white
+                        color: #ffffff
+
+                  .active
+                    .checked
+                      display: block
+                      width: 100%
+                      position: relative
+                      text-align: center
+                      margin-top: 4px
+                      font-size: 0.7em
+
+                .specification
+                  display: block
+                  padding: 13px 0
+                  margin: 0 auto
+                  border-top: 1px #c8c5c5 dotted
+                  width: 80%
 
 
 

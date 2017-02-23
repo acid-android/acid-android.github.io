@@ -102,8 +102,9 @@ html body .content .content__compare .compare__table {
   display: block;
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
-/* line 96, ../sass/compare_page.sass */
+/* line 97, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend {
   display: inline-block;
   position: relative;
@@ -111,7 +112,7 @@ html body .content .content__compare .compare__table .table__legend {
   width: auto;
   float: left;
 }
-/* line 103, ../sass/compare_page.sass */
+/* line 104, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__head {
   display: block;
   position: relative;
@@ -119,7 +120,7 @@ html body .content .content__compare .compare__table .table__legend .legend__hea
   text-align: center;
   border-bottom: 1px #efeaea solid;
 }
-/* line 110, ../sass/compare_page.sass */
+/* line 111, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__head .head__reload-icon {
   display: block;
   position: absolute;
@@ -130,46 +131,46 @@ html body .content .content__compare .compare__table .table__legend .legend__hea
   text-align: center;
   color: #969696;
 }
-/* line 120, ../sass/compare_page.sass */
+/* line 121, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__head .head__reload-icon i {
   cursor: pointer;
 }
-/* line 123, ../sass/compare_page.sass */
+/* line 124, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 128, ../sass/compare_page.sass */
+/* line 129, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items {
   display: block;
   position: relative;
   width: 100%;
   text-align: -webkit-center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
-/* line 135, ../sass/compare_page.sass */
+/* line 136, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items span {
   display: block;
   text-align: center;
 }
-/* line 139, ../sass/compare_page.sass */
+/* line 140, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items .num {
   font-size: 3em;
   color: #095A98;
   margin-bottom: 20px;
 }
-/* line 144, ../sass/compare_page.sass */
+/* line 145, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items .descr {
   width: 9rem;
 }
-/* line 147, ../sass/compare_page.sass */
+/* line 148, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications {
   display: block;
   margin-top: 20px;
   text-align: center;
 }
-/* line 153, ../sass/compare_page.sass */
+/* line 154, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications .colors {
   display: block;
   padding: 13px 0;
@@ -177,7 +178,7 @@ html body .content .content__compare .compare__table .table__legend .legend__con
   width: 80%;
   margin: 0 auto;
 }
-/* line 160, ../sass/compare_page.sass */
+/* line 161, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications .specification {
   display: block;
   padding: 13px 0;
@@ -185,7 +186,7 @@ html body .content .content__compare .compare__table .table__legend .legend__con
   border-top: 1px #c8c5c5 dotted;
   width: 80%;
 }
-/* line 171, ../sass/compare_page.sass */
+/* line 172, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main {
   float: left;
   display: inline-block;
@@ -194,7 +195,7 @@ html body .content .content__compare .compare__table .table__main {
   width: auto;
   border-left: 1px #efeaea solid;
 }
-/* line 179, ../sass/compare_page.sass */
+/* line 180, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__head {
   position: relative;
   display: block;
@@ -202,7 +203,7 @@ html body .content .content__compare .compare__table .table__main .main__head {
   text-align: center;
   border-bottom: 1px #efeaea solid;
 }
-/* line 186, ../sass/compare_page.sass */
+/* line 187, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__head .head__remove-icon {
   display: block;
   position: absolute;
@@ -213,28 +214,114 @@ html body .content .content__compare .compare__table .table__main .main__head .h
   color: #969696;
   text-align: center;
 }
-/* line 196, ../sass/compare_page.sass */
+/* line 197, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__head .head__remove-icon i {
   cursor: pointer;
 }
-/* line 199, ../sass/compare_page.sass */
+/* line 200, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__container {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 204, ../sass/compare_page.sass */
+/* line 205, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__container .info {
   margin-top: 20px;
   text-align: center;
 }
-/* line 208, ../sass/compare_page.sass */
+/* line 209, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .info .type {
+  display: block;
+  position: relative;
+  color: #969696;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+/* line 216, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .info .name {
+  display: block;
+  position: relative;
+  margin-top: 5px;
+}
+/* line 221, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .info .name .brand {
+  display: inline-block;
+  position: relative;
+}
+/* line 224, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .info .name .model {
+  display: inline-block;
+  position: relative;
+}
+/* line 228, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .info .price {
+  display: block;
+  position: relative;
+  color: #095A98;
+  font-size: 1em;
+  margin-top: 20px;
+}
+/* line 235, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__container .info .image {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 213, ../sass/compare_page.sass */
+/* line 240, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__container .info .image img {
+  width: 80%;
+}
+/* line 243, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .container__specifications {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 249, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .container__specifications .colors {
+  display: block;
+  padding: 9px 0;
+  border-top: 1px #c8c5c5 dotted;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 256, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .container__specifications .colors .color {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 2px 5px;
+  background-size: cover;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 266, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .container__specifications .colors .color .checked {
+  display: none;
+}
+/* line 269, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .container__specifications .colors .color .checked .black {
+  color: #000000;
+}
+/* line 272, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .container__specifications .colors .color .checked .white {
+  color: #ffffff;
+}
+/* line 276, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .container__specifications .colors .active .checked {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 4px;
+  font-size: 0.7em;
+}
+/* line 284, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__container .container__specifications .specification {
+  display: block;
+  padding: 13px 0;
+  margin: 0 auto;
+  border-top: 1px #c8c5c5 dotted;
   width: 80%;
 }
