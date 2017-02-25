@@ -587,127 +587,134 @@ function zoom(){
 
 
 
-var compareTable = $('.compare__table');
-var compareBlock = $('.table__main');
-var legendBlock = $('.table__legend');
-var width = parseInt(compareTable.width() / (compareBlock.length + legendBlock.length));
-//if(compareBlock.length > 5){
-//    width = parseInt(compareTable.width() / (5 + legendBlock.length));
+//var compareTable = $('.compare__table');
+//var compareBlock = $('.table__main');
+//var legendBlock = $('.table__legend');
+//var width = parseInt(compareTable.width() / (compareBlock.length + legendBlock.length));
+////if(compareBlock.length > 5){
+////    width = parseInt(compareTable.width() / (5 + legendBlock.length));
+////}
+//if (width * (compareBlock.length + legendBlock.length) > compareTable.width()) {
+//    width = width - 1;
 //}
-if (width * (compareBlock.length + legendBlock.length) > compareTable.width()) {
-    width = width - 1;
-}
-legendBlock.css({
-    'width': width
-});
-compareBlock.css({
-    'width': width
-});
-
-
-$(window).resize(function () {
-    if (width * (compareBlock.length + legendBlock.length) > compareTable.width()) {
-        legendBlock.css({
-            'width': parseInt(compareTable.width() / (compareBlock.length + legendBlock.length)) - 1
-        });
-        compareBlock.css({
-            'width': parseInt(compareTable.width() / (compareBlock.length + legendBlock.length)) - 1
-        });
-    } else {
-        legendBlock.css({
-            'width': parseInt(compareTable.width() / (compareBlock.length + legendBlock.length))
-        });
-        compareBlock.css({
-            'width': parseInt(compareTable.width() / (compareBlock.length + legendBlock.length))
-        });
-    }
-});
+//legendBlock.css({
+//    'width': width
+//});
+//compareBlock.css({
+//    'width': width
+//});
+//
+//
+//$(window).resize(function () {
+//    if (width * (compareBlock.length + legendBlock.length) > compareTable.width()) {
+//        legendBlock.css({
+//            'width': parseInt(compareTable.width() / (compareBlock.length + legendBlock.length)) - 1
+//        });
+//        compareBlock.css({
+//            'width': parseInt(compareTable.width() / (compareBlock.length + legendBlock.length)) - 1
+//        });
+//    } else {
+//        legendBlock.css({
+//            'width': parseInt(compareTable.width() / (compareBlock.length + legendBlock.length))
+//        });
+//        compareBlock.css({
+//            'width': parseInt(compareTable.width() / (compareBlock.length + legendBlock.length))
+//        });
+//    }
+//});
 
 //------------------------------COMPARE BLOCK WIDTH END-----------------------------
 
 //------------------------------COMPARE BLOCK INFO HEIGHT----------------------------
 
-var numOfItemsBlock = $('.container__num-of-items');
-var infoBlock = $('.container__product .info');
-
-numOfItemsBlock.css({
-    'height': infoBlock.height()
-});
-$(window).resize(function () {
-    numOfItemsBlock.css({
-        'height': infoBlock.height()
-    });
-});
-
-//------------------------------COMPARE BLOCK INFO HEIGHT END----------------------------
-
-//--------------------------------NUM OF COMPARE PRODUCTS--------------------------------
-
-$('.container__num-of-items .num').html(compareBlock.length);
-
-
-//------------------------------COMPARE SPECIFICATIONS BLOCK HEIGHT----------------------------
-
-var productTable = $('.table__main');
-var legendSpecificationBlock = $('.legend__container .container__specifications .specification');
-var productSpecificationBlock = $('.main__container .container__specifications .specification');
-
-productTable.each(function () {
-    $('[data-product-id="'+$(this).data('product-id')+'"]' +  ' .' + productSpecificationBlock.attr('class')).each(function (index) {
-        $(this).css({
-            'height': legendSpecificationBlock.eq(index).height()
-        });
-    });
-});
-
-$(window).resize(function () {
-    productTable.each(function () {
-        $('[data-product-id="'+$(this).data('product-id')+'"]' +  ' .' + productSpecificationBlock.attr('class')).each(function (index) {
-            $(this).css({
-                'height': legendSpecificationBlock.eq(index).height()
-            });
-        });
-    });
-});
+//var numOfItemsBlock = $('.container__num-of-items');
+//var infoBlock = $('.container__product .info');
+//
+//numOfItemsBlock.css({
+//    'height': infoBlock.height()
+//});
+//$(window).resize(function () {
+//    numOfItemsBlock.css({
+//        'height': infoBlock.height()
+//    });
+//});
+//
+////------------------------------COMPARE BLOCK INFO HEIGHT END----------------------------
+//
+////--------------------------------NUM OF COMPARE PRODUCTS--------------------------------
+//
+//$('.container__num-of-items .num').html(compareBlock.length);
+//
+//
+////------------------------------COMPARE SPECIFICATIONS BLOCK HEIGHT----------------------------
+//
+//var productTable = $('.table__main');
+//var legendSpecificationBlock = $('.legend__container .container__specifications .specification');
+//var productSpecificationBlock = $('.main__container .container__specifications .specification');
+//
+//productTable.each(function () {
+//    $('[data-product-id="'+$(this).data('product-id')+'"]' +  ' .' + productSpecificationBlock.attr('class')).each(function (index) {
+//        $(this).css({
+//            'height': legendSpecificationBlock.eq(index).height()
+//        });
+//    });
+//});
+//
+//$(window).resize(function () {
+//    productTable.each(function () {
+//        $('[data-product-id="'+$(this).data('product-id')+'"]' +  ' .' + productSpecificationBlock.attr('class')).each(function (index) {
+//            $(this).css({
+//                'height': legendSpecificationBlock.eq(index).height()
+//            });
+//        });
+//    });
+//});
 
 //------------------------------COMPARE SPECIFICATIONS BLOCK HEIGHT END----------------------------
 
 //-------------------------------REMOVE COMPARE PRODUCT BLOCK--------------------------------------
-var removeButton = $('.main__head .head__remove-icon');
-
-//var compareBlockLengthResize = compareBlock.length;
-//var blockWidthAfterResize = parseInt(compareTable.width() / (compareBlockLengthResize));
-removeButton.click(function () {
-    var productId = $(this).data('product-id-dlt');
-    var blockWidth = $(this).width();
-
-
-    //compareBlockLengthResize = compareBlockNew.length;
-    //$('[data-product-id="' + productId + '"').hide('clip', 1000);
-    $('[data-product-id="' + productId + '"').remove();
-    var compareBlockNew = $('.table__main');
-    //compareBlock = compareBlockNew;
-
-    var infoBlock = $('.container__product:nth-last-child(n) .info');
-    compareBlock.each(function () {
-        $(this).css({
-            'width': $(this).width() + (blockWidth / (compareBlockNew.length)) + 1
-        });
-    });
-
-    //legendBlock.css({
-    //    'width': legendBlock.width() + (blockWidth / (compareBlockNew.length))
-    //});
-    numOfItemsBlock.css({
-        'height': infoBlock.height()
-    });
-    compareBlockNew.each(function () {
-        $('[data-product-id="'+$(this).data('product-id')+'"]' +  ' .' + productSpecificationBlock.attr('class')).each(function (index) {
-            $(this).css({
-                'height': legendSpecificationBlock.eq(index).height()
-            });
-        });
-    });
-    $('.container__num-of-items .num').html(compareBlockNew.length);
-});
+//var removeButton = $('.main__head .head__remove-icon');
+//
+////var compareBlockLengthResize = compareBlock.length;
+////var blockWidthAfterResize = parseInt(compareTable.width() / (compareBlockLengthResize));
+//removeButton.click(function () {
+//    var productId = $(this).data('product-id-dlt');
+//    var blockWidth = $(this).width();
+//
+//
+//    //compareBlockLengthResize = compareBlockNew.length;
+//    //$('[data-product-id="' + productId + '"').hide('fade', 1000);
+//    $('[data-product-id="' + productId + '"').remove();
+//    var compareBlockNew = $('.table__main');
+//    //compareBlock = compareBlockNew;
+//
+//    var infoBlock = $('.container__product:nth-last-child(n) .info');
+//    compareBlock.each(function () {
+//        $(this).css({
+//            'width': $(this).width() + (blockWidth / (compareBlockNew.length)) + 1
+//        });
+//    });
+//
+//    //legendBlock.css({
+//    //    'width': legendBlock.width() + (blockWidth / (compareBlockNew.length))
+//    //});
+//    numOfItemsBlock.css({
+//        'height': infoBlock.height()
+//    });
+//    compareBlockNew.each(function () {
+//        $('[data-product-id="'+$(this).data('product-id')+'"]' +  ' .' + productSpecificationBlock.attr('class')).each(function (index) {
+//            $(this).css({
+//                'height': legendSpecificationBlock.eq(index).height()
+//            });
+//        });
+//    });
+//    $('.container__num-of-items .num').html(compareBlockNew.length);
+//});
 //-------------------------------REMOVE COMPARE PRODUCT BLOCK--------------------------------------
+
+//------------------------------------------------------------------------------------------
+//----------------------------------TEST----------------------------------------------------
+//------------------------------------------------------------------------------------------
+
+
+

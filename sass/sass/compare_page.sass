@@ -87,18 +87,20 @@ html
         display: block
         position: relative
         width: 100%
+        box-sizing: border-box
 
         .compare__table
           display: block
           position: relative
           width: 100%
           overflow: hidden
+          box-sizing: border-box
 
           .table__legend
             display: inline-block
             position: relative
             box-sizing: border-box
-            width: auto
+            width: 15%
             float: left
 
             .legend__head
@@ -107,6 +109,7 @@ html
               height: 60px
               text-align: center
               border-bottom: 1px #efeaea solid
+              box-sizing: border-box
 
               .head__reload-icon
                 display: block
@@ -125,6 +128,7 @@ html
               display: block
               position: relative
               width: 100%
+              box-sizing: border-box
 
               .container__num-of-items
                 display: block
@@ -132,6 +136,7 @@ html
                 width: 100%
                 text-align: -webkit-center
                 margin-top: 20px
+                box-sizing: border-box
 
                 span
                   display: block
@@ -145,9 +150,28 @@ html
                 .descr
                   width: 9rem
 
+                .nav-buttons
+                  display: block
+                  width: 100%
+                  position: relative
+                  text-align: center
+                  margin-top: 60px
+
+                  .button-left
+                    display: inline-block
+                    margin-right: 20px
+                    font-size: 1.5em
+                    cursor: pointer
+
+                  .button-right
+                    display: inline-block
+                    font-size: 1.5em
+                    cursor: pointer
+
               .container__specifications
                 display: block
                 margin-top: 20px
+                box-sizing: border-box
                 text-align: center
 
 
@@ -155,6 +179,7 @@ html
                   display: block
                   padding: 13px 0
                   border-top: 1px #c8c5c5 dotted
+                  box-sizing: border-box
                   width: 80%
                   margin: 0 auto
 
@@ -163,130 +188,153 @@ html
                   padding: 13px 0
                   margin: 0 auto
                   border-top: 1px #c8c5c5 dotted
+                  box-sizing: border-box
                   width: 80%
-
 
 
 
 
           .table__main
-            float: left
             display: inline-block
             position: relative
-            box-sizing: border-box
             width: auto
-            border-left: 1px #efeaea solid
+            overflow: hidden
+            float: left
+            height: 100%
+            box-sizing: border-box
 
-            .main__head
-              position: relative
+            .main__wrapper
               display: block
-              height: 60px
-              text-align: center
-              border-bottom: 1px #efeaea solid
-
-              .head__remove-icon
-                display: block
-                position: absolute
-                top: 50%
-                margin-top: -0.625em
-                width: 100%
-                height: 60px
-                color: #969696
-                text-align: center
-
-                i
-                  cursor: pointer
-
-            .main__container
-              display: block
-              position: relative
+              position: absolute
               width: 100%
+              overflow: hidden
+              height: 100%
+              box-sizing: border-box
 
-              .info
-                margin-top: 20px
-                text-align: center
+              .main
+                float: left
+                display: inline-block
+                position: relative
+                box-sizing: border-box
+                width: auto
+                border-left: 1px #efeaea solid
 
-                .type
-                  display: block
+                .main__head
                   position: relative
-                  color: #969696
-                  font-size: 0.7em
-                  text-transform: uppercase
-
-                .name
                   display: block
-                  position: relative
-                  margin-top: 5px
+                  height: 60px
+                  text-align: center
+                  border-bottom: 1px #efeaea solid
+                  box-sizing: border-box
 
-                  .brand
-                    display: inline-block
-                    position: relative
-                  .model
-                    display: inline-block
-                    position: relative
+                  .head__remove-icon
+                    display: block
+                    position: absolute
+                    top: 50%
+                    margin-top: -0.625em
+                    width: 100%
+                    height: 60px
+                    color: #969696
+                    text-align: center
 
-                .price
-                  display: block
-                  position: relative
-                  color: $main_color
-                  font-size: 1em
-                  margin-top: 20px
+                    i
+                      cursor: pointer
 
-                .image
+                .main__container
                   display: block
                   position: relative
                   width: 100%
+                  box-sizing: border-box
 
-                  img
-                    width: 80%
+                  .info
+                    margin-top: 20px
+                    text-align: center
 
-              .container__specifications
-                display: block
-                margin-top: 20px
-                text-align: center
-
-
-                .colors
-                  display: block
-                  padding: 9px 0
-                  border-top: 1px #c8c5c5 dotted
-                  width: 80%
-                  margin: 0 auto
-
-                  .color
-                    display: inline-block
-                    position: relative
-                    width: 20px
-                    height: 20px
-                    margin: 0 2px 5px
-                    background-size: cover
-                    vertical-align: middle
-                    cursor: pointer
-
-                    .checked
-                      display: none
-
-                      .black
-                        color: #000000
-
-                      .white
-                        color: #ffffff
-
-                  .active
-                    .checked
+                    .type
                       display: block
-                      width: 100%
                       position: relative
-                      text-align: center
-                      margin-top: 4px
+                      color: #969696
                       font-size: 0.7em
+                      text-transform: uppercase
 
-                .specification
-                  display: block
-                  padding: 13px 0
-                  margin: 0 auto
-                  border-top: 1px #c8c5c5 dotted
-                  width: 80%
+                    .name
+                      display: block
+                      position: relative
+                      margin-top: 5px
+
+                      .brand
+                        display: inline-block
+                        position: relative
+                      .model
+                        display: inline-block
+                        position: relative
+
+                    .price
+                      display: block
+                      position: relative
+                      color: $main_color
+                      font-size: 1em
+                      margin-top: 20px
+
+                    .image
+                      display: block
+                      position: relative
+                      width: 100%
+
+                      img
+                        width: 80%
+
+                  .container__specifications
+                    display: block
+                    margin-top: 20px
+                    text-align: center
+
+
+
+                    .colors
+                      display: block
+                      padding: 9px 0
+                      border-top: 1px #c8c5c5 dotted
+
+                      width: 80%
+                      margin: 0 auto
+
+                      .color
+                        display: inline-block
+                        position: relative
+                        width: 20px
+                        height: 20px
+                        margin: 0 2px 5px
+                        background-size: cover
+                        vertical-align: middle
+                        box-sizing: border-box
+                        cursor: pointer
+
+                        .checked
+                          display: none
+
+                          .black
+                            color: #000000
+
+                          .white
+                            color: #ffffff
+
+                      .active
+                        .checked
+                          display: block
+                          width: 100%
+                          position: relative
+                          text-align: center
+                          margin-top: 4px
+                          font-size: 0.7em
+
+                    .specification
+                      display: block
+                      padding: 13px 0
+                      margin: 0 auto
+                      border-top: 1px #c8c5c5 dotted
+
+                      width: 80%
 
 
 
