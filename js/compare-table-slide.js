@@ -35,8 +35,10 @@ init();
 function init() {
     initSlider();
     initButtons();
-    two();
-    resize();
+    removeProductBlock();
+    formatPrice();
+    processProductList();
+    //resize();
 }
 
 function initSlider() {
@@ -185,18 +187,7 @@ function initButtons() {
         $('.main__wrapper').animate({left: '-=' + (compareBlockWidth) + 'px'}, 200);
     });
 }
-function two() {
-
-    $(window).resize(function () {
-        numOfItemsBlock.css({
-            'height': infoBlock.height()
-        });
-    });
-
-
-
-
-
+function removeProductBlock() {
     removeButton.click(function () {
         var productBlock = $('.main');
         var animateFlag = false;
@@ -264,101 +255,6 @@ function two() {
 
 }
 
-function resize(){
-    $(window).resize(function () {
-        // if (compareBlock.length > 5) {
-        //     width = parseInt(tableMain.width() / 5);
-        //     compareBlock.css({
-        //         'width': width
-        //     });
-        //
-        //     //console.log('>5   ' + width);
-        // } else {
-        //     width = parseInt(tableMain.width() / compareBlock.length);
-        //     compareBlock.css({
-        //         'width': width
-        //     });
-        //
-        // }
-
-
-        numOfItemsBlock.css({
-            'height': infoBlock.height()
-        });
-
-        legendBlock.css({
-            'width': parseInt(legendBlock.width()) - 1
-        });
-
-
-        if(compareBlockLength >= maxVisibleBlocks) {
-            compareBlock.css({
-                'width': parseInt(compareTableWidth / maxVisibleBlocks)
-            });
-
-        } else if (compareBlockLength < maxVisibleBlocks){
-            compareBlock.css({
-                'width': parseInt(compareTableWidth / compareBlockLength)
-            });
-        }
-
-        tableMain.css({
-            'width': (compareBlockWidth * maxVisibleBlocks)
-        });
-        // tableMainWrapper.css({
-        //     'height': legendBlock.height(),
-        //     'width': compareBlock.width() * compareBlockLength
-        // });
-        // if (compareBlock.length > maxVisibleBlocks) {
-        //     width = parseInt(tableMain.width() / maxVisibleBlocks);
-        //     //console.log('>5   ' + width);
-        // } else {
-        //     width = parseInt(tableMain.width() / compareBlockLength);
-        //     //console.log('=<5   ' + width);
-        // }
-        //
-        // legendBlock.css({
-        //     'width': parseInt(legendBlock.width()) - 1
-        // });
-
-        // compareBlock.css({
-        //     'width': width
-        // });
-
-        // numOfItemsBlock.css({
-        //     'height': infoBlock.height()
-        // });
-        //
-        // tableMainWrapper.css({
-        //     'height': legendBlock.height()
-        // });
-        // tableMain.css({
-        //     'height': legendBlock.height()
-        // });
-        compareTable.css({
-            'width': tableMain.width() + legendBlock.width()
-        });
-        $('.content__compare').css({
-            'width': compareTable.width()
-        });
-        $('.content').css({
-            'width': compareTable.width()
-        });
-
-        $('.container__product .info .image img').css({
-            'width': $('.container__product .info .image img').width()
-        });
-        // compareTableWidth = compareTable.width();
-        // legendBlockWidth = legendBlock.width();
-        // tableMainWidth = tableMain.width();
-        // tableMainWrapperWidth = tableMainWrapper.width();
-        // infoBlockWidth = infoBlock.width();
-        // infoBlockHeight = infoBlock.height();
-        // compareBlockWidth = compareBlock.width();
-        // positionEnd = 0 - ((compareBlockLength - maxVisibleBlocks) * compareBlockWidth) + deleteOffset;
-    });
-}
-
 function isWait(elem){
     if(elem.hasClass('wait')){
         return true;
@@ -370,4 +266,161 @@ function notActive(elem){
         return true;
     }
 }
+
+function processProductList() {
+    var product = $('.main');
+    product.each(function (i, elem) {
+        $(elem + '.main__container .container__product .info .image img').attr('src', $(elem + '.main__container .container__product .info .colors .active').data('color-path'));
+        $(elem + '.main__container .container__product .info .prices .price span').html($(elem + '.main__container .container__product .info .colors .active').data('color-price'));
+        formatLocalPrice($(elem + '.main__container .container__product .info .prices .old-price span'), $(elem + '.main__container .container__product .info .prices .price span'));
+    });
+
+    var colorButton = $('.main .main__container .container__specifications .colors .color');
+    colorButton.on('click', function () {
+        console.log($(this));
+        if(!checkOnActiveColor($(this))){
+            return;
+        }
+        var productId = $(this).closest('.main').data('product-id');
+        $('[data-product-id="'+productId+'"]' + ' .main__container .container__product .info .image img').attr('src', $(this).data('color-path'));
+        $('[data-product-id="'+productId+'"]' + ' .main__container .container__product .info .prices .price span').html($(this).data('color-price'));
+        //$('[data-product-id="' + productId + '"]' + ' .info .colors .color-name span').html(replaceUnderline($(this).data('color-name')));
+        $('[data-product-id="' + productId + '"]' + ' .info .colors .active').removeClass('active');
+        $(this).addClass('active');
+        formatLocalPrice($('[data-product-id="' + productId + '"]' + ' .info .prices .old-price span'), $('[data-product-id="'+productId+'"]' + ' .info .prices .price span'));
+    });
+
+}
+
+
+//function replaceUnderline(data){
+//    return data.replace(/\_/gi, ' ');
+//}
+
+function formatPrice(){
+    $('.old-price span').each(function () {
+        var value = $(this).html();
+        value = value.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        if (value !== '')
+            $(this).html(value + ' грн');
+    });
+
+    $('.price span').each(function () {
+        var value = $(this).html();
+        value = value.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        if (value !== '')
+            $(this).html(value + ' грн');
+    });
+}
+
+function checkOnActiveColor(colorButton){
+    if(!colorButton.hasClass('active')) {
+        return true;
+    }
+}
+
+function formatLocalPrice(oldPriceSpan, priceSpan){
+    var oldPriceValue = oldPriceSpan.html();
+    var priceValue = priceSpan.html();
+    if(oldPriceValue){
+        oldPriceSpan.html(oldPriceValue.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + ' грн');
+    }
+    priceSpan.html(priceValue.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + ' грн');
+}
+
+//function resize(){
+//    $(window).resize(function () {
+//        // if (compareBlock.length > 5) {
+//        //     width = parseInt(tableMain.width() / 5);
+//        //     compareBlock.css({
+//        //         'width': width
+//        //     });
+//        //
+//        //     //console.log('>5   ' + width);
+//        // } else {
+//        //     width = parseInt(tableMain.width() / compareBlock.length);
+//        //     compareBlock.css({
+//        //         'width': width
+//        //     });
+//        //
+//        // }
+//
+//        numOfItemsBlock.css({
+//            'height': infoBlock.height()
+//        });
+//
+//        legendBlock.css({
+//            'width': parseInt(legendBlock.width()) - 1
+//        });
+//
+//
+//        if(compareBlockLength >= maxVisibleBlocks) {
+//            compareBlock.css({
+//                'width': parseInt(compareTableWidth / maxVisibleBlocks)
+//            });
+//
+//        } else if (compareBlockLength < maxVisibleBlocks){
+//            compareBlock.css({
+//                'width': parseInt(compareTableWidth / compareBlockLength)
+//            });
+//        }
+//
+//        tableMain.css({
+//            'width': (compareBlockWidth * maxVisibleBlocks)
+//        });
+//        // tableMainWrapper.css({
+//        //     'height': legendBlock.height(),
+//        //     'width': compareBlock.width() * compareBlockLength
+//        // });
+//        // if (compareBlock.length > maxVisibleBlocks) {
+//        //     width = parseInt(tableMain.width() / maxVisibleBlocks);
+//        //     //console.log('>5   ' + width);
+//        // } else {
+//        //     width = parseInt(tableMain.width() / compareBlockLength);
+//        //     //console.log('=<5   ' + width);
+//        // }
+//        //
+//        // legendBlock.css({
+//        //     'width': parseInt(legendBlock.width()) - 1
+//        // });
+//
+//        // compareBlock.css({
+//        //     'width': width
+//        // });
+//
+//        // numOfItemsBlock.css({
+//        //     'height': infoBlock.height()
+//        // });
+//        //
+//        // tableMainWrapper.css({
+//        //     'height': legendBlock.height()
+//        // });
+//        // tableMain.css({
+//        //     'height': legendBlock.height()
+//        // });
+//        compareTable.css({
+//            'width': tableMain.width() + legendBlock.width()
+//        });
+//        $('.content__compare').css({
+//            'width': compareTable.width()
+//        });
+//        $('.content').css({
+//            'width': compareTable.width()
+//        });
+//
+//        $('.container__product .info .image img').css({
+//            'width': $('.container__product .info .image img').width()
+//        });
+//        // compareTableWidth = compareTable.width();
+//        // legendBlockWidth = legendBlock.width();
+//        // tableMainWidth = tableMain.width();
+//        // tableMainWrapperWidth = tableMainWrapper.width();
+//        // infoBlockWidth = infoBlock.width();
+//        // infoBlockHeight = infoBlock.height();
+//        // compareBlockWidth = compareBlock.width();
+//        // positionEnd = 0 - ((compareBlockLength - maxVisibleBlocks) * compareBlockWidth) + deleteOffset;
+//    });
+//}
+
+
 
