@@ -185,19 +185,28 @@ html body .content .content__compare .compare__table .table__legend .legend__con
   cursor: pointer;
 }
 /* line 166, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items .nav-buttons .button-left .not-active {
+  color: #969696;
+  cursor: default;
+}
+/* line 171, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items .nav-buttons .button-right {
   display: inline-block;
   font-size: 1.5em;
   cursor: pointer;
 }
-/* line 171, ../sass/compare_page.sass */
+/* line 176, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items .nav-buttons .button-right .not-active {
+  color: #969696;
+}
+/* line 179, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications {
   display: block;
   margin-top: 20px;
   box-sizing: border-box;
   text-align: center;
 }
-/* line 178, ../sass/compare_page.sass */
+/* line 186, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications .colors {
   display: block;
   padding: 13px 0;
@@ -206,7 +215,7 @@ html body .content .content__compare .compare__table .table__legend .legend__con
   width: 80%;
   margin: 0 auto;
 }
-/* line 186, ../sass/compare_page.sass */
+/* line 194, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__specifications .specification {
   display: block;
   padding: 13px 0;
@@ -215,7 +224,7 @@ html body .content .content__compare .compare__table .table__legend .legend__con
   box-sizing: border-box;
   width: 80%;
 }
-/* line 197, ../sass/compare_page.sass */
+/* line 205, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main {
   display: inline-block;
   position: relative;
@@ -225,7 +234,7 @@ html body .content .content__compare .compare__table .table__main {
   height: 100%;
   box-sizing: border-box;
 }
-/* line 206, ../sass/compare_page.sass */
+/* line 214, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper {
   display: block;
   position: absolute;
@@ -234,7 +243,7 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   height: 100%;
   box-sizing: border-box;
 }
-/* line 214, ../sass/compare_page.sass */
+/* line 222, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main {
   float: left;
   display: inline-block;
@@ -243,7 +252,7 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   width: auto;
   border-left: 1px #efeaea solid;
 }
-/* line 222, ../sass/compare_page.sass */
+/* line 230, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__head {
   position: relative;
   display: block;
@@ -252,7 +261,7 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   border-bottom: 1px #efeaea solid;
   box-sizing: border-box;
 }
-/* line 230, ../sass/compare_page.sass */
+/* line 238, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__head .head__remove-icon {
   display: block;
   position: absolute;
@@ -263,23 +272,23 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   color: #969696;
   text-align: center;
 }
-/* line 240, ../sass/compare_page.sass */
+/* line 248, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__head .head__remove-icon i {
   cursor: pointer;
 }
-/* line 243, ../sass/compare_page.sass */
+/* line 251, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container {
   display: block;
   position: relative;
   width: 100%;
   box-sizing: border-box;
 }
-/* line 249, ../sass/compare_page.sass */
+/* line 257, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info {
   margin-top: 20px;
   text-align: center;
 }
-/* line 253, ../sass/compare_page.sass */
+/* line 261, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info .type {
   display: block;
   position: relative;
@@ -287,23 +296,23 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   font-size: 0.7em;
   text-transform: uppercase;
 }
-/* line 260, ../sass/compare_page.sass */
+/* line 268, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info .name {
   display: block;
   position: relative;
   margin-top: 5px;
 }
-/* line 265, ../sass/compare_page.sass */
+/* line 273, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info .name .brand {
   display: inline-block;
   position: relative;
 }
-/* line 268, ../sass/compare_page.sass */
+/* line 276, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info .name .model {
   display: inline-block;
   position: relative;
 }
-/* line 272, ../sass/compare_page.sass */
+/* line 280, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info .price {
   display: block;
   position: relative;
@@ -311,23 +320,23 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   font-size: 1em;
   margin-top: 20px;
 }
-/* line 279, ../sass/compare_page.sass */
+/* line 287, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info .image {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 284, ../sass/compare_page.sass */
+/* line 292, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info .image img {
   width: 80%;
 }
-/* line 287, ../sass/compare_page.sass */
+/* line 295, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications {
   display: block;
   margin-top: 20px;
   text-align: center;
 }
-/* line 294, ../sass/compare_page.sass */
+/* line 302, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .colors {
   display: block;
   padding: 9px 0;
@@ -335,7 +344,7 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   width: 80%;
   margin: 0 auto;
 }
-/* line 302, ../sass/compare_page.sass */
+/* line 310, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .colors .color {
   display: inline-block;
   position: relative;
@@ -347,19 +356,19 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   box-sizing: border-box;
   cursor: pointer;
 }
-/* line 313, ../sass/compare_page.sass */
+/* line 321, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .colors .color .checked {
   display: none;
 }
-/* line 316, ../sass/compare_page.sass */
-html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .colors .color .checked .black {
+/* line 324, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .colors .color .black {
   color: #000000;
 }
-/* line 319, ../sass/compare_page.sass */
-html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .colors .color .checked .white {
+/* line 327, ../sass/compare_page.sass */
+html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .colors .color .white {
   color: #ffffff;
 }
-/* line 323, ../sass/compare_page.sass */
+/* line 331, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .colors .active .checked {
   display: block;
   width: 100%;
@@ -368,7 +377,7 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
   margin-top: 4px;
   font-size: 0.7em;
 }
-/* line 331, ../sass/compare_page.sass */
+/* line 339, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .container__specifications .specification {
   display: block;
   padding: 13px 0;

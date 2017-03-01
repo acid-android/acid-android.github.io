@@ -1,6 +1,4 @@
 //---------------------ELEMENTS-------------------
-
-
 var compareTable = $('.compare__table');
 var compareBlock = $('.main');
 var legendBlock = $('.table__legend');
@@ -14,8 +12,6 @@ var compareRightButton = $('.nav-buttons .button-right i');
 var removeButton = $('.main__head .head__remove-icon');
 var legendSpecificationBlock = $('.legend__container .container__specifications .specification');
 var productSpecificationBlock = $('.main__container .container__specifications .specification');
-
-
 //---------------------ELEMENTS DIMENSIONS---------------------------
 var compareBlockLength = compareBlock.length;
 var compareBlockWidth = '';
@@ -40,7 +36,9 @@ function init() {
     initSlider();
     initButtons();
     two();
+    resize();
 }
+
 function initSlider() {
     tableMain.css({
         'width': compareTable.width() - legendBlock.width() - 3
@@ -119,7 +117,7 @@ function initSlider() {
     positionEnd = 0 - ((compareBlockLength - maxVisibleBlocks) * compareBlockWidth) + deleteOffset;
 
     if (wrapperPosition == positionStart) {
-        compareLeftButton.hide();
+        compareLeftButton.addClass('not-active');
     }
 
     if (compareBlockLength <= maxVisibleBlocks) {
@@ -135,37 +133,55 @@ function getPosition() {
 
 function initButtons() {
     compareLeftButton.on('click', function () {
+        var button = $(this);
+        if(notActive(button)){
+            return;
+        }
+        if(isWait(button)){
+            return;
+        }
+        button.addClass('wait');
+        compareRightButton.removeClass('not-active');
         setTimeout(function () {
             wrapperPosition = getPosition();
             console.log(positionStart - mistakeOffset);
             console.log(positionStart);
             console.log(wrapperPosition);
             if (wrapperPosition <= compareBlockLength) {
-                compareRightButton.show();
+                compareRightButton.removeClass('not-active');
             }
             if (wrapperPosition >= positionStart - mistakeOffset) {
-                compareLeftButton.hide();
+                compareLeftButton.addClass('not-active');
             }
+            button.removeClass('wait');
+
 
         }, 210);
         $('.main__wrapper').animate({left: '+=' + (compareBlockWidth) + 'px'}, 200);
     });
 
     compareRightButton.on('click', function () {
+        var button = $(this);
+        if(notActive(button)){
+            return;
+        }
+        if(isWait(button)){
+            return;
+        }
+        button.addClass('wait');
         setTimeout(function () {
             wrapperPosition = getPosition();
             console.log(compareBlockWidth);
             console.log(tableMainWrapper.position().left);
             console.log(positionEnd);
-            compareLeftButton.show();
+            compareLeftButton.removeClass('not-active');
 
             if (tableMainWrapper.position().left <= positionEnd) {
-                compareRightButton.hide();
+                compareRightButton.addClass('not-active');
             }
-            //if(tableMainWrapper.position().left == 0 - ((compareBlock.length - 5) * compareBlock.width())){
-            //    compareLeftButton.hide();
-            //}
+            button.removeClass('wait');
         }, 210);
+
         $('.main__wrapper').animate({left: '-=' + (compareBlockWidth) + 'px'}, 200);
     });
 }
@@ -343,4 +359,15 @@ function resize(){
     });
 }
 
+function isWait(elem){
+    if(elem.hasClass('wait')){
+        return true;
+    }
+}
+
+function notActive(elem){
+    if(elem.hasClass('not-active')){
+        return true;
+    }
+}
 
