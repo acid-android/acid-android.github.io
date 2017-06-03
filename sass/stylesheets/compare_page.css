@@ -11,14 +11,14 @@ html body {
 }
 /* line 13, ../sass/compare_page.sass */
 html body .header {
-  background-color: #3746de;
+  background-color: #5b5b5b;
   box-shadow: 0 0 65px rgba(0, 0, 0, 0.5);
   border-bottom: 1px rgba(165, 165, 165, 0.25) solid;
   z-index: 5;
 }
 /* line 20, ../sass/compare_page.sass */
 html body .header .header__menu-indicator-pushed {
-  background-color: #095A98;
+  background-color: #4c4c4c;
   border-right: 1px rgba(165, 165, 165, 0.25) solid;
 }
 /* line 24, ../sass/compare_page.sass */
@@ -27,7 +27,7 @@ html body .header .header__menu-indicator {
 }
 /* line 27, ../sass/compare_page.sass */
 html body .dropdown-menu {
-  background-color: #3746de;
+  background-color: #5b5b5b;
   z-index: 4;
 }
 /* line 31, ../sass/compare_page.sass */
@@ -39,7 +39,7 @@ html body .list-head {
   display: block;
   position: relative;
   top: -60px;
-  background-color: #3746de;
+  background-color: #5b5b5b;
   height: auto;
 }
 /* line 42, ../sass/compare_page.sass */
@@ -162,7 +162,7 @@ html body .content .content__compare .compare__table .table__legend .legend__con
 /* line 145, ../sass/compare_page.sass */
 html body .content .content__compare .compare__table .table__legend .legend__container .container__num-of-items .num {
   font-size: 3em;
-  color: #095A98;
+  color: #4c4c4c;
   margin-bottom: 20px;
 }
 /* line 150, ../sass/compare_page.sass */
@@ -316,7 +316,7 @@ html body .content .content__compare .compare__table .table__main .main__wrapper
 html body .content .content__compare .compare__table .table__main .main__wrapper .main .main__container .info .price {
   display: block;
   position: relative;
-  color: #095A98;
+  color: #4c4c4c;
   font-size: 1em;
   margin-top: 20px;
 }

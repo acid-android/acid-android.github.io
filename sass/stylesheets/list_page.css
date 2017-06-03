@@ -11,14 +11,14 @@ html body {
 }
 /* line 13, ../sass/list_page.sass */
 html body .header {
-  background-color: #3746de;
+  background-color: #5b5b5b;
   box-shadow: 0 0 65px rgba(0, 0, 0, 0.5);
   border-bottom: 1px rgba(165, 165, 165, 0.25) solid;
   z-index: 5;
 }
 /* line 20, ../sass/list_page.sass */
 html body .header .header__menu-indicator-pushed {
-  background-color: #095A98;
+  background-color: #4c4c4c;
   border-right: 1px rgba(165, 165, 165, 0.25) solid;
 }
 /* line 24, ../sass/list_page.sass */
@@ -27,7 +27,7 @@ html body .header .header__menu-indicator {
 }
 /* line 27, ../sass/list_page.sass */
 html body .dropdown-menu {
-  background-color: #3746de;
+  background-color: #5b5b5b;
   z-index: 4;
 }
 /* line 31, ../sass/list_page.sass */
@@ -39,7 +39,7 @@ html body .list-head {
   display: block;
   position: relative;
   top: -60px;
-  background-color: #3746de;
+  background-color: #5b5b5b;
   height: auto;
 }
 /* line 42, ../sass/list_page.sass */
@@ -315,7 +315,7 @@ html body .content .content__wrapper .wrapper__main .main__head .head__filter .f
 }
 /* line 280, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__filter .filter__refresh i {
-  color: #095A98;
+  color: #4c4c4c;
   display: block;
   position: relative;
   margin-top: 22px;
@@ -410,7 +410,7 @@ html body .content .content__wrapper .wrapper__main .main__head .head__sort .sor
 }
 /* line 365, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__sort .sort__container .container__value i {
-  color: #095A98;
+  color: #4c4c4c;
   display: inline;
   text-align: end;
   position: relative;
@@ -447,7 +447,7 @@ html body .content .content__wrapper .wrapper__main .main__head .head__sort .sor
 }
 /* line 400, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__sort .sort__drop .drop__menu .checked {
-  color: #52AFEB;
+  color: #52afeb;
   text-decoration: underline;
 }
 /* line 404, ../sass/list_page.sass */
@@ -531,7 +531,7 @@ html body .content .content__wrapper .wrapper__main .main__head .head__num-of-it
 }
 /* line 476, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__num-of-items .num-of-items__container .container__value i {
-  color: #095A98;
+  color: #4c4c4c;
   display: inline;
   text-align: end;
   position: relative;
@@ -568,7 +568,7 @@ html body .content .content__wrapper .wrapper__main .main__head .head__num-of-it
 }
 /* line 510, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__num-of-items .num-of-items__drop .drop__menu .checked {
-  color: #52AFEB;
+  color: #52afeb;
   text-decoration: underline;
 }
 /* line 514, ../sass/list_page.sass */
@@ -616,7 +616,7 @@ html body .content .content__wrapper .wrapper__main .main__head .head__compare .
 html body .content .content__wrapper .wrapper__main .main__head .head__compare .compare__container .circle {
   display: inline-block;
   width: 19px;
-  background-color: #095A98;
+  background-color: #4c4c4c;
   border-radius: 10px;
   margin-left: 20px;
   margin-top: 20px;
@@ -717,7 +717,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
 }
 /* line 636, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list .checked {
-  color: #52AFEB;
+  color: #52afeb;
 }
 /* line 640, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price {
@@ -790,7 +790,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
 }
 /* line 702, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content .ui-widget-header {
-  background: #095A98;
+  background: #4c4c4c;
 }
 /* line 705, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content .ui-corner-all {
@@ -1030,7 +1030,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
 /* line 917, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .price {
   position: relative;
-  color: #095A98;
+  color: #4c4c4c;
   font-size: 1em;
   padding-left: 10px;
 }
@@ -1092,10 +1092,10 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
 }
 /* line 977, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container .left-button:hover {
-  background-color: #52AFEB;
+  background-color: #52afeb;
   color: #F2F5F7;
   box-shadow: 0 0 20px rgba(55, 70, 222, 0.5);
-  border-right: 1px #52AFEB solid;
+  border-right: 1px #52afeb solid;
 }
 /* line 986, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .left-button-container .not-active .button-icon {
@@ -1140,11 +1140,11 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
 }
 /* line 1022, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .pagination__wrapper .pages-container .active {
-  background-color: #52AFEB;
+  background-color: #52afeb;
   box-shadow: 0 0 20px rgba(55, 70, 222, 0.5);
   color: #F2F5F7;
   z-index: 3;
-  border-right: 1px #52AFEB solid;
+  border-right: 1px #52afeb solid;
 }
 /* line 1031, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container {
@@ -1174,10 +1174,10 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
 }
 /* line 1055, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container .right-button:hover {
-  background-color: #52AFEB;
+  background-color: #52afeb;
   color: #F2F5F7;
   box-shadow: 0 0 20px rgba(55, 70, 222, 0.5);
-  border-left: 1px #52AFEB solid;
+  border-left: 1px #52afeb solid;
 }
 /* line 1065, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .right-button-container .not-active .button-icon {

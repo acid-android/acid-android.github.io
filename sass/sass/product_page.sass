@@ -8,68 +8,6 @@ html
     margin: 0
     padding: 0
 
-    .header
-      background-color: $list-bg-color
-      box-shadow: 0 0 65px rgba(0,0,0,0.5)
-      border-bottom: 1px rgba(165, 165, 165, 0.25) solid
-      z-index: 5
-
-
-      .header__menu-indicator-pushed
-        background-color: $main_color
-        border-right: 1px rgba(165, 165, 165, 0.25) solid
-
-      .header__menu-indicator
-        border-right: 1px rgba(165, 165, 165, 0.25) solid
-
-    .dropdown-menu
-      background-color: $list-bg-color
-      z-index: 4
-
-      .blur
-        display: none
-
-    .list-head
-      display: block
-      position: relative
-      top: -60px
-      background-color: $list-bg-color
-      height: auto
-
-      .head__wrapper
-        display: block
-        width: 100%
-        position: relative
-        padding-top: $list-header-padding + 15px
-        padding-bottom: 120px
-        text-align: center
-
-        .wrapper__text
-          color: $text_color
-          text-transform: uppercase
-
-        .wrapper__breadcrumbs
-          display: block
-
-          .anchor
-            display: inline-block
-
-
-            a
-              color: #bcb9b9
-              font-weight: 100
-              text-decoration: none
-
-              &:hover
-                color: $text_color
-
-
-          .delimiter
-            display: inline-block
-            color: #bcb9b9
-            font-weight: 100
-
-
     .content
       position: relative
       z-index: 3
@@ -256,19 +194,27 @@ html
             display: block
             width: 100%
             position: relative
-            padding: 30px
+            //padding: 30px
+            margin: 30px auto
             text-align: center
+            overflow: hidden
 
-            .wrapper__group
-              display: inline-block
-              width: 20%
-              min-width: 200px
-              padding: 20px
-              vertical-align: top
+            .spec
+              display: block
+              //margin-bottom: 40px
+              width: 60%
+              //float: left
+              margin: 0 auto 40px
+              h4
+                display: inline-block
+                margin-right: 20px
+                width: 30%
+                &:after
+                  content: ':'
+              span
+                display: inline-block
+                width: 65%
 
-              .spec
-                display: block
-                margin-bottom: 40px
 
         .product-about__gallery
           display: none
