@@ -930,148 +930,251 @@ html
                     &:nth-child(2)
                       width: calc(100% / 3 - 1px)
 
-
-
             .content__pagination
               display: block
               position: relative
-              border-left: 1px #efeaea solid
-              width: calc(75% + 1px)
-              float: right
               height: 60px
+              float: right
+              width: calc(75% + 1px)
               box-sizing: border-box
+              border-bottom: 1px #efeaea solid
+              margin: 0
+              padding: 0
               z-index: 2
 
-              .pagination__wrapper
-                position: relative
-                display: block
-                z-index: 0
-                overflow: hidden
+              li
+                display: inline-block
+                width: 5%
+                float: left
+                height: 60px
+                border-right: 1px #efeaea solid
+                box-sizing: border-box
+                cursor: pointer
 
-                .left-button-container, .pages-container, .right-button-container
-                  display: inline-block
 
-                .left-button-container
+                a
+                  text-decoration: none
+                  color: #000000
                   display: block
-                  float: left
-                  border-right: 1px #efeaea solid
-                  height: 60px
-                  width: calc(100% / 3 - 1px)
-                  box-sizing: border-box
+                  margin: 1.1em auto 0
+                  width: 15%
 
-                  .left-button
-                    display: block
-                    position: relative
-                    float: left
-                    height: 100%
-                    width: 20%
-                    box-sizing: border-box
-                    border-right: 1px #efeaea solid
-                    cursor: pointer
-
-                    .button-icon
-                      display: block
-                      margin: 1.1em auto 0
-                      width: 15%
-
-                    &:hover
-                      background-color: $main_color2
-                      color: $text_color
-                      box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
-                      border-right: 1px $main_color2 solid
-
-                  .not-active
+                &:hover
+                  background-color: #eee
+                  box-shadow: 0 0 20px rgba(211, 211, 211,0.5)
 
 
-                    .button-icon
-                      display: block
-                      margin: 1.1em auto 0
-                      width: 15%
-                      color: #808080
-
-                    &:hover
-                      background-color: #ffffff
-                      box-shadow: none
-                      border-right: 1px #efeaea solid
-
-
-                .pages-container
-                  display: block
-                  height: 100%
-                  width: calc(100% / 3)
-                  float: left
-                  box-sizing: border-box
-
-                  .page
-                    display: inline-block
-                    width: 20%
-                    float: left
-                    height: 60px
-                    border-right: 1px #efeaea solid
-                    box-sizing: border-box
-                    cursor: pointer
-
-                    &:last-child
-                      border-right: none
-
-                    .number
-                      display: block
-                      margin: 1.1em auto 0
-                      width: 15%
-
-                  .active
-                    background-color: $main_color2
-                    box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
-                    color: $text_color
-                    z-index: 3
-                    border-right: 1px $main_color2 solid
-
-
-
-              .right-button-container
+              .prev
                 display: block
                 float: left
                 border-left: 1px #efeaea solid
+                border-right: 1px #efeaea solid
                 height: 60px
-                width: calc(100% / 3 + 1px)
+                width: 10%
                 box-sizing: border-box
-
-                .right-button
+                margin: 0
+                i
+                  font-size: 1.2em
                   display: block
-                  position: relative
-                  float: right
-                  height: 100%
-                  width: 20%
-                  box-sizing: border-box
+                  margin: 0.85em auto 0
+                  width: 15%
+
+                &:hover
+                  background-color: $main_color2
+                  color: $text_color
+                  box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
+                  border-right: 1px $main_color2 solid
+                  border-left: 1px $main_color2 solid
+              .next
+                display: block
+                float: right
+                border-left: 1px #efeaea solid
+                height: 60px
+                width: 10%
+                box-sizing: border-box
+                margin: 0
+                i
+                  font-size: 1.2em
+                  display: block
+                  margin: 0.85em auto 00
+                  width: 15%
+
+                &:hover
+                  background-color: $main_color2
+                  color: $text_color
+                  box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
+                  border-left: 1px $main_color2 solid
+                  border-right: 1px $main_color2 solid
+
+
+              .disabled
+                i
+                  display: block
+                  margin: 0.85em auto 0
+                  width: 15%
+                  color: #808080
+
+                &:hover
+                  background-color: #ffffff
+                  box-shadow: none
                   border-left: 1px #efeaea solid
-                  cursor: pointer
+                  border-right: 1px #efeaea solid
+
+              .active
+                background-color: $main_color2
+                box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
+                color: #ffffff
+                z-index: 3
+                border-right: 1px $main_color2 solid
+                a
+                  color: #ffffff
 
 
-                  .button-icon
-                    display: block
-                    margin: 1.1em auto 0
-                    width: 15%
-
-                  &:hover
-                    background-color: $main_color2
-                    color: $text_color
-                    box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
-                    border-left: 1px $main_color2 solid
 
 
-                .not-active
 
 
-                  .button-icon
-                    display: block
-                    margin: 1.1em auto 0
-                    width: 15%
-                    color: #808080
 
-                  &:hover
-                    background-color: #ffffff
-                    box-shadow: none
-                    border-left: 1px #efeaea solid
+            //.content__pagination
+            //  display: block
+            //  position: relative
+            //  border-left: 1px #efeaea solid
+            //  width: calc(75% + 1px)
+            //  float: right
+            //  height: 60px
+            //  box-sizing: border-box
+            //  z-index: 2
+            //
+            //  .pagination__wrapper
+            //    position: relative
+            //    display: block
+            //    z-index: 0
+            //    overflow: hidden
+            //
+            //    .left-button-container, .pages-container, .right-button-container
+            //      display: inline-block
+            //
+            //    .left-button-container
+            //      display: block
+            //      float: left
+            //      border-right: 1px #efeaea solid
+            //      height: 60px
+            //      width: calc(100% / 3 - 1px)
+            //      box-sizing: border-box
+            //
+            //      .left-button
+            //        display: block
+            //        position: relative
+            //        float: left
+            //        height: 100%
+            //        width: 20%
+            //        box-sizing: border-box
+            //        border-right: 1px #efeaea solid
+            //        cursor: pointer
+            //
+            //        .button-icon
+            //          display: block
+            //          margin: 1.1em auto 0
+            //          width: 15%
+            //
+            //        &:hover
+            //          background-color: $main_color2
+            //          color: $text_color
+            //          box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
+            //          border-right: 1px $main_color2 solid
+            //
+            //      .not-active
+            //
+            //
+            //        .button-icon
+            //          display: block
+            //          margin: 1.1em auto 0
+            //          width: 15%
+            //          color: #808080
+            //
+            //        &:hover
+            //          background-color: #ffffff
+            //          box-shadow: none
+            //          border-right: 1px #efeaea solid
+            //
+            //
+            //    .pages-container
+            //      display: block
+            //      height: 100%
+            //      width: calc(100% / 3)
+            //      float: left
+            //      box-sizing: border-box
+            //
+            //      .page
+            //        display: inline-block
+            //        width: 20%
+            //        float: left
+            //        height: 60px
+            //        border-right: 1px #efeaea solid
+            //        box-sizing: border-box
+            //        cursor: pointer
+            //
+            //        &:last-child
+            //          border-right: none
+            //
+            //        .number
+            //          display: block
+            //          margin: 1.1em auto 0
+            //          width: 15%
+            //
+            //      .active
+            //        background-color: $main_color2
+            //        box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
+            //        color: $text_color
+            //        z-index: 3
+            //        border-right: 1px $main_color2 solid
+            //
+            //
+            //
+            //  .right-button-container
+            //    display: block
+            //    float: left
+            //    border-left: 1px #efeaea solid
+            //    height: 60px
+            //    width: calc(100% / 3 + 1px)
+            //    box-sizing: border-box
+            //
+            //    .right-button
+            //      display: block
+            //      position: relative
+            //      float: right
+            //      height: 100%
+            //      width: 20%
+            //      box-sizing: border-box
+            //      border-left: 1px #efeaea solid
+            //      cursor: pointer
+            //
+            //
+            //      .button-icon
+            //        display: block
+            //        margin: 1.1em auto 0
+            //        width: 15%
+            //
+            //      &:hover
+            //        background-color: $main_color2
+            //        color: $text_color
+            //        box-shadow: 0 0 20px rgba(55, 70, 222,0.5)
+            //        border-left: 1px $main_color2 solid
+            //
+            //
+            //    .not-active
+            //
+            //
+            //      .button-icon
+            //        display: block
+            //        margin: 1.1em auto 0
+            //        width: 15%
+            //        color: #808080
+            //
+            //      &:hover
+            //        background-color: #ffffff
+            //        box-shadow: none
+            //        border-left: 1px #efeaea solid
 
     //.footer
     //  width: 100%
