@@ -213,106 +213,131 @@ $('.num-of-items__drop .drop__menu .menu__item').on('click', function () {
 
 
 //------------------Number Of Elements On Page END-------------------------------
-
+// $(function () {
+//     var minPriceInput = $('.filters__price .price__body .inputs .min-price');
+//     var maxPriceInput = $('.filters__price .price__body .inputs .max-price');
+//
+//    if(getAllUrlParams().minprice){
+//        minPriceInput.data('min-price-get', getAllUrlParams().minprice);
+//    }
+//     if(getAllUrlParams().maxprice){
+//         maxPriceInput.data('max-price-get', getAllUrlParams().maxprice);
+//     }
+// });
 
 //----------------------PRICE SLIDER--------------------------------------------
 
-$( function() {
+$(function() {
     var minPriceInput = $('.filters__price .price__body .inputs .min-price');
     var maxPriceInput = $('.filters__price .price__body .inputs .max-price');
-    var minPrice = minPriceInput.data('min-price-get');
-    var maxPrice = maxPriceInput.data('max-price-get');
     var fixMinPrice = minPriceInput.data('min-price');
     var fixMaxPrice = maxPriceInput.data('max-price');
+    var minPrice = minPriceInput.data('min-price-get') !== 0 ? minPriceInput.data('min-price-get') : fixMinPrice;
+    var maxPrice = maxPriceInput.data('max-price-get') !== 0 ? maxPriceInput.data('max-price-get') : fixMaxPrice;
     var submitPriceButton = $('.price__body .body__list .submit');
-    var resetPriceButton = $('.price__body .body__list .reset');
-    var newHref;
-
-    if(submitPriceButton){
-
+    var resetButton = $('.price__body .body__list .reset');
+    var href = window.location.href;
+    console.log(minPrice);
+    console.log(maxPrice);
+    if(minPrice == fixMinPrice && minPriceInput.data('min-price-get') == 0) {
+        href = href + '&minPrice=' + minPrice;
+    }
+    if(maxPrice == fixMaxPrice && maxPriceInput.data('max-price-get') == 0){
+        href = href + '&maxPrice=' + maxPrice;
+    }
+    if(maxPriceInput.data('max-price-get') !== 0 || minPriceInput.data('min-price-get') !== 0) {
+        var resetLink1 = href.replace('&minPrice=' + minPrice, '');
+        var resetLink = resetLink1.replace('&maxPrice=' + maxPrice, '');
+        resetButton.attr('href', resetLink);
+        resetButton.addClass('reset-visible');
     }
 
+    console.log(href);
+    var oldMinPrice = minPrice;
+    var oldMaxPrice = maxPrice;
+
+    var newHref;
+
     minPriceInput.change(function(){
-        var href = window.location.href;
-        var oldMinPrice = getAllUrlParams().minprice;
+        // var href = window.location.href;
+        // var oldMinPrice = minPrice ? minPrice : fixMinPrice;
 
         if(parseInt(minPriceInput.val()) >= fixMinPrice && parseInt(minPriceInput.val()) < parseInt(maxPriceInput.val())) {
             minPrice = parseInt(minPriceInput.val());
             $('.price-range').slider("values", 0, minPrice);
             newHref = href.replace('&minPrice='+oldMinPrice, '&minPrice=' + minPrice);
             submitPriceButton.attr('href', newHref);
-            var reset1 = newHref.replace('&minPrice='+oldMinPrice, '');
-            var reset2 = reset1.replace('&maxPrice='+maxPrice, '');
-            resetPriceButton.attr('href', reset2);
-            resetPriceButton.addClass('reset-visible');
             submitPriceButton.addClass('submit-visible');
+            var reset1 = href.replace('&minPrice=' + oldMinPrice, '');
+            var reset2 = reset1.replace('&maxPrice=' + oldMaxPrice, '');
+            resetButton.attr('href', reset2);
+            resetButton.addClass('reset-visible');
+
         }
         else if (parseInt(minPriceInput.val()) >= fixMinPrice && parseInt(minPriceInput.val()) >= parseInt(maxPriceInput.val())){
             minPrice = parseInt(maxPriceInput.val());
             minPriceInput.val(minPrice);
             $('.price-range').slider("values", 0, minPrice);
-            newHref = href.replace('&minPrice='+oldMinPrice, '&minPrice=' + minPrice);
+            newHref = href.replace('minPrice='+oldMinPrice, 'minPrice=' + minPrice);
             submitPriceButton.attr('href', newHref);
-            var reset1 = newHref.replace('&minPrice='+oldMinPrice, '');
-            var reset2 = reset1.replace('&maxPrice='+maxPrice, '');
-            resetPriceButton.attr('href', reset2);
-            resetPriceButton.addClass('reset-visible');
             submitPriceButton.addClass('submit-visible');
+            var reset1 = href.replace('&minPrice=' + oldMinPrice, '');
+            var reset2 = reset1.replace('&maxPrice=' + oldMaxPrice, '');
+            resetButton.attr('href', reset2);
+            resetButton.addClass('reset-visible');
         } else {
             minPrice = fixMinPrice;
             minPriceInput.val(minPrice);
             $('.price-range').slider("values", 0, minPrice);
-            newHref = href.replace('&minPrice='+oldMinPrice, '');
+            newHref = href.replace('minPrice='+oldMinPrice, 'minPrice=' + minPrice);
             submitPriceButton.attr('href', newHref);
-            var reset1 = newHref.replace('&minPrice='+oldMinPrice, '');
-            var reset2 = reset1.replace('&maxPrice='+maxPrice, '');
-            resetPriceButton.attr('href', reset2);
-            resetPriceButton.addClass('reset-visible');
             submitPriceButton.addClass('submit-visible');
+            var reset1 = href.replace('&minPrice=' + oldMinPrice, '');
+            var reset2 = reset1.replace('&maxPrice=' + oldMaxPrice, '');
+            resetButton.attr('href', reset2);
+            resetButton.addClass('reset-visible');
         }
-
-
 
 
 
     });
 
     maxPriceInput.change(function(){
-        var href = window.location.href;
-        var oldMaxPrice = getAllUrlParams().maxprice;
+        // var href = window.location.href;
+        // var oldMaxPrice = maxPrice ? maxPrice : fixMaxPrice;
         if(parseInt(maxPriceInput.val()) <= fixMaxPrice && parseInt(maxPriceInput.val()) > parseInt(minPriceInput.val())) {
             maxPrice = parseInt(maxPriceInput.val());
             $('.price-range').slider("values", 1, maxPrice);
-            newHref = href.replace('&maxPrice='+oldMaxPrice, '&maxPrice=' + maxPrice);
+            newHref = href.replace('maxPrice='+oldMaxPrice, 'maxPrice=' + maxPrice);
             submitPriceButton.attr('href', newHref);
-            var reset1 = newHref.replace('&minPrice='+oldMinPrice, '');
-            var reset2 = reset1.replace('&maxPrice='+maxPrice, '');
-            resetPriceButton.attr('href', reset2);
-            resetPriceButton.addClass('reset-visible');
             submitPriceButton.addClass('submit-visible');
+            var reset1 = href.replace('&minPrice=' + oldMinPrice, '');
+            var reset2 = reset1.replace('&maxPrice=' + oldMaxPrice, '');
+            resetButton.attr('href', reset2);
+            resetButton.addClass('reset-visible');
         }
         else if (parseInt(maxPriceInput.val()) <= fixMaxPrice && parseInt(maxPriceInput.val()) <= parseInt(minPriceInput.val())){
             maxPrice = parseInt(minPriceInput.val());
             maxPriceInput.val(maxPrice);
             $('.price-range').slider("values", 1, maxPrice);
-            newHref = href.replace('&maxPrice='+oldMaxPrice, '&maxPrice=' + maxPrice);
+            newHref = href.replace('maxPrice='+oldMaxPrice, 'maxPrice=' + maxPrice);
             submitPriceButton.attr('href', newHref);
-            var reset1 = newHref.replace('&minPrice='+oldMinPrice, '');
-            var reset2 = reset1.replace('&maxPrice='+maxPrice, '');
-            resetPriceButton.attr('href', reset2);
-            resetPriceButton.addClass('reset-visible');
             submitPriceButton.addClass('submit-visible');
+            var reset1 = href.replace('&minPrice=' + oldMinPrice, '');
+            var reset2 = reset1.replace('&maxPrice=' + oldMaxPrice, '');
+            resetButton.attr('href', reset2);
+            resetButton.addClass('reset-visible');
         } else {
             maxPrice = fixMaxPrice;
             maxPriceInput.val(maxPrice);
-            newHref = href.replace('&maxPrice='+oldMaxPrice, '');
+            newHref = href.replace('maxPrice='+oldMaxPrice, 'maxPrice=' + maxPrice);
             submitPriceButton.attr('href', newHref);
-            var reset1 = newHref.replace('&minPrice='+oldMinPrice, '');
-            var reset2 = reset1.replace('&maxPrice='+maxPrice, '');
-            resetPriceButton.attr('href', reset2);
-            resetPriceButton.addClass('reset-visible');
             submitPriceButton.addClass('submit-visible');
             $('.price-range').slider("values", 1, maxPrice);
+            var reset1 = href.replace('&minPrice=' + oldMinPrice, '');
+            var reset2 = reset1.replace('&maxPrice=' + oldMaxPrice, '');
+            resetButton.attr('href', reset2);
+            resetButton.addClass('reset-visible');
         }
 
 
@@ -331,24 +356,20 @@ $( function() {
             maxPrice = ui.values[ 1 ];
             minPriceInput.val(minPrice);
             maxPriceInput.val(maxPrice);
-            var hrefOnSlideChange = window.location.href;
-            var oldMinPrice = getAllUrlParams().minprice;
-            var oldMaxPrice = getAllUrlParams().maxprice;
-            var href1 = hrefOnSlideChange.replace('&minPrice='+oldMinPrice, '&minPrice=' + minPrice);
-            var href2 = href1.replace('&maxPrice='+oldMaxPrice, '&maxPrice=' + maxPrice);
+
+            var href1 = href.replace('minPrice='+oldMinPrice, 'minPrice=' + minPrice);
+            var href2 = href1.replace('maxPrice='+oldMaxPrice, 'maxPrice=' + maxPrice);
             submitPriceButton.attr('href', href2);
             submitPriceButton.addClass('submit-visible');
-            var reset1 = href2.replace('&minPrice='+minPrice, '');
-            var reset2 = reset1.replace('&maxPrice='+maxPrice, '');
-            resetPriceButton.attr('href', reset2);
-            resetPriceButton.addClass('reset-visible');
+            var reset1 = href.replace('&minPrice=' + oldMinPrice, '');
+            var reset2 = reset1.replace('&maxPrice=' + oldMaxPrice, '');
+            resetButton.attr('href', reset2);
+            resetButton.addClass('reset-visible');
         }
     });
 
     minPriceInput.val($( ".price-range" ).slider( "values", 0 ));
     maxPriceInput.val( $( ".price-range" ).slider( "values", 1 ));
-
-
 } );
 //--------------------PRICE SLIDER END------------------------------------------------
 
