@@ -96,7 +96,9 @@ $('.products__big-item .big-item__wrap .info').css({
     'margin-top': '0'
 });
 
-padding();
+$(document).ready(function () {
+    padding();
+});
 //-------------------------PADDING ON INDEX-------------------------------------------------------------
 function padding() {
     var paddingBigItem = $('.products__left-group').height() - $('.products__big-item').height();
