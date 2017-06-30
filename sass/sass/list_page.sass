@@ -823,20 +823,29 @@ html
                     .colors-container
                       display: inline-block
                       position: relative
-                      width: 30px
-                      height: 30px
+                      width: 35px
+                      height: 35px
                       margin: 0 2px 5px
                       background-size: cover
                       vertical-align: middle
                       cursor: pointer
 
                       .color-check
-                        display: none
+                        display: block
                         width: 100%
                         position: relative
                         text-align: center
-                        margin-top: 9px
-                        font-size: 0.7em
+                        //margin-top: 9px
+                        font-size: 0.8em
+
+                        i
+                          margin-top: 12px
+                          display: none
+
+                        span
+                          margin-top: 8px
+                          display: block
+
 
                       .black
                         color: #000000
@@ -844,9 +853,35 @@ html
                       .white
                         color: #ffffff
 
+
+
                     .checked
                       .color-check
                         display: block
+
+                        i
+                          display: block
+                        span
+                          display: none
+                      &:hover
+
+                        .color-check
+                          display: block
+
+                          i
+                            display: inline-block
+                            font-size: 0.5em
+                          span
+                            display: inline-block
+                            font-size: 0.9em
+
+
+
+
+
+
+
+
 
 
               .filter
@@ -971,7 +1006,7 @@ html
                             width: 100%
                             position: relative
                             text-align: center
-                            margin-top: 6px
+                            margin-top: 1px
                             font-size: 0.6em
 
                       .prices

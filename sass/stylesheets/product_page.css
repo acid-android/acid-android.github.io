@@ -1,14 +1,22 @@
+@font-face {
+  font-family: "Arsenal";
+  src: url("../../fonts/Arsenal/Arsenal-Regular.ttf");
+}
+@font-face {
+  font-family: "ArsenalBold";
+  src: url("../../fonts/Arsenal/Arsenal-Bold.ttf");
+}
 /* line 3, ../sass/product_page.sass */
 html {
   margin: 0;
   padding: 0;
 }
-/* line 7, ../sass/product_page.sass */
+/* line 8, ../sass/product_page.sass */
 html body {
   margin: 0;
   padding: 0;
 }
-/* line 11, ../sass/product_page.sass */
+/* line 13, ../sass/product_page.sass */
 html body .content {
   position: relative;
   z-index: 3;
@@ -19,7 +27,7 @@ html body .content {
   box-shadow: 0 0 65px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
-/* line 21, ../sass/product_page.sass */
+/* line 23, ../sass/product_page.sass */
 html body .content .content__product {
   display: block;
   position: relative;
@@ -27,14 +35,14 @@ html body .content .content__product {
   border-bottom: 1px #efeaea solid;
   overflow: hidden;
 }
-/* line 28, ../sass/product_page.sass */
+/* line 30, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper {
   display: block;
   position: relative;
   overflow: hidden;
   width: 100%;
 }
-/* line 34, ../sass/product_page.sass */
+/* line 36, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info {
   display: block;
   position: relative;
@@ -42,42 +50,42 @@ html body .content .content__product .product__wrapper .wrapper__info {
   width: 40%;
   padding-top: 75px;
 }
-/* line 41, ../sass/product_page.sass */
+/* line 43, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__type {
   display: block;
   position: relative;
   padding-bottom: 20px;
   color: #4c4c4c;
 }
-/* line 47, ../sass/product_page.sass */
+/* line 49, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__name {
   display: block;
   position: relative;
   padding-bottom: 20px;
   font-size: 1.5em;
 }
-/* line 53, ../sass/product_page.sass */
+/* line 55, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__name .brand, html body .content .content__product .product__wrapper .wrapper__info .info__name .model {
   display: inline-block;
 }
-/* line 56, ../sass/product_page.sass */
+/* line 58, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__colors {
   display: block;
   position: relative;
 }
-/* line 60, ../sass/product_page.sass */
+/* line 62, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__colors .clrs-span {
   display: block;
   padding-bottom: 5px;
 }
-/* line 64, ../sass/product_page.sass */
+/* line 66, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__colors .color-name {
   display: block;
   position: relative;
   font-size: 0.7em;
   padding-bottom: 10px;
 }
-/* line 70, ../sass/product_page.sass */
+/* line 72, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__colors .color {
   display: inline-block;
   position: relative;
@@ -88,39 +96,39 @@ html body .content .content__product .product__wrapper .wrapper__info .info__col
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 80, ../sass/product_page.sass */
+/* line 82, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__colors .color .checked {
   display: none;
 }
-/* line 83, ../sass/product_page.sass */
+/* line 85, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__colors .color .black {
   color: #000000;
 }
-/* line 86, ../sass/product_page.sass */
+/* line 88, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__colors .color .white {
   color: #ffffff;
 }
-/* line 90, ../sass/product_page.sass */
+/* line 92, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__colors .active .checked {
   display: block;
   width: 100%;
   position: relative;
   text-align: center;
-  margin-top: 9px;
+  margin-top: 5px;
   font-size: 0.7em;
 }
-/* line 98, ../sass/product_page.sass */
+/* line 100, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__price {
   display: block;
   position: relative;
   padding-top: 20px;
 }
-/* line 103, ../sass/product_page.sass */
+/* line 105, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__price .price, html body .content .content__product .product__wrapper .wrapper__info .info__price .old-price {
   display: inline-block;
   padding-right: 10px;
 }
-/* line 107, ../sass/product_page.sass */
+/* line 109, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__price .old-price {
   position: relative;
   color: #ff6666;
@@ -128,14 +136,14 @@ html body .content .content__product .product__wrapper .wrapper__info .info__pri
   font-size: 1em;
   margin-left: 20px;
 }
-/* line 114, ../sass/product_page.sass */
+/* line 116, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__price .price {
   position: relative;
   color: #4c4c4c;
   font-size: 1.5em;
   margin-left: 20px;
 }
-/* line 120, ../sass/product_page.sass */
+/* line 122, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__color-image {
   display: block;
   position: relative;
@@ -143,30 +151,30 @@ html body .content .content__product .product__wrapper .wrapper__color-image {
   width: 60%;
   text-align: center;
 }
-/* line 127, ../sass/product_page.sass */
+/* line 130, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__color-image .image {
   display: none;
   position: relative;
   width: 100%;
   text-align: center;
 }
-/* line 133, ../sass/product_page.sass */
+/* line 136, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__color-image .image img {
   text-align: center;
   width: 60%;
 }
-/* line 137, ../sass/product_page.sass */
+/* line 140, ../sass/product_page.sass */
 html body .content .content__product .product__wrapper .wrapper__color-image .show {
   display: block;
 }
-/* line 140, ../sass/product_page.sass */
+/* line 143, ../sass/product_page.sass */
 html body .content .content__product-about {
   display: block;
   position: relative;
   width: 100%;
   padding-top: 20px;
 }
-/* line 145, ../sass/product_page.sass */
+/* line 148, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__tabs {
   display: block;
   position: relative;
@@ -174,19 +182,19 @@ html body .content .content__product-about .product-about__tabs {
   padding-left: 10%;
   padding-bottom: 20px;
 }
-/* line 152, ../sass/product_page.sass */
+/* line 155, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__tabs .tabs__tab {
   display: inline-block;
   margin-right: 40px;
   padding: 10px;
   cursor: pointer;
 }
-/* line 158, ../sass/product_page.sass */
+/* line 161, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__tabs .tabs__tab span {
   text-transform: uppercase;
   font-size: 0.7em;
 }
-/* line 162, ../sass/product_page.sass */
+/* line 165, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__tabs .tabs__tab .tab__underline {
   display: none;
   width: 100%;
@@ -195,30 +203,31 @@ html body .content .content__product-about .product-about__tabs .tabs__tab .tab_
   margin-top: 20px;
   box-shadow: 7px 0 20px rgba(55, 70, 222, 0.7);
 }
-/* line 175, ../sass/product_page.sass */
+/* line 178, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__tabs .active span {
   color: #52afeb;
 }
-/* line 178, ../sass/product_page.sass */
+/* line 181, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__tabs .active .tab__underline {
   display: block;
 }
-/* line 181, ../sass/product_page.sass */
+/* line 184, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__overview {
   display: block;
   width: 100%;
 }
-/* line 185, ../sass/product_page.sass */
+/* line 188, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__overview .overview__text {
   display: block;
-  padding: 100px;
+  width: 60%;
+  margin: 100px auto;
 }
-/* line 189, ../sass/product_page.sass */
+/* line 195, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__specifications {
   display: none;
   width: 100%;
 }
-/* line 193, ../sass/product_page.sass */
+/* line 200, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper {
   display: block;
   width: 100%;
@@ -227,28 +236,29 @@ html body .content .content__product-about .product-about__specifications .speci
   text-align: center;
   overflow: hidden;
 }
-/* line 202, ../sass/product_page.sass */
+/* line 209, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec {
   display: block;
   width: 60%;
   margin: 0 auto 40px;
 }
-/* line 208, ../sass/product_page.sass */
+/* line 215, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec h4 {
   display: inline-block;
   margin-right: 20px;
   width: 30%;
+  font-family: "ArsenalBold", sans-serif;
 }
-/* line 212, ../sass/product_page.sass */
+/* line 220, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec h4:after {
   content: ":";
 }
-/* line 214, ../sass/product_page.sass */
+/* line 222, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec span {
   display: inline-block;
   width: 65%;
 }
-/* line 219, ../sass/product_page.sass */
+/* line 227, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__gallery {
   display: none;
   width: 70%;
@@ -256,7 +266,7 @@ html body .content .content__product-about .product-about__gallery {
   text-align: center;
   padding: 20px 0;
 }
-/* line 226, ../sass/product_page.sass */
+/* line 234, ../sass/product_page.sass */
 html body .content .content__product-about .product-about__gallery .fotorama {
   text-align: -webkit-center;
 }
