@@ -3229,6 +3229,17 @@ html body .wrapper .content .content__wrapper .wrapper__container .container__br
   margin-bottom: 50px;
 }
 /* line 2791, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__brands .brands__wrapper {
+  display: block;
+  width: auto;
+  padding: 20px;
+}
+/* line 2796, ../sass/main_page.sass */
+html body .wrapper .content .content__wrapper .wrapper__container .container__brands .brands__wrapper .brand {
+  width: 30%;
+  display: inline-block;
+}
+/* line 2800, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts {
   display: none;
   position: relative;
@@ -3236,19 +3247,19 @@ html body .wrapper .content .content__wrapper .wrapper__container .container__co
   overflow: hidden;
   margin-bottom: 50px;
 }
-/* line 2798, ../sass/main_page.sass */
+/* line 2807, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__map {
   display: block;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-/* line 2804, ../sass/main_page.sass */
+/* line 2813, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__map .map {
   display: block;
   width: 100%;
 }
-/* line 2808, ../sass/main_page.sass */
+/* line 2817, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info {
   display: flex;
   flex-direction: row;
@@ -3256,75 +3267,75 @@ html body .wrapper .content .content__wrapper .wrapper__container .container__co
   padding: 50px 0;
 }
 @media screen and (max-width: 700px) {
-  /* line 2808, ../sass/main_page.sass */
+  /* line 2817, ../sass/main_page.sass */
   html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-/* line 2819, ../sass/main_page.sass */
+/* line 2828, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info span {
   display: block;
   padding-bottom: 10px;
 }
-/* line 2823, ../sass/main_page.sass */
+/* line 2832, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__address {
   display: block;
   text-align: center;
   width: 20%;
 }
-/* line 2830, ../sass/main_page.sass */
+/* line 2839, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__address .address__icon {
   display: block;
   color: #52afeb;
 }
-/* line 2834, ../sass/main_page.sass */
+/* line 2843, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__address .address__icon i {
   font-size: 1.5em;
 }
-/* line 2837, ../sass/main_page.sass */
+/* line 2846, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__phone {
   display: block;
   text-align: center;
   width: 20%;
 }
-/* line 2843, ../sass/main_page.sass */
+/* line 2852, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__phone .phone__icon {
   display: block;
   color: #52afeb;
 }
-/* line 2847, ../sass/main_page.sass */
+/* line 2856, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__phone .phone__icon i {
   font-size: 1.5em;
 }
-/* line 2850, ../sass/main_page.sass */
+/* line 2859, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__email {
   display: block;
   text-align: center;
   width: 20%;
 }
-/* line 2855, ../sass/main_page.sass */
+/* line 2864, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__email .email__icon {
   display: block;
   color: #52afeb;
 }
-/* line 2859, ../sass/main_page.sass */
+/* line 2868, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__email .email__icon i {
   font-size: 1.5em;
 }
-/* line 2862, ../sass/main_page.sass */
+/* line 2871, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__time {
   width: 20%;
   text-align: center;
   display: block;
 }
-/* line 2867, ../sass/main_page.sass */
+/* line 2876, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__time .time__icon {
   display: block;
   color: #52afeb;
 }
-/* line 2871, ../sass/main_page.sass */
+/* line 2880, ../sass/main_page.sass */
 html body .wrapper .content .content__wrapper .wrapper__container .container__contacts .contacts__info .info__time .time__icon i {
   font-size: 1.5em;
 }

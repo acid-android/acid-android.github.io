@@ -375,7 +375,7 @@ html body .content .content__wrapper .wrapper__main .main__head .head__sort .sor
 }
 /* line 330, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__sort .sort__container .container__label {
-  width: 47%;
+  width: 42%;
   display: inline-block;
   position: relative;
   float: left;
@@ -401,11 +401,11 @@ html body .content .content__wrapper .wrapper__main .main__head .head__sort .sor
 }
 /* line 354, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__sort .sort__container .container__value {
-  width: 53%;
+  width: 58%;
   display: inline-block;
   position: relative;
   float: left;
-  margin-top: 17px;
+  margin-top: 20px;
   cursor: pointer;
   text-align: center;
 }
@@ -496,7 +496,7 @@ html body .content .content__wrapper .wrapper__main .main__head .head__num-of-it
 }
 /* line 441, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__num-of-items .num-of-items__container .container__label {
-  width: 47%;
+  width: 54%;
   display: inline-block;
   position: relative;
   float: left;
@@ -522,11 +522,11 @@ html body .content .content__wrapper .wrapper__main .main__head .head__num-of-it
 }
 /* line 465, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__num-of-items .num-of-items__container .container__value {
-  width: 53%;
+  width: 46%;
   display: inline-block;
   position: relative;
   float: left;
-  margin-top: 17px;
+  margin-top: 20px;
   cursor: pointer;
   text-align: center;
 }
@@ -583,22 +583,23 @@ html body .content .content__wrapper .wrapper__main .main__head .head__num-of-it
 }
 /* line 518, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__num-of-items .num-of-items__drop .drop__menu .menu__item {
+  display: block;
   list-style-type: none;
   padding: 10px;
   text-align: center;
   cursor: pointer;
   font-size: 0.8em;
 }
-/* line 525, ../sass/list_page.sass */
+/* line 526, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__num-of-items .num-of-items__drop .drop__menu .checked {
   color: #52afeb;
   text-decoration: underline;
 }
-/* line 529, ../sass/list_page.sass */
+/* line 530, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__num-of-items .drop {
   display: block;
 }
-/* line 532, ../sass/list_page.sass */
+/* line 533, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__compare {
   position: relative;
   display: inline-block;
@@ -608,20 +609,20 @@ html body .content .content__wrapper .wrapper__main .main__head .head__compare {
   box-sizing: border-box;
 }
 @media screen and (max-width: 1135px) {
-  /* line 532, ../sass/list_page.sass */
+  /* line 533, ../sass/list_page.sass */
   html body .content .content__wrapper .wrapper__main .main__head .head__compare {
     width: 16.5%;
     text-align: center;
   }
 }
-/* line 546, ../sass/list_page.sass */
+/* line 547, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__compare .compare__container {
   display: block;
   position: relative;
   vertical-align: middle;
   width: 100%;
 }
-/* line 553, ../sass/list_page.sass */
+/* line 554, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__compare .compare__container span {
   display: inline-block;
   font-size: 0.7em;
@@ -629,13 +630,13 @@ html body .content .content__wrapper .wrapper__main .main__head .head__compare .
   margin-left: calc(13vw - 67px);
 }
 @media screen and (max-width: 1135px) {
-  /* line 553, ../sass/list_page.sass */
+  /* line 554, ../sass/list_page.sass */
   html body .content .content__wrapper .wrapper__main .main__head .head__compare .compare__container span {
     margin-left: 10px;
     font-size: 0.5em;
   }
 }
-/* line 563, ../sass/list_page.sass */
+/* line 564, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__compare .compare__container .circle {
   display: inline-block;
   width: 19px;
@@ -646,19 +647,19 @@ html body .content .content__wrapper .wrapper__main .main__head .head__compare .
   text-align: center;
 }
 @media screen and (max-width: 1135px) {
-  /* line 563, ../sass/list_page.sass */
+  /* line 564, ../sass/list_page.sass */
   html body .content .content__wrapper .wrapper__main .main__head .head__compare .compare__container .circle {
     margin-left: 5px;
   }
 }
-/* line 576, ../sass/list_page.sass */
+/* line 577, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__head .head__compare .compare__container .circle span {
   padding: 1px;
   font-size: 0.85em;
   color: #F2F5F7;
   margin: 0;
 }
-/* line 582, ../sass/list_page.sass */
+/* line 583, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content {
   display: block;
   position: relative;
@@ -666,7 +667,7 @@ html body .content .content__wrapper .wrapper__main .main__content {
   overflow: hidden;
   box-sizing: border-box;
 }
-/* line 588, ../sass/list_page.sass */
+/* line 589, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters {
   display: block;
   float: left;
@@ -676,92 +677,92 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   border-bottom: 1px #efeaea solid;
   box-sizing: border-box;
 }
-/* line 599, ../sass/list_page.sass */
+/* line 600, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .open-icon, html body .content .content__wrapper .wrapper__main .main__content .content__filters .close-icon, html body .content .content__wrapper .wrapper__main .main__content .content__filters .head__name {
   display: inline-block;
   cursor: pointer;
 }
-/* line 603, ../sass/list_page.sass */
+/* line 604, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__general {
   display: block;
   position: relative;
   width: 100%;
   border-bottom: 1px #efeaea solid;
 }
-/* line 609, ../sass/list_page.sass */
+/* line 610, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__general .filter__head {
   display: block;
   position: relative;
   padding: 10px;
 }
-/* line 616, ../sass/list_page.sass */
+/* line 617, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__general .filter__head .head__name {
   font-size: 0.7em;
   text-transform: uppercase;
   padding-left: 10px;
 }
-/* line 621, ../sass/list_page.sass */
+/* line 622, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 626, ../sass/list_page.sass */
+/* line 627, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list {
   display: none;
   list-style-type: none;
   padding: 0;
 }
-/* line 631, ../sass/list_page.sass */
+/* line 632, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list .list__items {
   display: block;
   padding-bottom: 5px;
 }
-/* line 634, ../sass/list_page.sass */
+/* line 635, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list .list__items .item {
   list-style-type: none;
   padding-left: 35px;
   overflow: hidden;
   font-size: 0.85em;
 }
-/* line 641, ../sass/list_page.sass */
+/* line 642, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list .list__items .item .item__name, html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list .list__items .item .item__quantity {
   display: inline-block;
 }
-/* line 644, ../sass/list_page.sass */
+/* line 645, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list .list__items .item .item__name {
   float: left;
   cursor: pointer;
 }
-/* line 648, ../sass/list_page.sass */
+/* line 649, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list .list__items .item .item__quantity {
   float: right;
   padding-right: 35px;
 }
-/* line 652, ../sass/list_page.sass */
+/* line 653, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .general__body .body__list .checked {
   color: #52afeb;
 }
-/* line 656, ../sass/list_page.sass */
+/* line 657, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price {
   display: block;
   position: relative;
   width: 100%;
   border-bottom: 1px #efeaea solid;
 }
-/* line 662, ../sass/list_page.sass */
+/* line 663, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .filter__head {
   display: block;
   position: relative;
   padding: 10px;
 }
-/* line 667, ../sass/list_page.sass */
+/* line 668, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .filter__head .head__name {
   font-size: 0.7em;
   text-transform: uppercase;
   padding-left: 10px;
 }
-/* line 672, ../sass/list_page.sass */
+/* line 673, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body {
   display: block;
   position: relative;
@@ -769,12 +770,12 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   padding-left: 35px;
   padding-right: 35px;
 }
-/* line 680, ../sass/list_page.sass */
+/* line 681, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .inputs {
   width: 75%;
   display: block;
 }
-/* line 684, ../sass/list_page.sass */
+/* line 685, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .inputs input {
   display: inline-block;
   position: relative;
@@ -788,22 +789,22 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   text-align: center;
   outline-style: none;
 }
-/* line 698, ../sass/list_page.sass */
+/* line 699, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .inputs input:focus {
   border: 2px #a4a2a2 solid;
   font-size: 0.8em;
   color: #000000;
   box-shadow: 0 0px 19px rgba(175, 175, 175, 0.9);
 }
-/* line 704, ../sass/list_page.sass */
+/* line 705, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .inputs label {
   font-size: 0.8em;
 }
-/* line 707, ../sass/list_page.sass */
+/* line 708, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .inputs .max-price {
   margin-left: 5px;
 }
-/* line 709, ../sass/list_page.sass */
+/* line 710, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content {
   width: 75%;
   margin: 20px 20px 30px 0;
@@ -811,41 +812,41 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   border: none;
   font-size: 0.3em;
 }
-/* line 716, ../sass/list_page.sass */
+/* line 717, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content .ui-widget-header {
   background: #4c4c4c;
 }
-/* line 719, ../sass/list_page.sass */
+/* line 720, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content .ui-corner-all {
   border-radius: 10px;
 }
-/* line 722, ../sass/list_page.sass */
+/* line 723, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .body__list .ui-widget-content .ui-slider-handle {
   font-size: 2.3em;
   top: -0.45em;
   outline-style: none;
   box-shadow: 2px 2px 7px rgba(55, 55, 55, 0.5);
 }
-/* line 728, ../sass/list_page.sass */
+/* line 729, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .price__range {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 733, ../sass/list_page.sass */
+/* line 734, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .submit {
   text-decoration: none;
   display: none;
   position: relative;
   width: 32%;
 }
-/* line 739, ../sass/list_page.sass */
+/* line 740, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .submit .submit-price-button {
   position: relative;
   display: block;
   background-color: #74d36b;
   width: 100%;
-  height: 20px;
+  height: 26px;
   padding-top: 7px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -853,7 +854,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   text-align: center;
   cursor: pointer;
 }
-/* line 752, ../sass/list_page.sass */
+/* line 753, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .submit .submit-price-button p {
   position: relative;
   display: block;
@@ -862,11 +863,11 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   font-size: 0.7em;
   margin: 0;
 }
-/* line 760, ../sass/list_page.sass */
+/* line 761, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .submit-visible {
   display: inline-block;
 }
-/* line 763, ../sass/list_page.sass */
+/* line 764, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .reset {
   text-decoration: none;
   display: none;
@@ -874,13 +875,13 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   width: 32%;
   margin-left: 5px;
 }
-/* line 770, ../sass/list_page.sass */
+/* line 771, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .reset .reset-price-button {
   position: relative;
   display: block;
   background-color: #d32e2c;
   width: 100%;
-  height: 20px;
+  height: 26px;
   padding-top: 7px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -888,7 +889,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   text-align: center;
   cursor: pointer;
 }
-/* line 783, ../sass/list_page.sass */
+/* line 784, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .reset .reset-price-button p {
   position: relative;
   display: block;
@@ -897,41 +898,53 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   font-size: 0.7em;
   margin: 0;
 }
-/* line 791, ../sass/list_page.sass */
+/* line 792, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__price .price__body .reset-visible {
   display: inline-block;
 }
-/* line 796, ../sass/list_page.sass */
+/* line 797, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 801, ../sass/list_page.sass */
+/* line 802, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .filter__head {
   display: block;
   position: relative;
   padding: 10px;
 }
-/* line 806, ../sass/list_page.sass */
+/* line 807, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .filter__head .head__name {
   font-size: 0.7em;
   text-transform: uppercase;
   padding-left: 10px;
 }
-/* line 812, ../sass/list_page.sass */
+/* line 813, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body {
   display: block;
   position: relative;
+  z-index: 0;
   width: 80%;
   max-width: 245px;
   padding: 20px 35px;
 }
-/* line 820, ../sass/list_page.sass */
+/* line 830, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list {
   display: none;
 }
-/* line 823, ../sass/list_page.sass */
+/* line 833, ../sass/list_page.sass */
+html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .color__popup {
+  background-color: #ffffff;
+  position: absolute;
+  top: -10%;
+  z-index: 1;
+  border: 1px solid #b2b2b2;
+  padding: 10px;
+  display: none;
+  color: #959595;
+}
+/* line 845, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container {
   display: inline-block;
   position: relative;
@@ -942,7 +955,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 833, ../sass/list_page.sass */
+/* line 855, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container .color-check {
   display: block;
   width: 100%;
@@ -950,75 +963,75 @@ html body .content .content__wrapper .wrapper__main .main__content .content__fil
   text-align: center;
   font-size: 0.8em;
 }
-/* line 841, ../sass/list_page.sass */
+/* line 863, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container .color-check i {
   margin-top: 12px;
   display: none;
 }
-/* line 845, ../sass/list_page.sass */
+/* line 867, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container .color-check span {
   margin-top: 8px;
   display: block;
 }
-/* line 850, ../sass/list_page.sass */
+/* line 872, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container .black {
   color: #000000;
 }
-/* line 853, ../sass/list_page.sass */
+/* line 875, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .colors-container .white {
   color: #ffffff;
 }
-/* line 859, ../sass/list_page.sass */
+/* line 881, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .checked .color-check {
   display: block;
 }
-/* line 862, ../sass/list_page.sass */
+/* line 884, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .checked .color-check i {
   display: block;
 }
-/* line 864, ../sass/list_page.sass */
+/* line 886, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .checked .color-check span {
   display: none;
 }
-/* line 868, ../sass/list_page.sass */
+/* line 890, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .checked:hover .color-check {
   display: block;
 }
-/* line 871, ../sass/list_page.sass */
+/* line 893, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .checked:hover .color-check i {
   display: inline-block;
   font-size: 0.5em;
 }
-/* line 874, ../sass/list_page.sass */
+/* line 896, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filters__colors .colors__body .body__list .checked:hover .color-check span {
   display: inline-block;
   font-size: 0.9em;
 }
-/* line 888, ../sass/list_page.sass */
+/* line 910, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .filter:hover {
   background-color: rgba(246, 246, 246, 0.4);
 }
-/* line 892, ../sass/list_page.sass */
+/* line 914, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .opened .filter__head .open-icon {
   display: none;
 }
-/* line 897, ../sass/list_page.sass */
+/* line 919, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .opened .f-body .body__list {
   display: block;
 }
-/* line 902, ../sass/list_page.sass */
+/* line 924, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .filter__head .close-icon {
   display: none;
 }
-/* line 905, ../sass/list_page.sass */
+/* line 927, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .body__list {
   display: none;
 }
-/* line 908, ../sass/list_page.sass */
+/* line 930, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .general__body, html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .price__body, html body .content .content__wrapper .wrapper__main .main__content .content__filters .minimized .colors__body {
   display: none;
 }
-/* line 911, ../sass/list_page.sass */
+/* line 933, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products {
   display: inline-block;
   position: relative;
@@ -1028,14 +1041,14 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   overflow: visible;
   z-index: 9;
 }
-/* line 920, ../sass/list_page.sass */
+/* line 942, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container {
   display: block;
   position: relative;
   width: 100%;
   float: right;
 }
-/* line 926, ../sass/list_page.sass */
+/* line 948, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row {
   display: block;
   width: 100%;
@@ -1043,7 +1056,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   overflow: hidden;
   box-sizing: border-box;
 }
-/* line 933, ../sass/list_page.sass */
+/* line 955, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper {
   width: calc(100% / 3);
   height: auto;
@@ -1053,23 +1066,23 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   border-bottom: 1px #efeaea solid;
   box-sizing: border-box;
 }
-/* line 943, ../sass/list_page.sass */
+/* line 965, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper a {
   color: inherit;
   text-decoration: none;
 }
-/* line 947, ../sass/list_page.sass */
+/* line 969, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .image {
   position: relative;
   text-align: center;
   display: block;
   width: 100%;
 }
-/* line 953, ../sass/list_page.sass */
+/* line 975, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .image img {
   width: 75%;
 }
-/* line 956, ../sass/list_page.sass */
+/* line 978, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info {
   display: block;
   position: relative;
@@ -1078,29 +1091,29 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   margin-left: 10px;
   text-align: center;
 }
-/* line 966, ../sass/list_page.sass */
+/* line 988, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .product-name {
   display: block;
   position: relative;
   margin-bottom: 10px;
 }
-/* line 971, ../sass/list_page.sass */
+/* line 993, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .product-name .brand, html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .product-name .model {
-  display: inline-block;
+  display: block;
 }
-/* line 974, ../sass/list_page.sass */
+/* line 996, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors {
   display: block;
   position: relative;
 }
-/* line 978, ../sass/list_page.sass */
+/* line 1000, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color-name {
   display: block;
   position: relative;
   font-size: 0.7em;
   padding-bottom: 10px;
 }
-/* line 984, ../sass/list_page.sass */
+/* line 1006, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color {
   display: inline-block;
   position: relative;
@@ -1111,19 +1124,19 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 994, ../sass/list_page.sass */
+/* line 1016, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color .checked {
   display: none;
 }
-/* line 997, ../sass/list_page.sass */
+/* line 1019, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color .black {
   color: #000000;
 }
-/* line 1000, ../sass/list_page.sass */
+/* line 1022, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .color .white {
   color: #ffffff;
 }
-/* line 1004, ../sass/list_page.sass */
+/* line 1026, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .colors .active .checked {
   display: block;
   width: 100%;
@@ -1132,40 +1145,40 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pro
   margin-top: 1px;
   font-size: 0.6em;
 }
-/* line 1012, ../sass/list_page.sass */
+/* line 1034, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices {
   margin-top: 10px;
   padding-bottom: 20px;
   display: block;
   position: relative;
 }
-/* line 1018, ../sass/list_page.sass */
+/* line 1040, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .old-price, html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .price {
   display: inline-block;
 }
-/* line 1021, ../sass/list_page.sass */
+/* line 1043, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .old-price {
   position: relative;
   color: #ff6666;
   text-decoration: line-through;
   font-size: 0.8em;
 }
-/* line 1028, ../sass/list_page.sass */
+/* line 1050, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper .info .prices .price {
   position: relative;
   color: #4c4c4c;
   font-size: 1em;
   padding-left: 10px;
 }
-/* line 1036, ../sass/list_page.sass */
+/* line 1058, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper:first-child {
   width: calc(100% / 3);
 }
-/* line 1041, ../sass/list_page.sass */
+/* line 1063, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__products .products__container .container__row .row__product-wrapper:nth-child(2) {
   width: calc(100% / 3 - 1px);
 }
-/* line 1046, ../sass/list_page.sass */
+/* line 1068, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination {
   display: block;
   position: relative;
@@ -1178,7 +1191,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   padding: 0;
   z-index: 2;
 }
-/* line 1058, ../sass/list_page.sass */
+/* line 1080, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination li {
   display: inline-block;
   width: 5%;
@@ -1188,7 +1201,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   box-sizing: border-box;
   cursor: pointer;
 }
-/* line 1068, ../sass/list_page.sass */
+/* line 1090, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination li a {
   text-decoration: none;
   color: #000000;
@@ -1198,12 +1211,12 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   height: 100%;
   text-align: center;
 }
-/* line 1077, ../sass/list_page.sass */
+/* line 1099, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination li:hover {
   background-color: #eee;
   box-shadow: 0 0 20px rgba(211, 211, 211, 0.5);
 }
-/* line 1082, ../sass/list_page.sass */
+/* line 1104, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .prev {
   display: block;
   float: left;
@@ -1214,14 +1227,14 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   box-sizing: border-box;
   margin: 0;
 }
-/* line 1091, ../sass/list_page.sass */
+/* line 1113, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .prev i {
   font-size: 1.2em;
   display: block;
   margin: 0.85em auto 0;
   width: 15%;
 }
-/* line 1097, ../sass/list_page.sass */
+/* line 1119, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .prev:hover {
   background-color: #eee;
   color: #F2F5F7;
@@ -1229,7 +1242,7 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   border-right: 1px #eee solid;
   border-left: 1px #eee solid;
 }
-/* line 1103, ../sass/list_page.sass */
+/* line 1125, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .next {
   display: block;
   float: right;
@@ -1239,14 +1252,14 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   box-sizing: border-box;
   margin: 0;
 }
-/* line 1111, ../sass/list_page.sass */
+/* line 1133, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .next i {
   font-size: 1.2em;
   display: block;
   margin: 0.85em auto 0;
   width: 15%;
 }
-/* line 1117, ../sass/list_page.sass */
+/* line 1139, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .next:hover {
   background-color: #eee;
   color: #F2F5F7;
@@ -1254,21 +1267,21 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   border-right: 1px #eee solid;
   border-left: 1px #eee solid;
 }
-/* line 1126, ../sass/list_page.sass */
+/* line 1148, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .disabled i {
   display: block;
   margin: 0.85em auto 0;
   width: 15%;
   color: #808080;
 }
-/* line 1132, ../sass/list_page.sass */
+/* line 1154, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .disabled:hover {
   background-color: #ffffff;
   box-shadow: none;
   border-left: 1px #efeaea solid;
   border-right: 1px #efeaea solid;
 }
-/* line 1138, ../sass/list_page.sass */
+/* line 1160, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .active {
   background-color: #52afeb;
   box-shadow: 0 0 20px rgba(55, 70, 222, 0.5);
@@ -1276,11 +1289,11 @@ html body .content .content__wrapper .wrapper__main .main__content .content__pag
   z-index: 3;
   border-right: 1px #52afeb solid;
 }
-/* line 1144, ../sass/list_page.sass */
+/* line 1166, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .active a {
   color: #ffffff;
 }
-/* line 1146, ../sass/list_page.sass */
+/* line 1168, ../sass/list_page.sass */
 html body .content .content__wrapper .wrapper__main .main__content .content__pagination .active:hover {
   background-color: #52afeb;
   box-shadow: 0 0 20px rgba(211, 211, 211, 0.5);

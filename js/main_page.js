@@ -421,6 +421,26 @@ $( function() {
     });
 });
 
+$(function(){
+    var color = $('.colors-container');
+    var popUp = $('.color__popup');
+    var popUpText = $('.color__popup span');
+    color.hover(function(){
+        //console.log($(this).position().top);
+        popUpText.html($(this).data('color-group-name'));
+        popUp.css({
+            'top': $(this).position().top - $(this).height(),
+            'left' : $(this).position().left - 20,
+            'display': 'block'
+        });
+    });
+    color.mouseleave(function(){
+        popUp.css({
+            'display': 'none'
+        });
+    });
+});
+
 //--------------------FILTERS END-----------------------------------------------
 
 //--------------------PAGINATION-----------------------------------------------
