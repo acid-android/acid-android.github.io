@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Arsenal";
+  src: url("../../fonts/Arsenal/Arsenal-Regular.ttf");
+}
+@font-face {
+  font-family: "ArsenalBold";
+  src: url("../../fonts/Arsenal/Arsenal-Bold.ttf");
+}
+/* line 3, ../sass/product_page_cable.sass */
+html {
+  margin: 0;
+  padding: 0;
+}
+/* line 8, ../sass/product_page_cable.sass */
+html body {
+  margin: 0;
+  padding: 0;
+}
+/* line 13, ../sass/product_page_cable.sass */
+html body .content {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: auto;
+  margin: -120px 5% 60px 5%;
+  background-color: white;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+/* line 23, ../sass/product_page_cable.sass */
+html body .content .content__product {
+  display: block;
+  position: relative;
+  padding: 150px 10%;
+  border-bottom: 1px #efeaea solid;
+  overflow: hidden;
+}
+/* line 30, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 36, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info {
+  display: block;
+  position: relative;
+  float: left;
+  width: 40%;
+  padding-top: 75px;
+}
+/* line 43, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__type {
+  display: block;
+  position: relative;
+  padding-bottom: 20px;
+  color: #4c4c4c;
+}
+/* line 49, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__name {
+  display: block;
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+}
+/* line 55, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__name .brand, html body .content .content__product .product__wrapper .wrapper__info .info__name .model {
+  display: inline-block;
+}
+/* line 58, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length {
+  display: block;
+  position: relative;
+}
+/* line 62, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length .length-span {
+  display: block;
+  padding-bottom: 5px;
+}
+/* line 66, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length .color-name {
+  display: block;
+  position: relative;
+  font-size: 0.7em;
+  padding-bottom: 10px;
+}
+/* line 72, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length .length {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 2px 5px;
+  background-size: cover;
+  vertical-align: middle;
+  cursor: pointer;
+  border: solid 1px #9f9f9f;
+  border-radius: 24px;
+  color: #000000;
+}
+/* line 85, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length .length .checked {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 9px;
+  font-size: 0.85em;
+}
+/* line 93, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length .length .checked i {
+  font-style: normal;
+}
+/* line 98, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length .length .black {
+  color: #000000;
+}
+/* line 101, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length .length .white {
+  color: #ffffff;
+}
+/* line 104, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__length .active {
+  border: solid 2px #62bbf1;
+  border-radius: 25px;
+  color: #62bbf1;
+}
+/* line 112, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__price {
+  display: block;
+  position: relative;
+  padding-top: 20px;
+}
+/* line 117, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__price .price, html body .content .content__product .product__wrapper .wrapper__info .info__price .old-price {
+  display: inline-block;
+  padding-right: 10px;
+}
+/* line 121, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__price .old-price {
+  position: relative;
+  color: #ff6666;
+  text-decoration: line-through;
+  font-size: 1em;
+  margin-left: 20px;
+}
+/* line 128, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__info .info__price .price {
+  position: relative;
+  color: #4c4c4c;
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+/* line 134, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__main-image {
+  display: block;
+  position: relative;
+  float: right;
+  width: 60%;
+  text-align: center;
+}
+/* line 142, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__main-image .image {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+/* line 148, ../sass/product_page_cable.sass */
+html body .content .content__product .product__wrapper .wrapper__main-image .image img {
+  text-align: center;
+  width: 60%;
+}
+/* line 154, ../sass/product_page_cable.sass */
+html body .content .content__product-about {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+}
+/* line 159, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__tabs {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-left: 10%;
+  padding-bottom: 20px;
+}
+/* line 166, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__tabs .tabs__tab {
+  display: inline-block;
+  margin-right: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+/* line 172, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__tabs .tabs__tab span {
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+/* line 176, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__tabs .tabs__tab .tab__underline {
+  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: #52afeb;
+  margin-top: 20px;
+  box-shadow: 7px 0 20px rgba(55, 70, 222, 0.7);
+}
+/* line 189, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__tabs .active span {
+  color: #52afeb;
+}
+/* line 192, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__tabs .active .tab__underline {
+  display: block;
+}
+/* line 195, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__overview {
+  display: block;
+  width: 100%;
+}
+/* line 199, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__overview .overview__text {
+  display: block;
+  width: 60%;
+  margin: 100px auto;
+}
+/* line 206, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__specifications {
+  display: none;
+  width: 100%;
+}
+/* line 211, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__specifications .specifications__wrapper {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 30px auto;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 220, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec {
+  display: block;
+  width: 60%;
+  margin: 0 auto 40px;
+}
+/* line 226, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec h4 {
+  display: inline-block;
+  margin-right: 20px;
+  width: 30%;
+  font-family: "ArsenalBold", sans-serif;
+}
+/* line 231, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec h4:after {
+  content: ":";
+}
+/* line 233, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec span {
+  display: inline-block;
+  width: 65%;
+}
+/* line 238, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__gallery {
+  display: none;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+/* line 245, ../sass/product_page_cable.sass */
+html body .content .content__product-about .product-about__gallery .fotorama {
+  text-align: -webkit-center;
+}

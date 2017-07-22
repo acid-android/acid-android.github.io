@@ -128,8 +128,29 @@ html body .header .header__search {
   display: inline-block;
   float: right;
   margin: 20px 20px 20px 0;
+  background-color: rgba(28, 30, 30, 0.2);
+  border-radius: 3px;
 }
-/* line 100, ../sass/template.sass */
+/* line 103, ../sass/template.sass */
+html body .header .header__search .form__icon {
+  color: white;
+  margin-right: 2px;
+}
+/* line 106, ../sass/template.sass */
+html body .header .header__search .form__input {
+  background-color: inherit;
+  border: none;
+  width: 200px;
+  font-size: 0.9em;
+  color: #FFFFFF;
+  outline-color: grey;
+}
+/* line 113, ../sass/template.sass */
+html body .header .header__search .form__input::-webkit-input-placeholder {
+  padding-right: 20px;
+  color: #FFFFFF;
+}
+/* line 118, ../sass/template.sass */
 html body .dropdown-menu {
   display: none;
   position: absolute;
@@ -140,7 +161,7 @@ html body .dropdown-menu {
   padding-bottom: 100px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-/* line 110, ../sass/template.sass */
+/* line 128, ../sass/template.sass */
 html body .dropdown-menu .blur {
   display: block;
   position: absolute;
@@ -149,19 +170,19 @@ html body .dropdown-menu .blur {
   filter: blur(10px);
   z-index: 0;
 }
-/* line 120, ../sass/template.sass */
+/* line 138, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper {
   margin: 20px;
   position: relative;
   z-index: 1;
 }
-/* line 125, ../sass/template.sass */
+/* line 143, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-/* line 130, ../sass/template.sass */
+/* line 148, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category {
   display: inline-block;
   margin-right: 50px;
@@ -169,44 +190,44 @@ html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list 
   vertical-align: top;
 }
 @media screen and (max-width: 1460px) {
-  /* line 130, ../sass/template.sass */
+  /* line 148, ../sass/template.sass */
   html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category {
     margin-right: 0;
   }
 }
-/* line 139, ../sass/template.sass */
+/* line 157, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category .general-category__head {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1460px) {
-  /* line 139, ../sass/template.sass */
+  /* line 157, ../sass/template.sass */
   html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category .general-category__head {
     font-size: 0.85em;
   }
 }
-/* line 145, ../sass/template.sass */
+/* line 163, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category .general-category__sub-category {
   list-style-type: none;
   padding: 0;
 }
-/* line 149, ../sass/template.sass */
+/* line 167, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category .general-category__sub-category .sub-category__item {
   display: block;
   width: auto;
   padding: 5px 0;
   font-size: 1rem;
 }
-/* line 155, ../sass/template.sass */
+/* line 173, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category .general-category__sub-category .sub-category__item a {
   text-decoration: none;
   color: #F2F5F7;
   cursor: pointer;
 }
-/* line 159, ../sass/template.sass */
+/* line 177, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category .general-category__sub-category .sub-category__item a:hover {
   color: #52afeb;
 }
-/* line 162, ../sass/template.sass */
+/* line 180, ../sass/template.sass */
 html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list .general-category .general-category__sub-category .sub-category__item .item__all {
   display: block;
   margin-top: 10px;
@@ -214,12 +235,12 @@ html body .dropdown-menu .dropdown-menu__wrapper .wrapper__main-categories-list 
   text-decoration: none;
   cursor: pointer;
 }
-/* line 168, ../sass/template.sass */
+/* line 186, ../sass/template.sass */
 html body .content {
   min-height: 100%;
   padding: 0 0 229px;
 }
-/* line 172, ../sass/template.sass */
+/* line 190, ../sass/template.sass */
 html body .footer {
   position: relative;
   width: 100%;
