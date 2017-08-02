@@ -105,7 +105,7 @@ html body .content .content__product .product__wrapper .wrapper__info .info__len
   width: 100%;
   position: relative;
   text-align: center;
-  margin-top: 9px;
+  margin-top: 10px;
   font-size: 0.85em;
 }
 /* line 93, ../sass/product_page_cable.sass */
@@ -122,22 +122,24 @@ html body .content .content__product .product__wrapper .wrapper__info .info__len
 }
 /* line 104, ../sass/product_page_cable.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__length .active {
+  width: 38px;
+  height: 38px;
   border: solid 2px #62bbf1;
   border-radius: 25px;
   color: #62bbf1;
 }
-/* line 112, ../sass/product_page_cable.sass */
+/* line 114, ../sass/product_page_cable.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__price {
   display: block;
   position: relative;
   padding-top: 20px;
 }
-/* line 117, ../sass/product_page_cable.sass */
+/* line 119, ../sass/product_page_cable.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__price .price, html body .content .content__product .product__wrapper .wrapper__info .info__price .old-price {
   display: inline-block;
   padding-right: 10px;
 }
-/* line 121, ../sass/product_page_cable.sass */
+/* line 123, ../sass/product_page_cable.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__price .old-price {
   position: relative;
   color: #ff6666;
@@ -145,14 +147,14 @@ html body .content .content__product .product__wrapper .wrapper__info .info__pri
   font-size: 1em;
   margin-left: 20px;
 }
-/* line 128, ../sass/product_page_cable.sass */
+/* line 130, ../sass/product_page_cable.sass */
 html body .content .content__product .product__wrapper .wrapper__info .info__price .price {
   position: relative;
   color: #4c4c4c;
   font-size: 1.5em;
   margin-left: 20px;
 }
-/* line 134, ../sass/product_page_cable.sass */
+/* line 136, ../sass/product_page_cable.sass */
 html body .content .content__product .product__wrapper .wrapper__main-image {
   display: block;
   position: relative;
@@ -160,26 +162,26 @@ html body .content .content__product .product__wrapper .wrapper__main-image {
   width: 60%;
   text-align: center;
 }
-/* line 142, ../sass/product_page_cable.sass */
+/* line 144, ../sass/product_page_cable.sass */
 html body .content .content__product .product__wrapper .wrapper__main-image .image {
   display: block;
   position: relative;
   width: 100%;
   text-align: center;
 }
-/* line 148, ../sass/product_page_cable.sass */
+/* line 150, ../sass/product_page_cable.sass */
 html body .content .content__product .product__wrapper .wrapper__main-image .image img {
   text-align: center;
   width: 60%;
 }
-/* line 154, ../sass/product_page_cable.sass */
+/* line 156, ../sass/product_page_cable.sass */
 html body .content .content__product-about {
   display: block;
   position: relative;
   width: 100%;
   padding-top: 20px;
 }
-/* line 159, ../sass/product_page_cable.sass */
+/* line 161, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__tabs {
   display: block;
   position: relative;
@@ -187,19 +189,19 @@ html body .content .content__product-about .product-about__tabs {
   padding-left: 10%;
   padding-bottom: 20px;
 }
-/* line 166, ../sass/product_page_cable.sass */
+/* line 168, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__tabs .tabs__tab {
   display: inline-block;
   margin-right: 40px;
   padding: 10px;
   cursor: pointer;
 }
-/* line 172, ../sass/product_page_cable.sass */
+/* line 174, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__tabs .tabs__tab span {
   text-transform: uppercase;
   font-size: 0.7em;
 }
-/* line 176, ../sass/product_page_cable.sass */
+/* line 178, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__tabs .tabs__tab .tab__underline {
   display: none;
   width: 100%;
@@ -208,31 +210,31 @@ html body .content .content__product-about .product-about__tabs .tabs__tab .tab_
   margin-top: 20px;
   box-shadow: 7px 0 20px rgba(55, 70, 222, 0.7);
 }
-/* line 189, ../sass/product_page_cable.sass */
+/* line 191, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__tabs .active span {
   color: #52afeb;
 }
-/* line 192, ../sass/product_page_cable.sass */
+/* line 194, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__tabs .active .tab__underline {
   display: block;
 }
-/* line 195, ../sass/product_page_cable.sass */
+/* line 197, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__overview {
   display: block;
   width: 100%;
 }
-/* line 199, ../sass/product_page_cable.sass */
+/* line 201, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__overview .overview__text {
   display: block;
   width: 60%;
   margin: 100px auto;
 }
-/* line 206, ../sass/product_page_cable.sass */
+/* line 208, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__specifications {
   display: none;
   width: 100%;
 }
-/* line 211, ../sass/product_page_cable.sass */
+/* line 213, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper {
   display: block;
   width: 100%;
@@ -241,29 +243,29 @@ html body .content .content__product-about .product-about__specifications .speci
   text-align: center;
   overflow: hidden;
 }
-/* line 220, ../sass/product_page_cable.sass */
+/* line 222, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec {
   display: block;
   width: 60%;
   margin: 0 auto 40px;
 }
-/* line 226, ../sass/product_page_cable.sass */
+/* line 228, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec h4 {
   display: inline-block;
   margin-right: 20px;
   width: 30%;
   font-family: "ArsenalBold", sans-serif;
 }
-/* line 231, ../sass/product_page_cable.sass */
+/* line 233, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec h4:after {
   content: ":";
 }
-/* line 233, ../sass/product_page_cable.sass */
+/* line 235, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__specifications .specifications__wrapper .spec span {
   display: inline-block;
   width: 65%;
 }
-/* line 238, ../sass/product_page_cable.sass */
+/* line 240, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__gallery {
   display: none;
   width: 70%;
@@ -271,7 +273,7 @@ html body .content .content__product-about .product-about__gallery {
   text-align: center;
   padding: 20px 0;
 }
-/* line 245, ../sass/product_page_cable.sass */
+/* line 247, ../sass/product_page_cable.sass */
 html body .content .content__product-about .product-about__gallery .fotorama {
   text-align: -webkit-center;
 }
